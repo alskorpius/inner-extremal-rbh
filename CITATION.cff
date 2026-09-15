@@ -6,6 +6,16 @@ abstract: >-
   NEC-satisfying anisotropic sources: existence, extent, and the absence of a
   classical selection mechanism". Contains the scripts, result files, figures
   and raw logs behind every number reported in the paper.
+
+  A family of regular black holes whose inner horizon is a triple root of the
+  metric function exists over a finite range of the core scale and satisfies the
+  null energy condition throughout. No local matter source in general relativity
+  selects it: between the horizons the geometry is a homogeneous Kantowski-Sachs
+  region whose flow preserves phase-space volume identically, so a degenerate
+  inner horizon can never be an attractor, and with a velocity-dependent
+  transverse pressure it is never asymptotically stable. This release adds that
+  theorem, its symbolic proof and numerical controls, the non-spherical analysis,
+  and the phase-space area figure.
 type: software
 authors:
   - given-names: Oleh
@@ -13,9 +23,10 @@ authors:
     email: oleh.popenkov@gmail.com
     affiliation: "Independent researcher, Kelowna, BC, Canada"
     orcid: "https://orcid.org/0009-0008-9894-2982"
-version: 1.0.0
-date-released: "2026-09-14"
+version: 1.1.1
+date-released: "2026-09-15"
 license: MIT
+license-url: "https://github.com/alskorpius/inner-extremal-rbh/blob/main/LICENSE"
 repository-code: "https://github.com/alskorpius/inner-extremal-rbh"
 keywords:
   - general relativity
@@ -25,3 +36,6 @@ keywords:
   - mass inflation
   - quasinormal modes
   - null energy condition
+  - Liouville theorem
+  - Kantowski-Sachs
+  - reproducible research

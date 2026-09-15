@@ -1,0 +1,42 @@
+{
+  "title": "inner-extremal-rbh: no attractor for degenerate inner horizons, and the NEC-satisfying family it rules out selecting",
+  "description": "<p>Reproduction package for the paper <em>Inner-extremal regular black holes with NEC-satisfying anisotropic sources: existence, extent, and the absence of a classical selection mechanism</em>. Every number in the paper is reproduced by one command from a clean clone; the map from each number to its script and result file is in <code>docs/reproducibility.md</code>, and the scope of every claim is in <code>docs/limitations.md</code>.</p><p>A family of regular black holes whose inner horizon is degenerate &mdash; a triple root of the metric function, so that the surface gravity vanishes and the Cauchy-horizon instability is switched off at linear order &mdash; exists over a finite range of the core scale and satisfies the null energy condition throughout. No local matter source in general relativity selects it. Between the horizons the geometry is a homogeneous Kantowski&ndash;Sachs region whose dynamics closes on the areal radius; the phase-space divergence of that flow vanishes identically, for any metric function and any explicit time dependence, so the flow is Hamiltonian, Liouville's theorem applies, and no attractor exists. With a velocity-dependent transverse pressure the flow is no longer Hamiltonian, but the Jacobian at the degenerate horizon still has zero trace, so such a horizon is never asymptotically stable. The result concerns the unreduced symplectic dynamics at fixed profile, and no energy condition enters the proof.</p><p>Version 1.1.1 adds the theorem with its symbolic proof and numerical controls (<code>src/no_attractor/</code>), the analysis of non-spherical perturbations (<code>src/nonspherical/</code>), and the phase-space area figure. Licensing is split: code in <code>src/</code> and <code>figures/</code> is MIT; data in <code>data/</code>, raw logs in <code>logs/</code> and the generated figure images are CC-BY-4.0. See <code>LICENSE</code>.</p><p>The calculations were carried out with automated agents under the author's direction, with an independent cross-audit between two separate research projects. The author is responsible for the results.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.1.1",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Popenkov, Oleh",
+      "affiliation": "Independent researcher, Kelowna, BC, Canada",
+      "orcid": "0009-0008-9894-2982"
+    }
+  ],
+  "keywords": [
+    "general relativity",
+    "regular black holes",
+    "inner horizon",
+    "degenerate horizon",
+    "Cauchy horizon",
+    "mass inflation",
+    "Liouville theorem",
+    "Kantowski-Sachs",
+    "null energy condition",
+    "quasinormal modes",
+    "reproducible research",
+    "gr-qc"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/alskorpius/inner-extremal-rbh",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.134.081401",
+      "relation": "cites",
+      "scheme": "doi"
+    }
+  ]
+}
