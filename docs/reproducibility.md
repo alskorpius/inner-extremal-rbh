@@ -8,6 +8,22 @@ Python 3.13.6; NumPy 2.3.5; SciPy 1.17.0; SymPy 1.14.0; mpmath 1.3.0; Matplotlib
 
 All results are deterministic except the random search in `T15_lambda_bound.py`; see [Determinism](#determinism).
 
+## Run this first
+
+One prerequisite, before anything in the table below that lives in `src/no_attractor/`:
+
+```
+python src/no_attractor/t36_profile.py
+```
+
+It builds `data/no_attractor/t36_profile_cache.npz`, the sampled profile that every other script in that
+directory reads, and takes about five seconds. The cache is deliberately **not** committed — `.gitignore`
+excludes `data/**/*.npz` — so a fresh clone does not have it and the scripts that need it will fail until
+it is built.
+
+Nothing else here has an ordering requirement: every other command below runs on its own, in any order,
+from a clean clone.
+
 ## Number → script → result file
 
 | Number or statement in the paper | Command | Result file | Section |
@@ -39,7 +55,16 @@ All results are deterministic except the random search in `T15_lambda_bound.py`;
 | Field defect: a smooth field has a degenerate horizon only at the scale of the theory constants (x_h² = 1/(1 − 1/(2α))); a triple root is impossible for the Mexican hat; the subcritical σ family runs 0 → 2 from below; supercritical horizons give κ_h = −0.06…−0.24 per δ_c | `python src/defect_field/defect_monopole.py`, `python src/defect_field/near_critical.py` | `data/defect_field/`, `logs/defect_field/defect_monopole_log.txt` | Absence (mechanisms for ℓ ∝ M) |
 | NED realisation: L(F) is reconstructed, stability holds outside the horizon (det S > 0, l = 2–4), inside κ_MS < 0 on [0.90, 1.63] and in the core, with amplification ln‖T‖ = 2.4ℓ (Hadamard ill-posedness) | `python src/ned_lagrangian/ned_reconstruct.py`, `python src/polar_qnm/interior_layer.py` | `data/ned_lagrangian/`, `data/polar_qnm/interior_layer.json` | Discussion |
 | Inhomogeneous collapse: all 160 shells bounce at K = (0.98 ± 0.01)·24/ℓ⁴ for ε = ±0.01…±0.3; caustics form after the bounce; the weak solution is not unique | `python src/inhomogeneous_collapse/ltb_bounce.py`, `postprocess.py`, `variant_A.py`, `weak_solution.py`, `weak_solution_shells.py` | `data/inhomogeneous_collapse/`, `logs/inhomogeneous_collapse/` | Consequence / Discussion |
+| **No-attractor theorem.** In the class T^t_t = T^r_r the T-region reduces to b″ = −f′(b)/2, whose phase-space divergence is a *symbolic* zero for any f and any explicit τ-dependence; with a velocity-dependent p_⊥ the Jacobian trace at the degenerate horizon is a symbolic zero, eigenvalues {0, ±√(−8πp_⊥\*)}. Stated for the unreduced symplectic dynamics at fixed profile | `python src/no_attractor/t36_core.py` | `data/no_attractor/t36_core.json` (`A.A2.divergence`, `A.A3.trace`, `A.A3.eigenvalues`), `logs/no_attractor/t36_core_log.txt` | Absence (theorem) |
+| Numerical controls of the theorem: Liouville monodromy max\|det J − 1\| = 3.74·10⁻¹¹; identity 8π p_⊥ = f″/2 + f′/b residual −4.9·10⁻¹⁷; Nariai control s = √(−f″/2) against 1/b\* for Λ = 0.1, 1.0, 3.0; codimension response matrix of (f, f′, f″) has rank 3, singular values 4.08·10², 3.36, 0.247 | `python src/no_attractor/t36_core.py` | `data/no_attractor/t36_core.json` (`B.B1`–`B.B4`) | Absence (theorem) |
+| ρ + p_r = 0 holds at **any** horizon (2m = r) for any lapse; degeneracy adds only the absolute values 8πρ = 1/r_h², 8π p_r = −1/r_h² | `python src/no_attractor/t36_core.py` | `data/no_attractor/t36_core.json` (`A.A1`) | Absence (theorem) |
+| Premise audit: which closed mechanism classes are instances of the theorem and which are not; the second law is load-bearing for T29 only | `python src/no_attractor/t36_premises.py` | `data/no_attractor/t36_premises.json`, `logs/no_attractor/t36_premises_log.txt` | Absence |
+| Candidate loopholes: Θ-dependent Π(Θ) over 5 forms × 7 values of ζ₀ gives 0 of 35 with ζ₀ > 0, transverse trace measured −2.5132 against −2.5133 predicted; ℓ = λM as a local law 0 of 7; memory kernels 0 of 7; piecewise-smooth 0 of 7; Filippov sliding repels from v = 0; non-autonomous 1 degenerate cell in 28 with det J = 1 to 10⁻¹² | `python src/no_attractor/t36_loopholes.py` | `data/no_attractor/t36_loopholes.json`, `logs/no_attractor/t36_loopholes_log.txt` | Absence |
+| The one counterexample: a non-local ratchet ℓ = λM does admit a degenerate exit, but a tracking error η returns the sensitivity law with its own coefficient, κ₋ = −1.919·\|η\|^{2/3} against 1.938, so η ≲ 3·10⁻³² and the gain is zero | `python src/no_attractor/t36_nonlocal.py` | `data/no_attractor/t36_nonlocal.json`, `logs/no_attractor/t36_nonlocal_log.txt` | Absence |
+| Core stability under l ≥ 2: axial sector stable for any regular profile; polar sector unstable with c_t²(0) = −1 − p/2 < −1 (≤ −2 only for p ≥ 2), spectrum unbounded below, growth 10.2 /M (l = 2, r_cut = 0.1) to 1473 /M (l = 20, r_cut = 0.02), matter-channel weight 0.986 → 0.9990. **The instability itself is De Felice and Tsujikawa, PRL 134, 081401 (2025); reproduced here by an independent hydrodynamic route** | `python src/nonspherical/t37_core_stability.py` | `data/nonspherical/t37_core_stability.json`, `data/nonspherical/core_potentials.png`, `data/nonspherical/polar_growth_vs_l.png`, `logs/nonspherical/t37_core_stability_log.txt` | Absence / Discussion |
+| Angular degeneracy: 2(L + 1)² real conditions on S², tuned fraction ε^{2(L+1)²}, 10⁻⁵⁶⁷ at the quadrupole against 10⁻⁶³ spherically; spin law \|κ₋\| = 3.144·a^{4/3} (fitted exponent 1.3289) giving a ≤ 1.1·10⁻¹⁶ (10 M☉) | `python src/nonspherical/t37_angular_degeneracy.py` | `data/nonspherical/t37_angular_degeneracy.json`, `data/nonspherical/angular_degeneracy.png`, `logs/nonspherical/t37_angular_degeneracy_log.txt` | Absence |
 | Figures 1–7 | `python figures/make_figures.py` (or with figure numbers) | `figures/fig1_family.pdf` … `figures/fig7_residual_kappa.pdf` (plus `.png`), `figures/figures_log.txt` | — |
+| Figure 8: phase-space area under the interior flow, against the cosmological comparison of Remmen and Carroll | `python src/no_attractor/t36_liouville_figure.py` | `figures/fig8_liouville.pdf` (plus `.png`), `figures/fig8_liouville_caption.txt`, `logs/no_attractor/t36_liouville_figure_log.txt` | — |
 
 Numbers that the working notes attribute to the companion paper (e-folding 18–41 μs for n = 6 profiles; echo exclusion; the ET/CE stack of 25–400 events) are cited in the paper from the companion preprint and are not reproduced here.
 
@@ -75,11 +100,21 @@ python src/verification_02/T25_constants.py         # ~2 min
 python src/defect_field/defect_monopole.py          # ~5 min
 python src/ned_lagrangian/ned_reconstruct.py        # ~2 min
 python src/polar_qnm/interior_layer.py              # ~3 min
+# the no-attractor theorem (t36_profile.py first: it builds the cache the rest read)
+python src/no_attractor/t36_profile.py              # ~5 s   -> data/no_attractor/t36_profile_cache.npz
+python src/no_attractor/t36_core.py                 # ~3 s
+python src/no_attractor/t36_premises.py             # < 1 s
+python src/no_attractor/t36_loopholes.py            # ~4 s
+python src/no_attractor/t36_nonlocal.py             # ~2 s
+# non-spherical perturbations
+python src/nonspherical/t37_core_stability.py       # ~2 min
+python src/nonspherical/t37_angular_degeneracy.py   # ~5 s
 # figures
 python figures/make_figures.py                      # ~15 s
+python src/no_attractor/t36_liouville_figure.py     # ~3 s; needs data/no_attractor/t36_core.json
 ```
 
-Order matters in three places. The figures read JSON from `data/`, so they come last. `axial_fd_fix.py` reads `data/polar_qnm/qnm_band.json`. `T21_extremal.py` reads `data/verification_01/T2_feedback.json`, `T25_constants.py` reads the `T15_*.json` files, `T18_halo.py` reads `data/polar_qnm/qnm_band.json` and `T15_qnm.json`, and `O1_holography.py` reads `data/verification_01/T16_base_profile_m_of_r.csv`.
+Order matters in four places. The figures read JSON from `data/`, so they come last — including `t36_liouville_figure.py`, which reads the measured monodromy error out of `data/no_attractor/t36_core.json` rather than hard-coding it. Everything in `src/no_attractor/` after `t36_profile.py` needs the cache that script builds. `axial_fd_fix.py` reads `data/polar_qnm/qnm_band.json`. `T21_extremal.py` reads `data/verification_01/T2_feedback.json`, `T25_constants.py` reads the `T15_*.json` files, `T18_halo.py` reads `data/polar_qnm/qnm_band.json` and `T15_qnm.json`, and `O1_holography.py` reads `data/verification_01/T16_base_profile_m_of_r.csv`.
 
 Scripts locate their neighbours through paths relative to their own file, so they can be started from any working directory, but the commands above assume the repository root.
 

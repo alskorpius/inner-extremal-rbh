@@ -4,6 +4,10 @@ Code and data for the paper **"Inner-extremal regular black holes with NEC-satis
 
 A family of regular black holes whose inner horizon is degenerate — a triple root of f(r), so that κ₋ = 0 and the Cauchy-horizon instability is switched off at linear order — exists over a finite range of ℓ/M and satisfies the null energy condition throughout. No classical mechanism selects it: the degeneracy is destroyed by any perturbation according to κ₋ ∝ ε^{2/3}, the back-reaction pushes away from it rather than towards it, and every dynamical process examined here — mass inflation, semiclassical flux, viscosity, a first-order transition, accretion, rotation — either leaves the tuning untouched or destroys it.
 
+**The absence of selection is a theorem, not an enumeration.** Take the region between horizons as the homogeneous Kantowski–Sachs reduction and let the transverse pressure obey any local constitutive law on a finite-dimensional state space that stays bounded as b′ → 0. The interior flow reduces to b″ = −f′(b)/2, whose phase-space divergence is identically zero — symbolically, for any f and even for an explicitly time-dependent one. The flow is Hamiltonian, Liouville's theorem applies, and no attractor can exist. If the transverse pressure is allowed to depend on b′ the flow is no longer Hamiltonian, but the Jacobian at the degenerate horizon still has zero trace, so its eigenvalues sum to zero and the horizon is never asymptotically stable. **The statement concerns the unreduced symplectic dynamics at fixed profile.** No energy condition enters the proof. Figure 8 shows it directly: a blob of initial conditions carried by the flow keeps its area, where an attractor would collapse it to a point.
+
+Two consequences are worth stating plainly. The theorem assumes the **Einstein equations**, so it does not touch constructions that modify the gravitational dynamics rather than the matter content — it locates the remaining escape in the gravitational sector instead of closing the subject. And the object whose selection it rules out is in any case linearly unstable: a de Sitter core has a negative squared tangential sound speed at the centre, which is the published result of [De Felice and Tsujikawa, *Phys. Rev. Lett.* **134**, 081401 (2025)](https://doi.org/10.1103/PhysRevLett.134.081401). That instability is reproduced here independently, by a hydrodynamic route that never invokes nonlinear electrodynamics, and carried over to the selection question, which their paper does not address.
+
 ## Install and run
 
 ```
@@ -50,8 +54,13 @@ The full ordered run, with timings, is in [`docs/reproducibility.md`](docs/repro
 | Thin walls and the gravastar regime | `src/audit_bhp/audit_bhp.py` | `logs/audit_bhp/audit_log.txt` |
 | Rotation (caveat) | `src/verification_03/T31_*.py`, `src/verification_02/T23_rotation.py` | `data/verification_03/T31_*.json` |
 | Family constants to four digits | `src/verification_02/T25_constants.py` | `data/verification_02/T25_constants.json` |
+| No-attractor theorem: divergence and Jacobian trace as symbolic zeros; s = ±√(−f″/2); monodromy 3.74·10⁻¹¹; codimension rank 3 | `src/no_attractor/t36_core.py` | `data/no_attractor/t36_core.json` |
+| Premise audit, and the candidate loopholes that fail (Θ-dependence, memory kernels, Filippov sliding, non-autonomy) | `src/no_attractor/t36_premises.py`, `t36_loopholes.py` | `data/no_attractor/` |
+| The non-local ratchet: a counterexample that costs as much as it buys, κ₋ = −1.919·\|η\|^{2/3} | `src/no_attractor/t36_nonlocal.py` | `data/no_attractor/t36_nonlocal.json` |
+| Core stability under l ≥ 2 and angular degeneracy (10⁻⁵⁶⁷ at the quadrupole; \|κ₋\| = 3.144·a^{4/3}) | `src/nonspherical/t37_core_stability.py`, `t37_angular_degeneracy.py` | `data/nonspherical/` |
+| Figure 8: phase-space area under the interior flow | `src/no_attractor/t36_liouville_figure.py` | `figures/fig8_liouville.pdf`, `figures/fig8_liouville_caption.txt` |
 
-The complete map, number by number, is [`docs/reproducibility.md`](docs/reproducibility.md).
+The complete map, number by number, is [`docs/reproducibility.md`](docs/reproducibility.md). One ordering rule: `src/no_attractor/t36_profile.py` builds a cache the other scripts in that directory read, so run it first.
 
 ## The base profile as data
 
@@ -60,6 +69,8 @@ The complete map, number by number, is [`docs/reproducibility.md`](docs/reproduc
 ## Layout
 
 ```
+src/no_attractor/      the theorem: symbolic proof, premise audit, loopholes, figure 8
+src/nonspherical/      l >= 2 perturbations: core stability, angular degeneracy
 src/verification_01/   T1, T2, T14, T15, T16, T18, T21
 src/verification_02/   T23, T25, T26
 src/verification_03/   T29, T30, T31
@@ -82,7 +93,7 @@ docs/limitations.md      scope and limits
 
 The family is constructed rather than derived from a field theory: the profile is a specific σ(r) parameterisation with the triple root tuned numerically, and its constants are reliable to four digits. The semiclassical treatment is the 2D Polyakov approximation. Viscosity is treated in a linearised settling model, mass inflation through the Ori two-flux model, and thin walls through the standard junction conditions. Rotation is a caveat, not a result: the degenerate inner horizon was not constructed for a rotating regular metric, only bounded (recoverable only for spin a ≲ 0.1–0.15). One quantity is stochastic — the random search that locates λ_max, seeded at 7 and reproducible to about three digits across seeds.
 
-The paper's central claim is negative, and it is a claim about the *classical* theory: no classical mechanism that selects the degenerate inner horizon was found among those examined, which is not a proof that none exists. Full discussion in [`docs/limitations.md`](docs/limitations.md).
+The theorem carries its own boundaries, and they are load-bearing. It assumes the Einstein equations, locality, a finite-dimensional state space, and boundedness of the source as b′ → 0; outside the class p_r = −ρ the interior flow is bounded but not Lipschitz, and the dynamical-systems argument does not extend. It is a statement about the unreduced symplectic dynamics at fixed profile: quotienting a Hamiltonian system by a dynamical similarity yields a contact system that is frictional, and that reduction has not been carried out here. Within those premises the no-go is a proof; the surrounding survey of mechanisms — mass inflation, semiclassical flux, viscosity, a first-order transition, accretion, rotation — remains an enumeration, which is not a proof that no mechanism exists. Full discussion in [`docs/limitations.md`](docs/limitations.md).
 
 ## Related
 

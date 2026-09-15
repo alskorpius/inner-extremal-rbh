@@ -1,0 +1,153 @@
+==============================================================================
+A. SYMBOLIC DERIVATION
+==============================================================================
+A1. General static metric ds^2 = -e^{2Phi} f dt^2 + dr^2/f + r^2 dOmega^2, f = 1 - 2m/r:
+    8 pi rho = 2*Derivative(m(r), r)/r**2
+    8 pi p_r = 2*(r*Derivative(Phi(r), r) - 2*m(r)*Derivative(Phi(r), r) - Derivative(m(r), r))/r**2
+    on a horizon (m = r/2, f = 0):   8 pi p_r = -2*m1/r**2      8 pi rho = 2*m1/r**2
+    degeneracy f'(r_h) = 0  <=>  2 m'(r_h) = 1   =>  8 pi rho = r**(-2), 8 pi p_r = -1/r**2
+    hence  rho + p_r = 0  at EVERY degenerate horizon,
+    independently of the lapse Phi: the class T^t_t = T^r_r is FORCED at the fixed point,
+    it is not an extra premise.  (NEC is saturated radially there.)
+
+A2. Class T^t_t = T^r_r, T-region:  b'' = -f'(b)/2, v = -b'.
+    flow (b', v') = (-v, Derivative(f(b, tau), b)/2);   divergence = 0
+    The divergence vanishes IDENTICALLY -- for any f(b), and also for an explicitly
+    tau-dependent f(b, tau).  The flow is a (possibly time-dependent) Hamiltonian flow
+    with H = v^2/2 + f(b)/2; Liouville's theorem applies; NO attractor of any kind exists.
+    => the premise 'autonomous' is REDUNDANT for this half of the theorem.
+
+A3. Same class, but p_perp = p(b, q, v) allowed to depend on v = -b'  (bounded at v -> 0).
+    Reduced system, q = 8 pi rho b^2 - 1 :
+        b' = -v,   v' = (v^2 - q)/(2 b),   q' = 16 pi b v p_perp .
+    Jacobian at the degenerate horizon (v = q = 0):
+[0      -1        0 ]
+[                   ]
+[                -1 ]
+[0       0       ---]
+[                2*b]
+[                   ]
+[0  16*pi*b*p_*   0 ]
+    trace = 0   (identically zero)
+    eigenvalues = {0: 1, -2*sqrt(2)*sqrt(pi)*sqrt(-p_*): 1, 2*sqrt(2)*sqrt(pi)*sqrt(-p_*): 1}
+    => every derivative of p_perp with respect to v enters multiplied by v and dies at
+       the fixed point.  Transverse eigenvalues are +- sqrt(-8 pi p_perp*): a saddle or a
+       centre, NEVER a sink.  An attractor requires p_perp to BLOW UP as 1/v, i.e. a
+       dependence on the expansion Theta (which diverges at every non-degenerate horizon).
+
+A4. Wider class (p_x != -rho).  The constraint gives h = a'/a = [(v^2+1) - 8 pi rho b^2]/(2 b v),
+    so h ~ 1/v at a horizon, and rho' = -h (rho + p_x) + (2v/b)(rho + p_perp) contains
+    the term  -(rho + p_x(rho, b))*(-8*pi*b**2*rho + v**2 + 1)/(2*b*v)
+    At a degenerate horizon rho + p_x -> 0 (A1) and the term is 0/0: the right-hand side
+    is bounded but NOT Lipschitz there (its v-derivative diverges).  The dynamical-systems
+    argument therefore does not extend verbatim outside the class T^t_t = T^r_r; this is
+    the exact step at which the general proof stops (see REPORT.md, section 5).
+
+A5. In this class  8 pi p_perp = f''/2 + f'/b.  At a degenerate horizon (f = f' = 0):
+    p_perp* = f''(b*)/(16 pi)   =>   s^2 = -8 pi p_perp* = -f''(b*)/2 .
+    f'' < 0 (double root, f <= 0 on both sides): s real  -> SADDLE, stable set codim 1.
+    f'' > 0                                    : s imaginary -> CENTRE, no approach.
+    f'' = 0 (TRIPLE root)                      : s = 0 both, p_perp(b*) = 0, fully
+       degenerate; the approach is algebraic, tau ~ (b - b*)^{-1/2} (T26), infinite time,
+       along a single orbit.
+
+==============================================================================
+B. NUMERICAL VERIFICATION
+==============================================================================
+
+B1. Base triple-root profile (BASE0, sigma_min = 1, same object as T26):
+    R_- = 0.677416   R_+ = 1.984648
+    f(R_-)  = -8.620e-13   f'(R_-) = -1.551e-07   f''(R_-) = +2.717e-03
+    8 pi rho R_-^2 - 1 = +1.051e-07   (degeneracy condition)
+    p_perp(R_-) = +5.405e-05;  identity check f''/2 + f'/b - 8 pi p_perp = -4.90e-17
+    predicted s^2 = -f''/2 = -1.359e-03  -> |s| = 3.686e-02
+    (the residual f'' = 2.7e-3 is the tuning residual of the tabulated profile,
+     kappa_- = -5e-8 in T26; the exact triple root has f'' = p_perp(b*) = 0 exactly.)
+
+B2. Liouville: monodromy determinant of the T-region flow (b, v).
+    b' = -v, v' = f'(b)/2; variational equation dJ/dtau = A(b) J, A = [[0,-1],[f''/2,0]].
+    integrated from b = 1.98465 down to b = 0.677859 over tau = 40.0 M
+    max |det J - 1| = 3.74e-11   (phase-space area exactly conserved)
+    => the barotropic T-region flow contracts no phase volume anywhere: no attractor can
+       exist, whatever the equation of state.
+
+B3. Nariai (exact Schwarzschild-de Sitter double root) as a check of s^2 = -f''/2:
+    Lambda = 0.1 : b* = 3.162278, f = -5.6e-17, f' = +5.6e-17, f'' = -0.200000 = -2 Lambda; s = sqrt(-f''/2) = 0.316228 = 1/b* = 0.316228
+    Lambda = 1.0 : b* = 1.000000, f = +5.6e-17, f' = +0.0e+00, f'' = -2.000000 = -2 Lambda; s = sqrt(-f''/2) = 1.000000 = 1/b* = 1.000000
+    Lambda = 3.0 : b* = 0.577350, f = -5.6e-17, f' = -4.4e-16, f'' = -6.000000 = -2 Lambda; s = sqrt(-f''/2) = 1.732051 = 1/b* = 1.732051
+    The T26 result 'every Nariai point is a saddle with eigenvalue +1/b*, independently of
+    the potential V' is exactly the f'' = -2 Lambda < 0 case of A3/A5: no separate theorem
+    for scalar fields is needed.
+
+B4. Codimension: are f = f' = f'' = 0 independent under arbitrary local perturbations?
+    delta m(r) = eps * S_k(r) with three independent smooth bumps; response matrix
+    M_ik = d(f, f', f'')_i / d eps_k at R_-.
+    bump centres (0.45, 0.68, 0.95), width 0.12
+    response matrix (rows f, f', f''; columns = bumps):
+      f    -8.1357e-02  -2.9510e+00  -1.6954e-02
+      f'   +2.6898e+00  +3.2972e+00  -6.1684e-01
+      f''  -7.7807e+01  +3.9975e+02  -2.0124e+01
+    singular values = [4.078e+02 3.362e+00 2.470e-01];  rank = 3
+    => the three conditions are functionally independent: in the space of mass profiles
+       'a degenerate horizon exists somewhere' is codimension 2 (three conditions minus the
+       free location R_-), and codimension 1 inside a family whose shape is already fixed
+       and only the scale is free (T26 (a), T1).
+
+==============================================================================
+SUMMARY of part (b)
+==============================================================================
+The dynamical closures DO reduce to one statement:
+  In the class T^t_t = T^r_r the T-region flow preserves phase volume; a degenerate
+  horizon is a fixed point with zero-trace linearisation and eigenvalues +- sqrt(-f''/2);
+  it is a saddle (double root) or fully degenerate (triple root), never a sink.
+  Hence its stable set has empty interior: measure zero in initial data, codimension 2
+  in profile space.  T26 (fluid/scalar/k-essence), T29 (zeta > 0), T30 (piecewise),
+  T21 (quartic end) and the profile-space part of T1 are all instances.
+The premises that are NOT needed: autonomy (A2), smoothness beyond continuity (A2/A3),
+  energy conditions (used nowhere above), the class condition itself at the fixed point (A1).
+The premises that ARE load-bearing: locality (finite-dimensional state) and the
+  boundedness of the source as v -> 0 (no Theta-dependence) -- tested in t36_loopholes.py
+  and t36_nonlocal.py.
+
+==============================================================================
+STATEMENT OF THE RESULT (part (d) of the task)
+==============================================================================
+THEOREM (no selection of a degenerate inner horizon by a local classical source).
+  Let the spacetime be spherically symmetric and satisfy the Einstein equations, and let
+  the region between horizons be the homogeneous Kantowski-Sachs reduction (equivalently,
+  the static mass function m(r) continued into f < 0).  Let the transverse pressure be
+  given by a constitutive law  p_perp = P(b, rho, b', internal variables)  which
+    (i)   is a function on a FINITE-DIMENSIONAL state space (locality);
+    (ii)  makes the evolution field continuous and locally Lipschitz;
+    (iii) has a finite limit as b' -> 0 at fixed (b, rho) (boundedness at the horizon,
+          i.e. no dependence on the expansion Theta).
+  Explicit dependence on proper time is ALLOWED.  No energy condition is assumed.  The
+  radial condition p_r = -rho need not be assumed: it is forced at any degenerate
+  horizon (A1).  Then:
+    1. a degenerate horizon f = f' = 0 at b = b* is a fixed point whose linearisation has
+       ZERO TRACE, with transverse eigenvalues s = +- sqrt(-8 pi p_perp(b*)) =
+       +- sqrt(-f''(b*)/2);
+    2. hence it is a saddle (f'' < 0), a centre (f'' > 0) or totally degenerate (f'' = 0,
+       a triple root, where p_perp(b*) = 0), and NEVER asymptotically stable; if the law
+       does not depend on b' the flow is exactly Hamiltonian, H = b'^2/2 + f(b, tau)/2,
+       and preserves phase-space volume;
+    3. therefore the set of interior data ending on a degenerate horizon has EMPTY
+       INTERIOR.  In profile space f = f' = f'' = 0 is codimension 2 (codimension 1 with
+       the shape fixed and only the scale free), with normal form
+       kappa_- = -(3/2)|f'''(R_-)/6|^{1/3} |eps g(R_-)|^{2/3}  (T1).
+
+SHARPNESS.  Premises (i) and (iii) are each necessary.
+  - dropping (iii) admits Theta-dependent laws; the transverse trace is then 8 pi zeta_eff
+    with zeta_eff = -dPi/dTheta, so an attractor exists only for zeta_eff < 0, i.e.
+    NEGATIVE ENTROPY PRODUCTION.  The theorem survives with the second law as a premise.
+  - dropping (i) -- a law reading the TOTAL mass, ell = lambda M -- admits an attractor by
+    homothety, but only if the tracking is exact: a relative tracking error eta gives back
+    T1's law, kappa_- = -1.92 |eta|^{2/3}, with T1's own coefficient.
+  - autonomy and smoothness beyond continuity are NOT needed; energy conditions are NOT
+    used anywhere in the proof.
+
+NOT COVERED: non-sphericity (T37); rotation (T31: the rotating triple root exists only for
+  a <~ 0.1-0.15 and is itself codimension 2); quantum gravity and semiclassical sources
+  (T14, T38); non-local sources (by the sharpness clause); the wider class p_x != -rho away
+  from the horizon (A4: the flow is bounded but not Lipschitz there -- the exact step at
+  which a fully general proof stops); and what the interior looks like after the exit.

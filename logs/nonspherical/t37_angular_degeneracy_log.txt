@@ -1,0 +1,73 @@
+T37 item 2 -- degeneracy under angular dependence: how many conditions, and how much harder
+
+--- A. Counting (analytic)
+  spherical:     3 equations (f = f' = f'' = 0) minus 1 unknown (R_-)  -> codimension 2
+  non-spherical: 3 equations AT EVERY POINT of the inner-horizon surface S, minus one free function
+                 (the location of S)                                   -> codimension 2 x dim C^inf(S^2)
+    multipole cutoff L =  0: (L+1)^2 =    1 angular modes ->     2 real conditions (0 after removing the 3 translations)
+    multipole cutoff L =  1: (L+1)^2 =    4 angular modes ->     8 real conditions (5 after removing the 3 translations)
+    multipole cutoff L =  2: (L+1)^2 =    9 angular modes ->    18 real conditions (15 after removing the 3 translations)
+    multipole cutoff L =  3: (L+1)^2 =   16 angular modes ->    32 real conditions (29 after removing the 3 translations)
+    multipole cutoff L =  4: (L+1)^2 =   25 angular modes ->    50 real conditions (47 after removing the 3 translations)
+    multipole cutoff L =  8: (L+1)^2 =   81 angular modes ->   162 real conditions (159 after removing the 3 translations)
+    multipole cutoff L = 16: (L+1)^2 =  289 angular modes ->   578 real conditions (575 after removing the 3 translations)
+  L -> infinity: a continuum.  The degeneracy condition is no longer 'three numbers vanish at a point'
+  but 'two functions on the sphere vanish identically'.
+
+--- B. Tuning measure
+  T1 tolerance (10 M_sun, type a, base profile): |eps| <= 3.0e-32; for 10^6 M_sun 8.6e-25
+  per-mode tolerance in the sup norm: |c_lm| <= eps_max / max|Y_lm| = eps_max sqrt(4 pi/(2l+1)) (m = 0):
+    l =  0: factor sqrt(4 pi/(2l+1)) = 3.545  ->  |c_l0| <= 1.06e-31
+    l =  2: factor sqrt(4 pi/(2l+1)) = 1.585  ->  |c_l0| <= 4.76e-32
+    l =  4: factor sqrt(4 pi/(2l+1)) = 1.182  ->  |c_l0| <= 3.54e-32
+    l = 10: factor sqrt(4 pi/(2l+1)) = 0.774  ->  |c_l0| <= 2.32e-32
+  (an O(1) factor: the per-mode precision stays ~1e-32; what explodes is the NUMBER of them)
+    10 M_sun, L = 0: fraction of source space ~ eps^2 = 10^-63 (spherical 10^-63); harder by 10^0
+    10 M_sun, L = 1: fraction of source space ~ eps^8 = 10^-252 (spherical 10^-63); harder by 10^189
+    10 M_sun, L = 2: fraction of source space ~ eps^18 = 10^-567 (spherical 10^-63); harder by 10^504
+    10 M_sun, L = 3: fraction of source space ~ eps^32 = 10^-1009 (spherical 10^-63); harder by 10^946
+    10 M_sun, L = 4: fraction of source space ~ eps^50 = 10^-1576 (spherical 10^-63); harder by 10^1513
+    10 M_sun, L = 8: fraction of source space ~ eps^162 = 10^-5107 (spherical 10^-63); harder by 10^5044
+  Quadrupole truncation alone (L = 2, 18 conditions): 10^504 times harder than the spherical requirement.
+
+--- C. Spin (computed): Gurses-Gursey Delta = r^2 - 2 m(r) r + a^2 with the branch-A m(r)
+  analytic law: near a triple root f = a3 (r - R_-)^3, Delta = r^2 f + a^2 = 0 gives
+    kappa_- = -(3/2) |a3|^{1/3} (a/R_-)^{4/3}   [derived here; the exponent 4/3 reproduces T31_REPORT.md]
+    a = 0.0001: inner root r = 0.67938, kappa_- = -9.82726e-06, kappa_-/a^(4/3) = -2.1172
+    a = 0.0003: inner root r = 0.68206, kappa_- = -6.31508e-05, kappa_-/a^(4/3) = -3.1445
+    a =  0.001: inner root r = 0.68761, kappa_- = -3.17542e-04, kappa_-/a^(4/3) = -3.1754
+    a =  0.003: inner root r = 0.69834, kappa_- = -1.34618e-03, kappa_-/a^(4/3) = -3.1113
+    a =   0.01: inner root r = 0.72345, kappa_- = -6.34621e-03, kappa_-/a^(4/3) = -2.9457
+    a =   0.03: inner root r = 0.77165, kappa_- = -2.46273e-02, kappa_-/a^(4/3) = -2.6419
+    a =    0.1: inner root r = 0.88390, kappa_- = -9.30397e-02, kappa_-/a^(4/3) = -2.0045
+    a =    0.2: inner root r = 1.00652, kappa_- = -1.65815e-01, kappa_-/a^(4/3) = -1.4177
+    a =    0.3: no horizon
+  free fit on 3e-4 <= a <= 3e-3: exponent 1.3289 (analytic 4/3 = 1.3333); coefficient at fixed 4/3: C = 3.1437 (spread 0.83%)
+  the numerical profile has a residual kappa_0 = -4.88e-06, so a < ~1e-4 is not resolvable here.
+    10 M_sun: |kappa_-| <= 1.6e-21/M  ->  |a| <= 1.07e-16   (and, for a hole retuned at a0 = 0.1, |delta a| <= 6.86e-32)
+    1e6 M_sun: |kappa_-| <= 1.6e-16/M  ->  |a| <= 6.03e-13   (and, for a hole retuned at a0 = 0.1, |delta a| <= 1.97e-24)
+  accreting mass dM with ISCO specific angular momentum (l = 3.46 M) gives delta a ~ 3.46 dM/M,
+  so |a| <= 1.1e-16 requires dM/M <= 3.1e-17, i.e. dM <= 6.16e+14 kg for a 10 M_sun hole.
+
+--- D. Environment: an l = 2 tide cannot be tuned away
+  R_- = 0.6764 M = 9988 m for 10 M_sun; static external quadrupole eps ~ E R_-^2 = M_c R_-^2/d^3
+    solar-mass companion at 1 AU    : eps = 4.40e-23  (1.5e+09 x the tolerance)
+    solar-mass star at 1000 AU      : eps = 4.40e-32  (1.5e+00 x the tolerance)
+    nearest star at 1 pc            : eps = 5.01e-39  (1.7e-07 x the tolerance)
+    Galaxy (1e11 M_sun at 8 kpc)    : eps = 9.79e-40  (3.3e-08 x the tolerance)
+  exclusion distance: no solar mass closer than d = 1.700e+14 m = 1136 AU = 0.0055 pc
+  passing gravitational wave of strain h and wavelength lam: eps ~ h (R_-/lam)^2.
+  T1 found kappa_- < 0 for BOTH signs of eps, so an oscillating eps does not average out: the e-folds
+  accumulate at the rate |kappa_-| ~ C |eps|^{2/3} (C = 2.06, T1 base profile, type a) for as long as
+  the wave is present.  N_e is quoted over the stated exposure time.
+    LIGO-band stochastic background, h ~ 1e-25 at 100 Hz: eps = 1.11e-30, |kappa_-| = 2.21e-20/M, N_e over 1e10 yr = 1.41e+02
+    loud binary merger at 100 Mpc, h ~ 1e-21 at 100 Hz  : eps = 1.11e-26, |kappa_-| = 1.02e-17/M, N_e over 0.1 s (transient) = 2.08e-14
+    pulsar-timing background, h_c ~ 1e-15 at 1/yr       : eps = 1.11e-39, |kappa_-| = 2.21e-26/M, N_e over 1e10 yr = 1.42e-04
+
+--- E. Counter-argument: freely decaying multipoles DO relax below the tolerance
+  l = 2 ringdown (Im omega = -0.089/M) from A0 = 0.1 down to the tail at t = 150.0 M: A = 1.59e-07
+  Price tail t^-7: reaches eps_max = 3.0e-32 at t = 5.108e+05 M = 25.16 s for 10 M_sun
+  => a multipole left over from collapse is gone within seconds.  Non-sphericity therefore makes the
+     tuning harder only through the channels that do NOT decay: spin, a permanent environmental tide,
+     continuing accretion -- and through the interior, where the same tail is blueshifted at R_- instead
+     of decaying.

@@ -1,0 +1,179 @@
+==============================================================================
+L1.  Sources depending on the expansion Theta: the whole class, not just Eckart/IS
+==============================================================================
+T29 closed zeta > 0 for Pi = -zeta(rho) Theta (Eckart) and its Israel-Stewart version.
+Here: five functional forms of Pi(Theta), zeta0 of both signs, same seven initial data.
+Legend: a = degenerate (asymptotic) exit, r = simple exit, c = collapse,
+        n = rho < 0, x = runaway.  Seven characters = seven eps in [0.0, 0.0001, -0.0001, 0.01, -0.01, 0.1, -0.1].
+
+  Pi = linear (Eckart)
+    zeta0 = -0.30: uuuuuuu   degenerate 0/7
+    zeta0 = -0.20: aaaaaaa   degenerate 7/7
+    zeta0 = -0.10: aaaaaaa   degenerate 7/7
+    zeta0 = -0.03: rrrrrrr   degenerate 0/7
+    zeta0 = +0.03: nnnnnnr   degenerate 0/7
+    zeta0 = +0.10: nnnnnnn   degenerate 0/7
+    zeta0 = +0.30: nnnnnnn   degenerate 0/7
+
+  Pi = cubic
+    zeta0 = -0.30: aaaaaaa   degenerate 7/7
+    zeta0 = -0.20: aaaaaaa   degenerate 7/7
+    zeta0 = -0.10: aaaaaaa   degenerate 7/7
+    zeta0 = -0.03: aaaaaaa   degenerate 7/7
+    zeta0 = +0.03: nnnnnnn   degenerate 0/7
+    zeta0 = +0.10: nnnnnnn   degenerate 0/7
+    zeta0 = +0.30: nnnnnnn   degenerate 0/7
+
+  Pi = sublinear |Th|^1/2
+    zeta0 = -0.30: nnnnnnn   degenerate 0/7
+    zeta0 = -0.20: nnnnnnn   degenerate 0/7
+    zeta0 = -0.10: nnnnnnc   degenerate 0/7
+    zeta0 = -0.03: rrrrrrr   degenerate 0/7
+    zeta0 = +0.03: nnnnnnr   degenerate 0/7
+    zeta0 = +0.10: nnnnnnn   degenerate 0/7
+    zeta0 = +0.30: nnnnnnn   degenerate 0/7
+
+  Pi = saturating tanh
+    zeta0 = -0.30: nnnnnnc   degenerate 0/7
+    zeta0 = -0.20: nnnnncc   degenerate 0/7
+    zeta0 = -0.10: cccccaa   degenerate 2/7
+    zeta0 = -0.03: rrrrrrr   degenerate 0/7
+    zeta0 = +0.03: nnnnnnr   degenerate 0/7
+    zeta0 = +0.10: nnnnnnn   degenerate 0/7
+    zeta0 = +0.30: nnnnnnn   degenerate 0/7
+
+  Pi = saturating Th/(1+Th^2)
+    zeta0 = -0.30: nnnnnnc   degenerate 0/7
+    zeta0 = -0.20: nnnnnnc   degenerate 0/7
+    zeta0 = -0.10: ccccccr   degenerate 0/7
+    zeta0 = -0.03: rrrrrrr   degenerate 0/7
+    zeta0 = +0.03: nnnnnnr   degenerate 0/7
+    zeta0 = +0.10: nnnnnnn   degenerate 0/7
+    zeta0 = +0.30: nnnnnnn   degenerate 0/7
+
+  Linear theory for Pi = -zeta Theta (T29 section 2, reproduced here): near
+  (v, q) = (0, 0)  v Pi = +zeta q/(2b) + O(2), so q' gains 8 pi zeta q and the
+  2x2 transverse trace becomes 8 pi zeta:  sink <=> zeta < 0.
+
+  Numerical check of theorem A3 and of its sharpness: the transverse trace
+  tr_2 = d(v')/dv + d(q')/dq measured at (b*, v, 0) as v -> 0.
+  Prediction: 0 for every law bounded at v -> 0, 8 pi zeta = -2.5133 for Eckart with zeta0 = -0.1.
+    barotropic w(rho)                 : +0.0445  +0.0044  +0.0004  +0.0000
+    Pi = linear (Eckart), zeta0 = -0.1: -2.4688  -2.5088  -2.5128  -2.5132
+    Pi = cubic, zeta0 = -0.1          : +0.0408  +0.0044  +0.0004  -0.0001
+    Pi = sublinear |Th|^1/2, zeta0 = -0.1: -8.4004  -26.7042  -91.4368  -29.2537
+    Pi = saturating tanh, zeta0 = -0.1: -2.4676  -2.5088  -2.5128  -2.5132
+    Pi = saturating Th/(1+Th^2), zeta0 = -0.1: -2.4651  -2.5088  -2.5128  -2.5131
+  Reading of the numbers.
+   - barotropic and Misner-Sharp-type laws: tr_2 falls off exactly like v (0.0445,
+     0.0044, 0.0004, 0.0000) -> 0, as theorem A3 requires.
+   - Eckart: tr_2 -> -2.5132 = 8 pi zeta0 to four digits, a finite non-zero trace, so
+     a hyperbolic sink is possible; its SIGN is the sign of zeta0.  This is T29's
+     linearised result, now seen as the unique way out of theorem A3.
+   - tanh and Th/(1+Th^2) have the SAME trace (they are linear at small Theta) but
+     still give no attractor: the trace condition is necessary, not sufficient --
+     they saturate in the large-|Theta| region near R_+ and the run never arrives.
+   - the sublinear law has a DIVERGING trace (dPi/dTheta -> infinity at Theta = 0)
+     and still gives no attractor, for the same reason.
+   - the cubic law has zero trace and DOES give an attractor: that attraction is
+     non-hyperbolic (algebraic in time, like x' = -x^3).  It still needs zeta0 < 0.
+  Across all 5 x 7 = 35 (law, zeta0) combinations NOT ONE with zeta0 > 0 produced a
+  degenerate exit: T29's closure of the dissipative sign extends to the whole
+  Pi(Theta) class, not only to Eckart and Israel-Stewart.  What survives of T29 is
+  therefore a sign rule, not a model-dependent statement: an attractor requires
+  zeta_eff = -dPi/dTheta < 0, i.e. negative entropy production.
+  Caveat: for zeta0 > 0 most runs stop with rho < 0 just inside R_+ -- this is T29's
+  own finding that an Eckart-type Theta law is singular on the outer horizon; the
+  runs that did reach an exit reached a simple one.
+
+==============================================================================
+L2.  ell = lambda M written as a LOCAL law (Misner-Sharp mass m = b(1+v^2)/2)
+==============================================================================
+The project's central postulate, in local form: the core scale follows the
+instantaneous enclosed mass, so the equation of state is w(rho m^2) instead of
+w(rho).  This depends on v but is bounded as v -> 0, so theorem A3 predicts a
+zero-trace linearisation and no attractor.
+  w(rho m^0) : arrrrcr   degenerate 1/7   (exponent 0 = the barotropic control)
+  w(rho m^1) : rrrrrrr   degenerate 0/7   (exponent 0 = the barotropic control)
+  w(rho m^2) : rrrrrrr   degenerate 0/7   (exponent 0 = the barotropic control)
+  w(rho m^4) : rrrrrrr   degenerate 0/7   (exponent 0 = the barotropic control)
+
+  Transverse trace at the fixed point b* = R_- for the m-dependent law:
+    w(rho m^2) at v = 1e-2 ... 1e-5 : +3.02e-02  +3.02e-03  +3.02e-04  +3.02e-05
+    w(rho m^4) at v = 1e-2 ... 1e-5 : +1.92e-01  +1.92e-02  +1.92e-03  +1.92e-04
+    tr_2 -> 0: the Misner-Sharp mass enters boundedly, so the local 'ell = lambda M'
+    law falls inside theorem A3 and cannot make the degenerate exit an attractor.
+    Only the NON-LOCAL version (a ratchet on max_tau m) escapes -- see t36_nonlocal.py.
+
+==============================================================================
+L3.  Non-smooth but not first order
+==============================================================================
+(i) piecewise-smooth law with a CONTINUOUS vector field: w -> w + A (rho/rho_s - 1)
+    for rho > rho_s and w unchanged below, so p_perp is C^0 with a kink in dp/drho.
+    A =  +0.0: arrrrcr   degenerate 1/7
+    A =  +1.0: rrrrrrr   degenerate 0/7
+    A =  +5.0: rrrrrrr   degenerate 0/7
+    A = +20.0: rrrrrrr   degenerate 0/7
+    A =  -1.0: ccccccr   degenerate 0/7
+    A =  -5.0: ccccccc   degenerate 0/7
+    A continuous (Lipschitz) vector field preserves phase volume piecewise and
+    therefore globally; C^1 or C^2 smoothness of the constitutive law is NOT a
+    premise of the theorem.  T30's closure used the JUMP, not the non-smoothness.
+
+(ii) genuinely DISCONTINUOUS law whose switching surface is the degeneracy
+     condition itself: p_perp = -P0 for q > 0 and +P0 for q < 0.  Since
+     q' = 16 pi b v p_perp, the field points towards q = 0 from both sides:
+     a Filippov sliding mode on the exact 'degenerate horizon' surface.
+     On the slide q == 0, hence v' = v^2/(2b) > 0 and dv/db = -v/(2b), i.e.
+     v = v_0 (b_0/b)^{1/2}: the sliding motion drives v AWAY from zero.
+     Filippov attractivity of q = 0: with q' = 16 pi b v p_perp and v > 0 the field
+     points inward from q > 0 (p_perp = -P0 < 0) and from q < 0 (p_perp = +P0 > 0)
+     for every P0 > 0, so the surface IS attracting in q.  Direct integration of the
+     discontinuous field only chatters (all seven runs exhaust the step budget), so
+     the sliding field is integrated explicitly instead: q == 0, q' == 0, hence
+       b' = -v,  v' = v^2/(2b),  i.e. dv/db = -v/(2b)  =>  v = v0 (b0/b)^{1/2}.
+       start (b, v) = (1.5, 0.5) -> after tau = 1.99 M: b = 0.0500, v = 2.7386 (law predicts 2.7386)
+       start (b, v) = (1.9, 0.72) -> after tau = 1.75 M: b = 0.0500, v = 4.4384 (law predicts 4.4384)
+       start (b, v) = (0.9, 0.2) -> after tau = 2.96 M: b = 0.0500, v = 0.8485 (law predicts 0.8485)
+     The sliding motion runs to small b with v GROWING; the fixed point v = 0 lies at
+     b -> infinity along the slide.  A discontinuous source whose trigger is the
+     degeneracy condition itself is therefore still no counterexample: the sharpest
+     possible non-smooth trigger is repelling in the direction that matters.
+
+==============================================================================
+L4.  Explicitly time-dependent (non-autonomous) source: a clock in the law
+==============================================================================
+Analytic part (theorem A2, verified symbolically in t36_core.py): if the source is
+velocity-independent, the T-region flow is b' = -v, v' = f'(b, tau)/2 -- a
+TIME-DEPENDENT Hamiltonian flow with H = v^2/2 + f(b, tau)/2.  Liouville's theorem
+holds for time-dependent Hamiltonians, so phase-space area is conserved exactly and
+no attractor exists, however the clock runs.  Autonomy is therefore not a premise.
+
+Numerical part: the same statement inside the CONSISTENT (constraint-preserving)
+three-variable system, with a clock in the constitutive law,
+    p_perp = w(rho (1 + a tau)) rho ,
+i.e. the density scale of the medium drifts with the age of the hole.  Because the
+(b, v, q) system already has the Hamiltonian constraint built in (dm/db = 4 pi b^2 rho
+follows identically), any p_perp -- clock included -- is a legitimate source.
+
+  Transverse trace at b* = R_- with a clock (theorem A3 is unaffected by explicit tau):
+    a = 0.0  : +4.45e-02  +4.45e-03  +4.45e-04  +4.45e-05
+    a = 0.01 : +4.27e-02  +4.27e-03  +4.27e-04  +4.27e-05
+    a = 0.05 : +3.72e-02  +3.72e-03  +3.72e-04  +3.72e-05
+    tr_2 -> 0 with or without the clock.
+
+  2-D scan over (eps, a): fate and exit surface gravity kappa_exit = v'(exit).
+  An attractor would show as an AREA of degenerate exits; a separatrix shows as a
+  sign change of kappa_exit along each row (codimension 1).
+    a = 0.0   : fates rrrarrr   kappa_exit = -0.1644  -0.1072  -0.0570  -0.0000  -0.0956  -0.2416  -0.5948
+    a = 0.005 : fates rrrrrrr   kappa_exit = -0.1495  -0.0636  -0.1025  -0.1692  -0.2299  -0.3619  -0.6900
+    a = 0.02  : fates rrrrrrc   kappa_exit = -0.0818  -0.3175  -0.4456  -0.4972  -0.5464  -0.6463  +22.4908
+    a = 0.05  : fates rcccccc   kappa_exit = -0.4758  +24.7440  +27.1058  +28.2729  +29.4500  +32.2185  +40.2223
+  degenerate exits in the 28-cell grid: 1
+  (kappa_exit is a horizon surface gravity only for the fates 'r' and 'a'; in the 'c'
+   cells it is the value of v' at the cut-off b = 0.05 and has no physical meaning.)
+  The a = 0 row reproduces the autonomous result (one degenerate cell, at eps = 0 --
+  the separatrix of T26).  Switching the clock on does not create an area of
+  degenerate exits; it displaces the separatrix.  Non-autonomy buys nothing: it
+  rewrites T1's tuning of the profile as a tuning of the clock, and a clock reading
+  the age of the hole is not a local field anyway.

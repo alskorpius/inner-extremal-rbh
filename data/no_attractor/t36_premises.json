@@ -1,0 +1,295 @@
+{
+ "premises": {
+  "P1": {
+   "name": "spherical symmetry + GR",
+   "statement": "The geometry is spherically symmetric and obeys the Einstein equations; the region between horizons is the homogeneous Kantowski-Sachs T-region ds^2 = -dtau^2 + a^2 dx^2 + b^2 dOmega^2 (equivalently, the static profile f(r) continued into f < 0)."
+  },
+  "P2": {
+   "name": "locality",
+   "statement": "The source at a point is a function of the fields and of finitely many of their derivatives AT THAT POINT; equivalently, the constitutive law is a function on a finite-dimensional state space (internal memory variables with bounded dynamics are allowed and do not break this)."
+  },
+  "P3": {
+   "name": "autonomy",
+   "statement": "The constitutive law contains no explicit dependence on the coordinates (no clock, no preferred radius)."
+  },
+  "P4": {
+   "name": "smoothness",
+   "statement": "The right-hand side of the evolution system is C^k with k >= 1."
+  },
+  "P5": {
+   "name": "source class T^t_t = T^r_r",
+   "statement": "p_r = -rho, equivalently g_tt g_rr = -1 for the static form."
+  },
+  "P6": {
+   "name": "boundedness at the horizon",
+   "statement": "The constitutive law has a finite limit as v = -db/dtau -> 0 at fixed (b, rho); equivalently it does not depend on the expansion Theta, which diverges at every non-degenerate horizon."
+  },
+  "P7": {
+   "name": "energy conditions",
+   "statement": "NEC (rho + p_i >= 0) and/or WEC hold on the solution."
+  },
+  "P8": {
+   "name": "second law",
+   "statement": "Entropy production is non-negative: for a bulk-viscous law, zeta >= 0."
+  },
+  "P9": {
+   "name": "Lagrangian origin",
+   "statement": "The source derives from an action (perfect fluid with an equation of state, scalar field, k-essence, ...)."
+  },
+  "P10": {
+   "name": "quantitative input",
+   "statement": "An external magnitude or time scale enters the argument (hbar, an accretion rate, the age of the universe, a curvature bound).  Not a structural premise."
+  }
+ },
+ "usage": [
+  {
+   "cls": "T1",
+   "what": "tuning: kappa_- ~ eps^{2/3}",
+   "where": "experiments/verification_01/T1_REPORT.md",
+   "uses": [
+    "P1",
+    "P5"
+   ],
+   "not_used": [
+    "P3",
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "kinematic (profile space)",
+   "instance_of_fixed_point": "yes, as the normal form",
+   "note": "Pure codimension statement: three conditions f = f' = f'' = 0 at one point. It is theorem A (codimension 2 in profile space) made quantitative; the exponent 2/3 is the normal form of a cubic root under a linear perturbation."
+  },
+  {
+   "cls": "T2",
+   "what": "classical back-reaction of mass inflation",
+   "where": "experiments/verification_01/T2_REPORT.md",
+   "uses": [
+    "P1",
+    "P10"
+   ],
+   "not_used": [
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "dynamical, but in a DIFFERENT system (Ori two-stream null shell)",
+   "instance_of_fixed_point": "partly",
+   "note": "kappa_- = 0 is a fixed point of the back-reaction map kappa -> kappa', and the content is that it REPELS (d|kappa_-|/dN_e > 0). That is a fixed-point statement, but not the Liouville statement of theorem B: it lives in the space of kappa under accreted e-folds, not in the KS phase plane, and the sign is an independent input."
+  },
+  {
+   "cls": "T14",
+   "what": "semiclassical flux at R_- (2D Polyakov, Unruh)",
+   "where": "experiments/verification_01/T14_REPORT.md",
+   "uses": [
+    "P1",
+    "P10"
+   ],
+   "not_used": [
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "magnitude",
+   "instance_of_fixed_point": "no",
+   "note": "Two independent contents: (i) the power is 6e-61 of what is needed -- a pure magnitude; (ii) the fixed point of the semiclassical feedback is |kappa_-| = kappa_+, not 0. Neither is the Liouville statement. Also it is not a classical source at all, so it is outside the theorem's class by construction."
+  },
+  {
+   "cls": "T20",
+   "what": "no protecting conserved quantity",
+   "where": "VERIFICATION_ANSWERS.md, T20",
+   "uses": [
+    "P1",
+    "P5"
+   ],
+   "not_used": [
+    "P3",
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "kinematic (profile space)",
+   "instance_of_fixed_point": "yes",
+   "note": "Says the three conditions are not a first integral. In the language of theorem B: the fixed point is not protected by a conserved quantity of the flow, and indeed the only conserved quantity of the barotropic flow is H = v^2/2 + f/2, whose zero level set is the whole T-region, not the fixed point."
+  },
+  {
+   "cls": "T21",
+   "what": "extremal end is a branch boundary, not an attractor",
+   "where": "experiments/verification_01/T21_REPORT.md",
+   "uses": [
+    "P1",
+    "P2",
+    "P5"
+   ],
+   "not_used": [
+    "P3",
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "kinematic + dynamical",
+   "instance_of_fixed_point": "yes",
+   "note": "The quartic root has f'' = f''' = 0 as well; theorem A5 puts it at the boundary between the saddle (f'' < 0) and centre (f'' > 0) cases, which is exactly the observed split '+delta M -> two horizons / -delta M -> horizonless'."
+  },
+  {
+   "cls": "E4 (BH-P)",
+   "what": "curvature towers h = sum alpha_n psi^n, alpha_n >= 0",
+   "where": "experiments/audit_bhp/REPORT.md, row E4",
+   "uses": [
+    "P1",
+    "P5",
+    "positivity alpha_n >= 0"
+   ],
+   "not_used": [
+    "P3",
+    "P4",
+    "P6",
+    "P7",
+    "P8"
+   ],
+   "layer": "kinematic (profile space), algebraic",
+   "instance_of_fixed_point": "no",
+   "note": "Stronger than codimension: inside that ansatz a triple root is IMPOSSIBLE, not merely rare, because 2 psi h'' - h' >= 1 on a root. The positivity alpha_n >= 0 is used by no other closure: it is load-bearing for E4's stronger claim and is NOT a premise of the general theorem."
+  },
+  {
+   "cls": "T26",
+   "what": "smooth Lagrangians in the KS minisuperspace",
+   "where": "experiments/verification_02/T26_REPORT.md",
+   "uses": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P9"
+   ],
+   "not_used": [
+    "P7",
+    "P8"
+   ],
+   "layer": "dynamical (the anchor)",
+   "instance_of_fixed_point": "yes -- it IS the statement",
+   "note": "Theorem B in its original form. Part (b) shows that of its seven premises only P1, P2, P6 are load-bearing: P3 is redundant (A2), P4 weakens to continuity (L3i), P5 is forced at the fixed point (A1), P9 is redundant (A3 covers non-Lagrangian bounded laws)."
+  },
+  {
+   "cls": "T29",
+   "what": "bulk viscosity zeta > 0 (Eckart, Israel-Stewart)",
+   "where": "experiments/verification_03/T29_REPORT.md",
+   "uses": [
+    "P1",
+    "P2",
+    "P5",
+    "P8"
+   ],
+   "not_used": [
+    "P4",
+    "P6",
+    "P7",
+    "P9"
+   ],
+   "layer": "dynamical, P6 dropped on purpose",
+   "instance_of_fixed_point": "yes, as the boundary case",
+   "note": "The ONLY closure that drops P6, and the only one that needs P8. Its content is the sign rule: the transverse trace at the fixed point is 8 pi zeta, so a sink requires zeta < 0. P8 is therefore load-bearing AND used by exactly one class -- the audit flag asked for in the task."
+  },
+  {
+   "cls": "T30",
+   "what": "first-order phase transition at eps_c",
+   "where": "experiments/verification_03/T30_REPORT.md",
+   "uses": [
+    "P1",
+    "P2",
+    "P3",
+    "P5"
+   ],
+   "not_used": [
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "dynamical, P4 dropped",
+   "instance_of_fixed_point": "yes",
+   "note": "Each phase is a Hamiltonian flow; the transition is a codimension-1 matching surface. L3 shows what was really used was the JUMP (a discontinuous vector field), not non-smoothness: a C^0 vector field with a kink changes nothing."
+  },
+  {
+   "cls": "T32",
+   "what": "conversion of the inflow by F(K) on the seam",
+   "where": "experiments/cycle2/T32_REPORT.md",
+   "uses": [
+    "P1",
+    "P10"
+   ],
+   "not_used": [
+    "P3",
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "curvature identity",
+   "instance_of_fixed_point": "no",
+   "note": "Content is the algebraic decomposition K = C^2 + 2 R_ab R^ab - R^2/3 with C^2 fixed by the enclosed mass and the Ricci part non-negative, so conversion cannot lower K. That is an identity about the Kretschmann scalar, not a statement about fixed points."
+  },
+  {
+   "cls": "T33",
+   "what": "finite future of the external universe as a cutoff",
+   "where": "experiments/cycle2/T33_REPORT.md",
+   "uses": [
+    "P1",
+    "P10"
+   ],
+   "not_used": [
+    "P2",
+    "P3",
+    "P4",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "layer": "time scale",
+   "instance_of_fixed_point": "no",
+   "note": "A comparison of two numbers (time to Planck curvature on the seam vs any end of the universe). It reduces to T1's inequality with tau = t_evaporation, so it is downstream of T1, not an independent structural closure."
+  }
+ ],
+ "single_use": {
+  "positivity alpha_n >= 0": 1,
+  "P4": 1,
+  "P6": 1,
+  "P9": 1,
+  "P8": 1
+ },
+ "fixed_point_instances": [
+  "T1",
+  "T20",
+  "T21",
+  "T26",
+  "T29",
+  "T30"
+ ],
+ "partly": [
+  "T2"
+ ],
+ "not_instances": [
+  "T14",
+  "E4 (BH-P)",
+  "T32",
+  "T33"
+ ]
+}

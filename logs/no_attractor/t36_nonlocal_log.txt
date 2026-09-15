@@ -1,0 +1,97 @@
+==============================================================================
+N1.  Memory (non-local in proper time): does a relaxation kernel help?
+==============================================================================
+Extended state (b, v, q, mu):   mu' = (D - mu)/tau_r,   p_perp = w(rho) rho - G mu,
+with the drive D taken to be the degeneracy defect q itself (the sharpest choice --
+the memory is fed exactly the quantity that must be driven to zero).  This contains
+the Israel-Stewart structure T29 tested, and more: an arbitrary linear memory kernel
+can be written this way.
+Prediction of A3: mu enters q' = 16 pi b v (w rho - G mu) multiplied by v, so at
+v = 0 its contribution to the Jacobian vanishes and the (v, q) block still has zero
+trace.  The extra eigenvalue -1/tau_r contracts only the memory direction.
+  tau_r = 0.05  G = +0.3: rrrrrrr   degenerate 0/7
+  tau_r = 0.05  G = +1.0: rrrrrrr   degenerate 0/7
+  tau_r = 0.05  G = +3.0: rrrrrrr   degenerate 0/7
+  tau_r = 0.05  G = -1.0: nnnnnnn   degenerate 0/7
+  tau_r = 0.3   G = +0.3: rrrrrrr   degenerate 0/7
+  tau_r = 0.3   G = +1.0: rrrrrrr   degenerate 0/7
+  tau_r = 0.3   G = +3.0: rrrrrrr   degenerate 0/7
+  tau_r = 0.3   G = -1.0: nnnnnnn   degenerate 0/7
+  tau_r = 1.0   G = +0.3: rrrrrrr   degenerate 0/7
+  tau_r = 1.0   G = +1.0: rrrrrrr   degenerate 0/7
+  tau_r = 1.0   G = +3.0: rrrrrrr   degenerate 0/7
+  tau_r = 1.0   G = -1.0: nnnnnnn   degenerate 0/7
+  Not one of the twelve memory laws produces a degenerate exit -- not even at eps = 0,
+  where the gain G displaces the separatrix away from the tuned profile.  Non-locality
+  in TIME does not defeat the theorem, for the structural reason given above.  (This
+  generalises T29's Israel-Stewart runs, which used one kernel and two relaxation
+  times, to an arbitrary single-pole memory kernel and both signs of the gain.)
+
+==============================================================================
+N2.  Non-local in r: the medium reads the TOTAL mass and sets ell = lambda M
+==============================================================================
+This is the project's tracking law (ratchet).  It is non-local: M = m(infinity) is
+an integral of rho over the whole profile, not a function of the fields at a point,
+so it is outside the premises of the theorem -- and it works, trivially, because a
+homothety (m -> A m, r -> A r) leaves f invariant.  A tracker that is EXACT keeps the
+triple root for every mass.  The question is what an inexact tracker costs.
+
+  (a) exact tracker, ell = lambda M, for a range of masses A:
+      M = 0.5  : inner root at r = 0.338565 = 0.677131 M, kappa_- = -1.42e-06, kappa_- M = -7.099e-07, sign changes of f = 15
+      M = 0.9  : inner root at r = 0.609418 = 0.677131 M, kappa_- = -7.89e-07, kappa_- M = -7.099e-07, sign changes of f = 15
+      M = 1.0  : inner root at r = 0.677131 = 0.677131 M, kappa_- = -7.10e-07, kappa_- M = -7.099e-07, sign changes of f = 15
+      M = 1.1  : inner root at r = 0.744844 = 0.677131 M, kappa_- = -6.45e-07, kappa_- M = -7.099e-07, sign changes of f = 15
+      M = 2.0  : inner root at r = 1.354261 = 0.677131 M, kappa_- = -3.55e-07, kappa_- M = -7.099e-07, sign changes of f = 15
+      M = 10.0 : inner root at r = 6.771306 = 0.677131 M, kappa_- = -7.10e-08, kappa_- M = -7.099e-07, sign changes of f = 15
+      kappa_- M is the SAME number for every mass: the triple root is exactly preserved
+      under the homothety, as it must be.  Its value -7.1e-7 is the noise floor of the
+      cached interpolation grid (T26, evaluating the family directly, gets 5e-8); the
+      many sign changes of f are the same noise, |f| <~ 1e-12 over a finite interval.
+
+  (b) inexact tracker: ell = lambda M (1 + eta), i.e. the scale lags or leads the
+      mass by a relative error eta.  Model: A fixed, L -> A (1 + eta).
+      eta > 0:
+        |eta| = 1e-06   kappa_- = -1.9195e-04   |kappa|/|eta|^(2/3) = 1.919
+        |eta| = 3e-06   kappa_- = -3.9767e-04   |kappa|/|eta|^(2/3) = 1.912
+        |eta| = 1e-05   kappa_- = -8.8153e-04   |kappa|/|eta|^(2/3) = 1.899
+        |eta| = 3e-05   kappa_- = -1.8171e-03   |kappa|/|eta|^(2/3) = 1.882
+        |eta| = 1e-04   kappa_- = -3.9944e-03   |kappa|/|eta|^(2/3) = 1.854
+        |eta| = 3e-04   kappa_- = -8.1354e-03   |kappa|/|eta|^(2/3) = 1.815
+        |eta| = 1e-03   kappa_- = -1.7497e-02   |kappa|/|eta|^(2/3) = 1.750
+        |eta| = 3e-03   kappa_- = -3.4397e-02   |kappa|/|eta|^(2/3) = 1.654
+        |eta| = 1e-02   kappa_- = -6.8396e-02   |kappa|/|eta|^(2/3) = 1.474
+        |eta| = 3e-02   kappa_- = -1.1319e-01   |kappa|/|eta|^(2/3) = 1.172
+      eta < 0:
+        |eta| = 1e-05   kappa_- = -9.1644e-04   |kappa|/|eta|^(2/3) = 1.974
+        |eta| = 1e-04   kappa_- = -4.3453e-03   |kappa|/|eta|^(2/3) = 2.017
+        |eta| = 1e-03   kappa_- = -2.1097e-02   |kappa|/|eta|^(2/3) = 2.110
+        |eta| = 1e-02   kappa_- = -1.0867e-01   |kappa|/|eta|^(2/3) = 2.341
+      fit over |eta| in [1e-6, 1e-3]:  d ln|kappa| / d ln|eta| = 0.6541 (T1 law: 2/3 = 0.6667).  The fitted prefactor 1.633 is biased by the
+      upper end of the range (the ratio drifts from 1.92 to 1.75 as |eta| grows to
+      1e-3); the asymptotic coefficient is the |eta| -> 0 ratio, 1.919.
+      Analytic check.  With m(r) = A m_b(r/L) at fixed A, d f/d L at L = 1 equals
+      2 m_b'(r), and the degeneracy condition 2 m_b'(R_-) = 1 makes it exactly 1:
+      delta f = eta * g with g = +1, the same |g| as T1's mass-amplitude case (g_a = -1).
+      T1's law kappa_- = -(3/2)|a|^{1/3} |eta g|^{2/3} with (3/2)|a|^{1/3} = 1.938 then
+      predicts 1.938; the measured |eta| -> 0 ratio is 1.919 (1 % agreement).
+
+      CONSEQUENCE.  kappa_-(eta) is T1's law with the SAME exponent AND the same
+      coefficient.  T1's requirement eps <~ 3e-32 for a 10 M_sun hole becomes
+      eta <~ 3e-32 on the relative tracking error, with no gain at all.
+      The non-local law removes the tuning of the profile only by requiring an
+      equally exact tuning of the tracker.  It is a counterexample to the theorem as
+      stated, and NOT a physical mechanism: the enumeration did not miss anything.
+      Its independent price is already on record: accretion_tracking (an ingoing flux
+      of negative energy up to 0.2 Mdot inside R < 1.49 M, or emission by the medium
+      towards R_-) and NONLOCAL_LAW_REPORT / inhomogeneous_collapse section 3.4 (the
+      local version ell = lambda m_enc(r) gives a singular centre, K ~ 1e24...1e29).
+
+==============================================================================
+SUMMARY of the non-local tests
+==============================================================================
+Locality is the load-bearing premise, but in a precise and narrow sense: what fails
+is not 'non-locality in time' (memory laws are still covered, N1) but dependence on
+a FUNCTIONAL OF THE PROFILE, specifically the total mass (N2).  And the escape is
+not free: an exact tracker is needed, with the same 10^-32 accuracy T1 demanded of
+the profile itself.  The theorem is therefore sharp and the loophole is empty of
+physics -- which is the honest way to state it.

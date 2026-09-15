@@ -1,0 +1,89 @@
+T37 item 1 -- stability of the de Sitter core (0 < r < R_-) to l >= 2 perturbations
+Background: scenario (branch A, triple root); ell/M = 0.271016; R_- = 0.676388 (residual kappa_- = -4.88e-06); R_+ = 1.984648
+
+--- AXIAL sector: V_ax = f [ l(l+1) - 6m/r + 2m' ] / r^2
+  core checks: max 2m/r = 1.00000001 (<= 1 by definition of the inner horizon); min m' = 2.042e-07 (>= 0 <=> rho >= 0); min f = -5.044e-09
+  l=  2: min B = 4.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 3); B > 0 everywhere: True; min V_ax where f > 0: +7.634e-10
+  l=  3: min B = 10.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 9); B > 0 everywhere: True; min V_ax where f > 0: +1.909e-09
+  l=  4: min B = 18.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 17); B > 0 everywhere: True; min V_ax where f > 0: +3.435e-09
+  l=  5: min B = 28.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 27); B > 0 everywhere: True; min V_ax where f > 0: +5.344e-09
+  l= 10: min B = 108.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 107); B > 0 everywhere: True; min V_ax where f > 0: +2.061e-08
+  l= 20: min B = 418.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 417); B > 0 everywhere: True; min V_ax where f > 0: +7.978e-08
+  l= 50: min B = 2548.000007 at r = 0.6763 (analytic bound l(l+1)-3 = 2547); B > 0 everywhere: True; min V_ax where f > 0: +4.863e-07
+  => B >= l(l+1) - 3 >= 3 for l >= 2 because 2m/r < 1 (so 6m/r < 3) and m' >= 0.  This uses nothing
+     about the profile beyond rho >= 0 and the absence of trapped surfaces inside R_-.
+
+  lowest two eigenvalues omega^2 of -(f u')' + (B/r^2) u = omega^2 u/f (Dirichlet on [r_lo, r_hi]):
+    l=  2, r_hi = 0.5: omega^2 = +1.478892e+00, +3.811784e+00;  growing mode: False
+    l=  2, r_hi = 0.6: omega^2 = +4.565003e-02, +9.970476e-02;  growing mode: False
+    l=  2, r_hi = 0.65: omega^2 = +1.101162e-03, +1.987988e-03;  growing mode: False
+    l=  5, r_hi = 0.5: omega^2 = +4.659489e+00, +8.560656e+00;  growing mode: False
+    l=  5, r_hi = 0.6: omega^2 = +1.776098e-01, +2.838257e-01;  growing mode: False
+    l=  5, r_hi = 0.65: omega^2 = +5.088397e-03, +7.130101e-03;  growing mode: False
+    l= 10, r_hi = 0.5: omega^2 = +1.292764e+01, +1.963751e+01;  growing mode: False
+    l= 10, r_hi = 0.6: omega^2 = +5.374667e-01, +7.358955e-01;  growing mode: False
+    l= 10, r_hi = 0.65: omega^2 = +1.655348e-02, +2.066655e-02;  growing mode: False
+
+  time evolution in the core (axial), l = 2, domain [0.01, 0.6] in r (r* span 30.3):
+    dr* = 0.04: N = 758, fitted d ln|u|/dt = +3.922e-04, |u|_end/|u|_0 = 3.957e-01
+    dr* = 0.02: N = 1515, fitted d ln|u|/dt = +3.924e-04, |u|_end/|u|_0 = 3.955e-01
+    dr* = 0.01: N = 3029, fitted d ln|u|/dt = +3.924e-04, |u|_end/|u|_0 = 3.954e-01
+    long run to t = 4000 M (dr* = 0.04): d ln|u|/dt = -9.573e-06, |u|_end/|u|_0 = 6.749e-01
+
+--- POLAR sector: identification kappa_MS = c_t^2 = dp_t/drho
+  max |c_t^2(direct, from p_t = -rho - (r/2) rho') - kappa_MS(sigma)| over 0.02 < r < R_- : 5.133e-04
+
+  c_t^2 at the centre for regular cores (analytic: rho = rho_c(1 - (r/L)^p + ...) => c_t^2 -> -1 - p/2):
+    scenario (branch A, triple root)  : p = 4, c_t^2(0) numeric = -3.000000, analytic -1 - p/2 = -3.000
+    Hayward ell=0.271                 : p = 3, c_t^2(0) numeric = -2.500000, analytic -1 - p/2 = -2.500
+    Bardeen g=0.6                     : p = 2, c_t^2(0) numeric = -2.000000, analytic -1 - p/2 = -2.000
+    Dymnikova r*=0.9615               : p = 3, c_t^2(0) numeric = -2.500000, analytic -1 - p/2 = -2.500
+  => every de Sitter plateau has c_t^2(0) = -1 - p/2 < -1: the tangential sound speed squared is
+     negative (and |c_t| > 1) at the centre for ANY regular profile, not only for this one.
+     The sharper bound c_t^2(0) <= -2 needs p >= 2 (p = 1 gives -1.5); every profile above has
+     p >= 2.  What the polar sector needs is only c_t^2(0) < -1/4, which holds for all p > 0.
+
+  c_t^2 < 0 on r in [0.0010, 0.3791] = 56.0% of the core; min c_t^2 = -3.0000; c_t^2(R_-^-) = +1.0007
+
+  eikonal growth rate  nu = sqrt( f |c_t^2| l(l+1) ) / r  (Killing time), maximised over r > r_cut:
+    l=  2: nu_max =    11.901 (r>0.2),    38.718 (r>0.1),    83.294 (r>0.05),   211.546 (r>0.02)  [1/M]
+    l=  3: nu_max =    16.830 (r>0.2),    54.755 (r>0.1),   117.796 (r>0.05),   299.171 (r>0.02)  [1/M]
+    l=  5: nu_max =    26.611 (r>0.2),    86.575 (r>0.1),   186.252 (r>0.05),   473.030 (r>0.02)  [1/M]
+    l= 10: nu_max =    50.956 (r>0.2),   165.779 (r>0.1),   356.645 (r>0.05),   905.784 (r>0.02)  [1/M]
+    l= 20: nu_max =    99.569 (r>0.2),   323.935 (r>0.1),   696.890 (r>0.05),  1769.918 (r>0.02)  [1/M]
+    l= 50: nu_max =   245.340 (r>0.2),   798.185 (r>0.1),  1717.157 (r>0.05),  4361.125 (r>0.02)  [1/M]
+    nu grows like sqrt(l(l+1)) and like 1/r_cut: there is no fastest mode (Hadamard ill-posed).
+
+  two-channel Moreno-Sarbach eigenvalue solve on [r_cut, 0.6], Dirichlet, lowest omega^2:
+    l=  2, r_cut =  0.2: omega^2_min = +2.64514e-02 -> growth rate     0.000/M; min N V22 = -1.499e+02; matter-channel weight 0.3423; mode peaks at r = 0.5850
+    l=  2, r_cut =  0.1: omega^2_min = -1.05024e+02 -> growth rate    10.248/M; min N V22 = -1.186e+03; matter-channel weight 0.9861; mode peaks at r = 0.1803
+    l=  2, r_cut = 0.05: omega^2_min = -3.61637e+02 -> growth rate    19.017/M; min N V22 = -4.797e+03; matter-channel weight 0.9990; mode peaks at r = 0.1130
+    l=  2, r_cut = 0.02: omega^2_min = -1.33667e+03 -> growth rate    36.561/M; min N V22 = -2.960e+04; matter-channel weight 1.0000; mode peaks at r = 0.0484
+    l=  3, r_cut =  0.2: omega^2_min = -7.32026e+00 -> growth rate     2.706/M; min N V22 = -2.895e+02; matter-channel weight 0.8996; mode peaks at r = 0.2948
+    l=  3, r_cut =  0.1: omega^2_min = -4.72273e+02 -> growth rate    21.732/M; min N V22 = -2.681e+03; matter-channel weight 0.9973; mode peaks at r = 0.1495
+    l=  3, r_cut = 0.05: omega^2_min = -2.23612e+03 -> growth rate    47.288/M; min N V22 = -1.173e+04; matter-channel weight 0.9999; mode peaks at r = 0.0791
+    l=  3, r_cut = 0.02: omega^2_min = -1.36781e+04 -> growth rate   116.954/M; min N V22 = -7.435e+04; matter-channel weight 1.0000; mode peaks at r = 0.0319
+    l=  5, r_cut =  0.2: omega^2_min = -8.41113e+01 -> growth rate     9.171/M; min N V22 = -7.133e+02; matter-channel weight 0.9796; mode peaks at r = 0.2520
+    l=  5, r_cut =  0.1: omega^2_min = -2.28554e+03 -> growth rate    47.807/M; min N V22 = -7.177e+03; matter-channel weight 0.9995; mode peaks at r = 0.1295
+    l=  5, r_cut = 0.05: omega^2_min = -1.15433e+04 -> growth rate   107.440/M; min N V22 = -3.255e+04; matter-channel weight 1.0000; mode peaks at r = 0.0665
+    l=  5, r_cut = 0.02: omega^2_min = -7.47548e+04 -> growth rate   273.413/M; min N V22 = -2.086e+05; matter-channel weight 1.0000; mode peaks at r = 0.0267
+    l= 10, r_cut =  0.2: omega^2_min = -7.91716e+02 -> growth rate    28.137/M; min N V22 = -2.601e+03; matter-channel weight 0.9968; mode peaks at r = 0.2276
+    l= 10, r_cut =  0.1: omega^2_min = -1.38560e+04 -> growth rate   117.712/M; min N V22 = -2.716e+04; matter-channel weight 0.9999; mode peaks at r = 0.1165
+    l= 10, r_cut = 0.05: omega^2_min = -6.83312e+04 -> growth rate   261.402/M; min N V22 = -1.251e+05; matter-channel weight 1.0000; mode peaks at r = 0.0591
+    l= 10, r_cut = 0.02: omega^2_min = -4.44333e+05 -> growth rate   666.583/M; min N V22 = -8.053e+05; matter-channel weight 1.0000; mode peaks at r = 0.0238
+    l= 20, r_cut =  0.2: omega^2_min = -4.92633e+03 -> growth rate    70.188/M; min N V22 = -9.919e+03; matter-channel weight 0.9994; mode peaks at r = 0.2158
+    l= 20, r_cut =  0.1: omega^2_min = -6.95520e+04 -> growth rate   263.727/M; min N V22 = -1.046e+05; matter-channel weight 1.0000; mode peaks at r = 0.1098
+    l= 20, r_cut = 0.05: omega^2_min = -3.34549e+05 -> growth rate   578.402/M; min N V22 = -4.835e+05; matter-channel weight 1.0000; mode peaks at r = 0.0552
+    l= 20, r_cut = 0.02: omega^2_min = -2.17035e+06 -> growth rate  1473.210/M; min N V22 = -3.117e+06; matter-channel weight 1.0000; mode peaks at r = 0.0223
+
+  time evolution of the same two-channel system in the core (l = 2), inner cut moved inwards:
+    r_cut =  0.2, dr* = 0.004: N = 511, fitted d ln|u|/dt = -0.089/M, ran to t = 6M, |u|_end/|u|_0 = 8.689e-01
+    r_cut =  0.1, dr* = 0.002: N = 1094, fitted d ln|u|/dt = +10.249/M, ran to t = 6M, |u|_end/|u|_0 = 3.361e+25
+    r_cut = 0.05, dr* = 0.001: N = 2242, fitted d ln|u|/dt = +19.018/M, ran to t = 6M, |u|_end/|u|_0 = 3.984e+47
+    r_cut = 0.02, dr* = 0.0004: N = 5680, fitted d ln|u|/dt = +36.560/M, ran to t = 5.22M, |u|_end/|u|_0 = 1.003e+80
+
+  physical scales for M = 10 M_sun (GM_sun/c^3 = 4.9255e-6 s, M = 1.477e4 m), from the MS eigenvalues:
+    l= 2, r_cut =  0.1 M (1.48 km): nu = 10.25/M -> e-folding 0.0976 M = 4.806 microseconds
+    l= 2, r_cut = 0.02 M (0.30 km): nu = 36.56/M -> e-folding 0.0274 M = 1.347 microseconds
+    l=10, r_cut =  0.1 M (1.48 km): nu = 117.71/M -> e-folding 0.0085 M = 0.418 microseconds
+    l=20, r_cut = 0.02 M (0.30 km): nu = 1473.21/M -> e-folding 0.0007 M = 0.033 microseconds
