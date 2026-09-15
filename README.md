@@ -1,5 +1,7 @@
 # inner-extremal-rbh
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22780231.svg)](https://doi.org/10.5281/zenodo.22780231)
+
 Code and data for the paper **"Inner-extremal regular black holes with NEC-satisfying anisotropic sources: existence, extent, and the absence of a classical selection mechanism"**.
 
 A family of regular black holes whose inner horizon is degenerate — a triple root of f(r), so that κ₋ = 0 and the Cauchy-horizon instability is switched off at linear order — exists over a finite range of ℓ/M and satisfies the null energy condition throughout. No classical mechanism selects it: the degeneracy is destroyed by any perturbation according to κ₋ ∝ ε^{2/3}, the back-reaction pushes away from it rather than towards it, and every dynamical process examined here — mass inflation, semiclassical flux, viscosity, a first-order transition, accretion, rotation — either leaves the tuning untouched or destroys it.
@@ -102,7 +104,13 @@ The crossing of this inner horizon by an infalling body — the cost and the tra
 ## Citation
 
 Oleh Popenkov, *Inner-extremal regular black holes with NEC-satisfying anisotropic sources: existence, extent, and the absence of a classical selection mechanism* (2026).
-Code and data: https://github.com/alskorpius/inner-extremal-rbh — see [`CITATION.cff`](CITATION.cff).
+
+To cite this repository, use the archived release rather than the URL — see [`CITATION.cff`](CITATION.cff):
+
+| | DOI |
+|---|---|
+| all versions (resolves to the latest) | [10.5281/zenodo.22780231](https://doi.org/10.5281/zenodo.22780231) |
+| this version, `v1.1.1` | [10.5281/zenodo.22780232](https://doi.org/10.5281/zenodo.22780232) |
 
 ORCID: [0009-0008-9894-2982](https://orcid.org/0009-0008-9894-2982)
 
