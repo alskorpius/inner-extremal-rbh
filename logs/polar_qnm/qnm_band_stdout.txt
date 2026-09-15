@@ -1,0 +1,41 @@
+QNM prediction band for the family of triple-root profiles (dr* = 0.05, window [80, 200], l = 2, 3)
+  Schwarzschild l=2: axial 0.373675 -0.088987i, polar 0.373665 -0.088989i (Leaver 0.37367 -0.08896i; error Re +1.4e-05/-1.3e-05, Im +3.1e-04/+3.2e-04)
+  Schwarzschild l=3: axial 0.599457 -0.092684i, polar 0.599460 -0.092684i (Leaver 0.59944 -0.0927i; error Re +2.9e-05/+3.3e-05, Im -1.7e-04/-1.7e-04)
+  base (scenario): lambda = 0.271, R- = 0.677 (|f| = 2.6e-14), R+ = 1.9846, kappa+ = 0.22108, T_H/T_S = 0.8843, m(R+)/M = 0.9923; max|dU| axial 5.8e-03 at r = 1.99, polar 7.4e-03 at r = 1.99; kappa_MS outside the horizon [5.89, 11.00]
+      l=2: axial dRe/Re = -1.67e-03, dIm/Im = -2.15e-03; polar dRe/Re = -1.17e-03, dIm/Im = +8.83e-04 (|Phi|/|Psi| = 2.8e-04)   [21 s]
+      l=3: axial dRe/Re = -5.93e-04, dIm/Im = +1.19e-03; polar dRe/Re = -4.06e-04, dIm/Im = +1.93e-03 (|Phi|/|Psi| = 2.2e-05)   [21 s]
+  u2 = 3: lambda = 0.270, R- = 0.583 (|f| = 3.6e-14), R+ = 1.9585, kappa+ = 0.19157, T_H/T_S = 0.7663, m(R+)/M = 0.9793; max|dU| axial 1.6e-02 at r = 1.96, polar 2.1e-02 at r = 1.96; kappa_MS outside the horizon [2.57, 11.00]
+      l=2: axial dRe/Re = -4.19e-03, dIm/Im = -8.90e-03; polar dRe/Re = -2.96e-03, dIm/Im = -2.05e-04 (|Phi|/|Psi| = 5.2e-04)   [32 s]
+      l=3: axial dRe/Re = -1.68e-03, dIm/Im = -7.24e-04; polar dRe/Re = -1.17e-03, dIm/Im = +1.98e-03 (|Phi|/|Psi| = 4.7e-05)   [32 s]
+  u3 = 12: lambda = 0.186, R- = 0.464 (|f| = 5.9e-14), R+ = 1.9827, kappa+ = 0.21954, T_H/T_S = 0.8781, m(R+)/M = 0.9913; max|dU| axial 6.5e-03 at r = 1.98, polar 8.4e-03 at r = 1.98; kappa_MS outside the horizon [4.96, 11.00]
+      l=2: axial dRe/Re = -1.88e-03, dIm/Im = -3.03e-03; polar dRe/Re = -1.34e-03, dIm/Im = +5.97e-04 (|Phi|/|Psi| = 3.0e-04)   [43 s]
+      l=3: axial dRe/Re = -7.06e-04, dIm/Im = +9.71e-04; polar dRe/Re = -4.90e-04, dIm/Im = +1.93e-03 (|Phi|/|Psi| = 2.5e-05)   [43 s]
+  u3 = 20: lambda = 0.130, R- = 0.325 (|f| = 1.0e-13), R+ = 1.8779, kappa+ = 0.14450, T_H/T_S = 0.5780, m(R+)/M = 0.9390; max|dU| axial 5.1e-02 at r = 1.88, polar 7.0e-02 at r = 1.88; kappa_MS outside the horizon [-0.23, 11.00]
+      l=2: axial dRe/Re = -9.50e-03, dIm/Im = -3.61e-02; polar dRe/Re = -5.48e-03, dIm/Im = -1.31e-02 (|Phi|/|Psi| = 1.1e-03)   [55 s]
+      l=3: axial dRe/Re = -4.74e-03, dIm/Im = -1.47e-02; polar dRe/Re = -3.36e-03, dIm/Im = -6.21e-03 (|Phi|/|Psi| = 1.2e-04)   [55 s]
+  s_end = 8: lambda = 0.213, R- = 0.534 (|f| = 1.7e-14), R+ = 1.9049, kappa+ = 0.19855, T_H/T_S = 0.7942, m(R+)/M = 0.9525; max|dU| axial 3.9e-02 at r = 1.91, polar 5.2e-02 at r = 1.91; kappa_MS outside the horizon [2.61, 3.00]
+      l=2: axial dRe/Re = +5.13e-03, dIm/Im = -4.22e-02; polar dRe/Re = +1.66e-04, dIm/Im = -2.95e-02 (|Phi|/|Psi| = 3.7e-02)   [65 s]
+      l=3: axial dRe/Re = +5.05e-03, dIm/Im = -3.60e-02; polar dRe/Re = +2.37e-03, dIm/Im = -2.78e-02 (|Phi|/|Psi| = 1.2e-02)   [65 s]
+  s_end = 48: lambda = 0.300, R- = 0.750 (|f| = 6.9e-14), R+ = 1.9902, kappa+ = 0.22309, T_H/T_S = 0.8924, m(R+)/M = 0.9951; max|dU| axial 3.7e-03 at r = 1.99, polar 4.7e-03 at r = 1.99; kappa_MS outside the horizon [7.21, 23.00]
+      l=2: axial dRe/Re = -1.15e-03, dIm/Im = +1.43e-03; polar dRe/Re = -5.57e-04, dIm/Im = +2.66e-03 (|Phi|/|Psi| = 1.2e-08)   [77 s]
+      l=3: axial dRe/Re = -1.96e-04, dIm/Im = +2.65e-03; polar dRe/Re = -4.85e-05, dIm/Im = +2.28e-03 (|Phi|/|Psi| = 8.9e-11)   [77 s]
+  sigma_min = 0.5: lambda = 0.234, R- = 0.569 (|f| = 2.1e-13), R+ = 1.9987, kappa+ = 0.24693, T_H/T_S = 0.9877, m(R+)/M = 0.9993; max|dU| axial 5.0e-04 at r = 2.00, polar 6.3e-04 at r = 2.00; kappa_MS outside the horizon [9.34, 11.00]
+      l=2: axial dRe/Re = -1.52e-04, dIm/Im = -7.41e-05; polar dRe/Re = -1.07e-04, dIm/Im = +1.84e-04 (|Phi|/|Psi| = 7.4e-05)   [87 s]
+      l=3: axial dRe/Re = -5.09e-05, dIm/Im = +1.36e-04; polar dRe/Re = -3.39e-05, dIm/Im = +1.76e-04 (|Phi|/|Psi| = 5.3e-06)   [87 s]
+  w2 = 0.6: lambda = 0.221, R- = 0.524 (|f| = 3.8e-15), R+ = 1.9976, kappa+ = 0.24455, T_H/T_S = 0.9782, m(R+)/M = 0.9988; max|dU| axial 9.1e-04 at r = 2.00, polar 1.2e-03 at r = 2.00; kappa_MS outside the horizon [8.82, 11.00]
+      l=2: axial dRe/Re = -2.75e-04, dIm/Im = -1.75e-04; polar dRe/Re = -1.94e-04, dIm/Im = +3.04e-04 (|Phi|/|Psi| = 1.0e-04)   [98 s]
+      l=3: axial dRe/Re = -9.52e-05, dIm/Im = +2.40e-04; polar dRe/Re = -6.44e-05, dIm/Im = +3.22e-04 (|Phi|/|Psi| = 7.3e-06)   [98 s]
+
+Band (across 8 variants):
+  axial l=2, frequency: from -9.50e-03 to +5.13e-03 (|max| = 9.50e-03)
+  axial l=2, damping: from -4.22e-02 to +1.43e-03 (|max| = 4.22e-02)
+  axial l=3, frequency: from -4.74e-03 to +5.05e-03 (|max| = 5.05e-03)
+  axial l=3, damping: from -3.60e-02 to +2.65e-03 (|max| = 3.60e-02)
+  polar l=2, frequency: from -5.48e-03 to +1.66e-04 (|max| = 5.48e-03)
+  polar l=2, damping: from -2.95e-02 to +2.66e-03 (|max| = 2.95e-02)
+  polar l=3, frequency: from -3.36e-03 to +2.37e-03 (|max| = 3.36e-03)
+  polar l=3, damping: from -2.78e-02 to +2.28e-03 (|max| = 2.78e-02)
+  correlation ax_l2_dRe: with T_H/T_S +0.62, with 1-m(R+)/M -0.30, with lambda +0.39
+  correlation ax_l2_dIm: with T_H/T_S +0.76, with 1-m(R+)/M -0.96, with lambda +0.59
+  correlation po_l2_dRe: with T_H/T_S +0.86, with 1-m(R+)/M -0.62, with lambda +0.53
+-> <repo>\inner-extremal-rbh\data\polar_qnm (98 s)

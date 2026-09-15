@@ -1,0 +1,11 @@
+fig6: halo -> QNM shift
+  compact cut Rc = 1.4: dRe = +0.0e+00
+  -> fig6_halo_qnm.pdf
+  [1 s]
+fig7: residual kappa_- for ell^2 = lambda^2 M^2 + ell0^2
+  slope d ln|kappa|/d ln(ell0/M) for ell0/M <= 0.01 (eps_eff <= 7e-4): 1.3207 (expected 4/3); coefficient |kappa_-| ≈ 4.760 (ell0/M)^1.321
+  slope for ell0/M <= 0.03: 1.3084 (coefficient drifts at eps ~ 1e-2, as in T1)
+  analytic coefficient from T1 (kind b, C_pred = 1.479): 5.313 (ell0/M)^(4/3)
+  -> fig7_residual_kappa.pdf
+  [1 s]
+total 2 s

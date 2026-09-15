@@ -1,0 +1,34 @@
+<venv>\site-packages\numpy\lib\_function_base_impl.py:1309: RuntimeWarning: divide by zero encountered in divide
+  a = -(dx2) / (dx1 * (dx1 + dx2))
+<venv>\site-packages\numpy\lib\_function_base_impl.py:1310: RuntimeWarning: divide by zero encountered in divide
+  b = (dx2 - dx1) / (dx1 * dx2)
+<venv>\site-packages\numpy\lib\_function_base_impl.py:1311: RuntimeWarning: divide by zero encountered in divide
+  c = dx1 / (dx2 * (dx1 + dx2))
+<venv>\site-packages\numpy\lib\_function_base_impl.py:1317: RuntimeWarning: invalid value encountered in add
+  out[tuple(slice1)] = a * f[tuple(slice2)] + b * f[tuple(slice3)] \
+1. Rate of mass inflation for de Sitter cores: e-folding over dv = 1/|kappa_-| ~ ell/c
+   rho_c=50 rho_nuc: ell=3.39e+03 m, e-folding 1.13e-05 s; per 1 s -- 8.84e+04 e-foldings
+   rho_c=V_EW      : ell=0.0763 m, e-folding 2.55e-10 s; per 1 s -- 3.93e+09 e-foldings
+   rho_c=Planck    : ell=5.59e-36 m, e-folding 1.86e-44 s; per 1 s -- 5.36e+43 e-foldings
+
+2. Monotone profile rho = rho_c/((1+(R/R1)^2)(1+(R/R2)^6)): structure of H(u) = 2m/(R 8 pi rho_c R1^2)
+   r21 from 0.3 to 100: number of values with stationary points of H: 120 out of 120
+   r21=    0.3: stationary points of H' = 1, min|H'|=8.2e-06 at u=0.379, H there=0.04943; Hmax=0.04943 at u=0.379
+   r21=  0.539: stationary points of H' = 1, min|H'|=2.56e-05 at u=0.657, H there=0.1411; Hmax=0.1411 at u=0.657
+   r21=  0.968: stationary points of H' = 1, min|H'|=3.76e-05 at u=1.1, H there=0.3432; Hmax=0.3432 at u=1.1
+   r21=   1.74: stationary points of H' = 1, min|H'|=1.92e-05 at u=1.82, H there=0.6648; Hmax=0.6648 at u=1.82
+   r21=   3.12: stationary points of H' = 1, min|H'|=4.5e-07 at u=2.98, H there=1.028; Hmax=1.028 at u=2.98
+   r21=   5.61: stationary points of H' = 1, min|H'|=3.34e-05 at u=4.87, H there=1.344; Hmax=1.344 at u=4.87
+   r21=   10.1: stationary points of H' = 1, min|H'|=1.1e-05 at u=8, H there=1.577; Hmax=1.577 at u=8
+   r21=   18.1: stationary points of H' = 1, min|H'|=1.81e-06 at u=13.2, H there=1.734; Hmax=1.734 at u=13.2
+   r21=   32.5: stationary points of H' = 1, min|H'|=1.88e-06 at u=21.7, H there=1.836; Hmax=1.836 at u=21.7
+   r21=   58.5: stationary points of H' = 1, min|H'|=1.69e-06 at u=35.7, H there=1.899; Hmax=1.899 at u=35.7
+
+3. Minimum achievable |kappa_-| for a monotone profile: scan of scale at r21=3 (inner root approaching the maximum of H)
+   scale*Hmax=   1.5: horizons=0, R-=None, R+=None, kappa-=None, kappa+=None, |kappa-|*ell=nan, K_max=24.3, WEC viol=False, NEC viol=False, T_H/S=None
+   scale*Hmax=   1.2: horizons=0, R-=None, R+=None, kappa-=None, kappa+=None, |kappa-|*ell=nan, K_max=6.38, WEC viol=False, NEC viol=False, T_H/S=None
+   scale*Hmax=  1.05: horizons=0, R-=None, R+=None, kappa-=None, kappa+=None, |kappa-|*ell=nan, K_max=2.86, WEC viol=False, NEC viol=False, T_H/S=None
+   scale*Hmax=  1.01: horizons=0, R-=None, R+=None, kappa-=None, kappa+=None, |kappa-|*ell=nan, K_max=2.27, WEC viol=False, NEC viol=False, T_H/S=None
+   scale*Hmax= 1.001: horizons=0, R-=None, R+=None, kappa-=None, kappa+=None, |kappa-|*ell=nan, K_max=2.15, WEC viol=False, NEC viol=False, T_H/S=None
+
+-> <repo>\inner-extremal-rbh\data\stability

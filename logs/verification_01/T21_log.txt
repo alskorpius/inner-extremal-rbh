@@ -1,0 +1,49 @@
+T21. Extremal end of the family (lambda -> 1.066)
+
+(1) Configurations lambda = 1.00, 1.05 and the limiting one (moving along s_end from the T15 optimum; s1 retuned to the triple root)
+  existence boundary in s_end: 28.2424 (at 28.2432 there is no triple root anymore); lambda at the boundary = 1.0352
+  lambda = 1.000: u1 = 2.0497; roots ['1.40764', '1.40804', '1.40831', '1.83609'] (kappa ['-7.86e-08', '8.35e-08', '-5.13e-08', '5.74e-02']); R- = 1.4076, R+ = 1.8361, R+ - R- = 0.4285; kappa- = -7.9e-08, kappa+ = 5.74e-02, T_H/T_S = 0.2295; halo = 0.0820; f - f_Schw at 3M/6M: +1.7e-05/+4.0e-12; photon sphere r_ph/M = 2.9994 (-2.2e-04), b_c/M = 5.1960 (-2.6e-05); f'''(R-) = -5.940, f''(R+) = +1.119, min f between = -6.38e-03 at r = 1.716; QNM l=2: dRe/Re = -8.93e-03, dIm/Im = -1.08e-02; halo-based estimate −0.2·halo = -1.64e-02   [14 s]
+  lambda = 1.018: u1 = 2.0497; roots ['1.43876', '1.43917', '1.43941', '1.80960'] (kappa ['-3.62e-08', '4.10e-08', '-6.08e-08', '3.99e-02']); R- = 1.4388, R+ = 1.8096, R+ - R- = 0.3708; kappa- = -3.6e-08, kappa+ = 3.99e-02, T_H/T_S = 0.1597; halo = 0.0952; f - f_Schw at 3M/6M: +1.2e-05/+7.2e-13; photon sphere r_ph/M = 2.9995 (-1.7e-04), b_c/M = 5.1961 (-1.7e-05); f'''(R-) = -4.957, f''(R+) = +0.998, min f between = -3.64e-03 at r = 1.708; QNM l=2: dRe/Re = -9.46e-03, dIm/Im = -9.27e-03; halo-based estimate −0.2·halo = -1.90e-02   [19 s]
+  lambda = 1.035 (boundary in s_end): u1 = 2.0497; roots ['1.47264', '1.47307', '1.47329', '1.77272'] (kappa ['-1.21e-08', '1.68e-08', '-6.67e-08', '2.27e-02']); R- = 1.4726, R+ = 1.7727, R+ - R- = 0.3001; kappa- = -1.2e-08, kappa+ = 2.27e-02, T_H/T_S = 0.0908; halo = 0.1136; f - f_Schw at 3M/6M: +7.6e-06/+1.1e-13; photon sphere r_ph/M = 2.9997 (-9.8e-05), b_c/M = 5.1961 (-1.1e-05); f'''(R-) = -3.870, f''(R+) = +0.772, min f between = -1.59e-03 at r = 1.693; QNM l=2: dRe/Re = -9.96e-03, dIm/Im = -7.94e-03; halo-based estimate −0.2·halo = -2.27e-02   [25 s]
+  lambda = 1.066 (T15 optimum, exact parameters): u1 = 2.0497; roots ['1.55839', '1.55871', '1.55916', '1.61888'] (kappa ['-6.26e-09', '1.61e-08', '-1.17e-08', '2.11e-04']); R- = 1.5584, R+ = 1.6189, R+ - R- = 0.0605; kappa- = -6.3e-09, kappa+ = 2.11e-04, T_H/T_S = 0.0008; halo = 0.1906; f - f_Schw at 3M/6M: +3.6e-06/+0.0e+00; photon sphere r_ph/M = 2.9998 (-7.2e-05), b_c/M = 5.1961 (-5.4e-06); f'''(R-) = -0.746, f''(R+) = +0.042, min f between = -2.70e-06 at r = 1.604; QNM l=2: not computed (kappa+ < 1e-3, horizon not resolved by the r* grid); halo-based estimate −0.2·halo = -3.81e-02   [25 s]
+  Merger: kappa+ ∝ (R+ − R-)^2.88 over 4 points (a quadruple root f ≈ c (r−R-)^3 (r−R+) gives exponent 3); at the limit f ≥ 0 on both sides (the trapped region disappears), f ~ (r − r0)^4.
+
+(2) Stability of the limiting configuration (lambda = 1.066 (T15 optimum, exact parameters)): perturbations of mass m -> (1+eps) m and shape (without retuning s1)
+  mass +1e-04: roots ['1.4870', '1.6642'], kappa ['-2.480e-03', '+2.489e-03'], min f = -1.03e-04 at r = 1.604 → two horizons (kappa- < 0: mass inflation)
+  mass +1e-03: roots ['1.4236', '1.7303'], kappa ['-1.374e-02', '+1.269e-02'], min f = -1.00e-03 at r = 1.604 → two horizons (kappa- < 0: mass inflation)
+  mass +1e-02: roots ['1.3105', '1.8613'], kappa ['-7.678e-02', '+6.137e-02'], min f = -1.00e-02 at r = 1.604 → two horizons (kappa- < 0: mass inflation)
+  mass -1e-04: roots [], kappa [], min f = +9.73e-05 at r = 1.604 → horizonless object (f > 0 everywhere)
+  mass -1e-03: roots [], kappa [], min f = +9.97e-04 at r = 1.604 → horizonless object (f > 0 everywhere)
+  mass -1e-02: roots [], kappa [], min f = +1.00e-02 at r = 1.604 → horizonless object (f > 0 everywhere)
+  shape s_end × 1.01: roots [], kappa [], min f = +3.73e-04 at r = 1.519 → horizonless object (f > 0 everywhere)
+  shape s_end × 0.99: roots ['1.4585', '1.7174'], kappa ['-6.028e-03', '+9.381e-03'], min f = -5.64e-04 at r = 1.641 → two horizons (kappa- < 0)
+  shape u3 × 1.01: roots ['1.3997', '1.7962'], kappa ['-1.849e-02', '+3.332e-02'], min f = -3.24e-03 at r = 1.680 → two horizons (kappa- < 0)
+  shape u3 × 0.99: roots [], kappa [], min f = +1.82e-03 at r = 1.497 → horizonless object (f > 0 everywhere)
+
+(3) Dynamics from T2: drift of r- as mass accumulates (prescription P1/P1s)
+  kappa~+1e-03, N=1: r- 0.6604 → 0.5805 over N_e = 4 (dr-/dN_e = -0.0200 M), kappa- → -0.270
+  kappa~+1e-03, N=3: r- 0.6604 → 0.5105 over N_e = 12 (dr-/dN_e = -0.0125 M), kappa- → -1.470
+  kappa~+1e-03, N=10: r- 0.6604 → 0.3905 over N_e = 40 (dr-/dN_e = -0.0067 M), kappa- → -9.028
+  kappa~-1e-03, N=1: r- 0.6956 → 0.6474 over N_e = 1 (dr-/dN_e = -0.0482 M), kappa- → -0.011
+  kappa~-1e-03, N=3: r- 0.6956 → 0.5278 over N_e = 12 (dr-/dN_e = -0.0140 M), kappa- → -1.041
+  kappa~-1e-03, N=10: r- 0.6956 → 0.4131 over N_e = 40 (dr-/dN_e = -0.0071 M), kappa- → -6.781
+  kappa~+1e-02, N=3: r- 0.6252 → 0.4880 over N_e = 12 (dr-/dN_e = -0.0114 M), kappa- → -2.184
+  kappa~-1e-02, N=3: r- 0.7374 → 0.5567 over N_e = 12 (dr-/dN_e = -0.0151 M), kappa- → -0.573
+  kappa~+3e-02, N=3: r- 0.5904 → 0.4631 over N_e = 12 (dr-/dN_e = -0.0106 M), kappa- → -3.164
+  kappa~-3e-02, N=3: r- 0.7881 → 0.7389 over N_e = 12 (dr-/dN_e = -0.0041 M), kappa- → -0.203
+  kappa~+8e-02, N=1: r- 0.5428 → 0.5113 over N_e = 4 (dr-/dN_e = -0.0079 M), kappa- → -0.789
+  kappa~+8e-02, N=3: r- 0.5428 → 0.5013 over N_e = 12 (dr-/dN_e = -0.0035 M), kappa- → -1.092
+  kappa~+8e-02, N=10: r- 0.5428 → 0.4720 over N_e = 40 (dr-/dN_e = -0.0018 M), kappa- → -2.242
+  kappa~-8e-02, N=1: r- 0.8863 → 0.8533 over N_e = 4 (dr-/dN_e = -0.0083 M), kappa- → -0.532
+  kappa~-8e-02, N=3: r- 0.8863 → 0.8426 over N_e = 12 (dr-/dN_e = -0.0036 M), kappa- → -0.654
+  kappa~-8e-02, N=10: r- 0.8863 → 0.8107 over N_e = 40 (dr-/dN_e = -0.0019 M), kappa- → -0.948
+  kappa~+1e-03, N=3, P1s: r- 0.6604 → 0.3233 over N_e = 12 (dr-/dN_e = -0.0281 M), kappa- → -0.924
+  kappa~-1e-03, N=3, P1s: r- 0.6956 → 0.3259 over N_e = 12 (dr-/dN_e = -0.0308 M), kappa- → -0.891
+  kappa~+8e-02, N=3, P1s: r- 0.5428 → 0.3116 over N_e = 12 (dr-/dN_e = -0.0193 M), kappa- → -0.974
+  kappa~-8e-02, N=3, P1s: r- 0.8863 → 0.3348 over N_e = 12 (dr-/dN_e = -0.0460 M), kappa- → -0.799
+  In all 20 series r- moves INWARD (dr-/dN_e < 0): True; it does not approach R+ ≈ 1.98 — the "horizon merger via mass inflation" scenario is not realized under the T2 prescription.
+  Estimates for 10 M☉ (ℓ = 4.00 km): N_e to Planckian curvature at R- (K ∝ δm²): ½ ln(K_P/K_core) = 175; N_e needed for δm ~ M − m(R-) at δm₀ = 10⁻³ M: 6.5 (if R- moved outward — but it moves inward).
+
+(4) Comparison with the companion paper
+  ℓ₀ = 10.7 km: extremality boundary of the triple-root family lambda_ext = 1.066 → M = 6.80 M☉; the companion paper's criterion ℓ₀/M ≥ 1.49 (profile n = 6, without a triple root) → 4.86 M☉.
+  Different objects: our point is the boundary "hole with a triple inner root ↔ horizonless object" (the triple root merges with the outer one, a quadruple root), theirs is the boundary "two-horizon hole with kappa- ≠ 0 ↔ horizonless" (a double root) for a monotone profile with no dip in the slope; for the same ℓ₀ the thresholds differ by a factor of 1.49/1.066 = 1.40.

@@ -1,0 +1,54 @@
+<repo>\inner-extremal-rbh\src\approach_map\approach_map.py:243: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  val, err = quad(lambda t: 4 * np.pi * float(fam.geometry(t)["R"] ** 2 / np.sqrt(fam.geometry(t)["f"])),
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:99: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  tau_in, _ = quad(lambda R: 1 / np.sqrt(max(Fneg(R), 1e-300)), R_in * (1 + 1e-9), R_out * (1 - 1e-9), limit=400)
+<repo>\inner-extremal-rbh\src\approach_map\approach_map.py:243: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  val, err = quad(lambda t: 4 * np.pi * float(fam.geometry(t)["R"] ** 2 / np.sqrt(fam.geometry(t)["f"])),
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:59: RuntimeWarning: overflow encountered in square
+  return -self.rho_c * 0.5 / (self.delta * np.cosh(z) ** 2)
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:99: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  tau_in, _ = quad(lambda R: 1 / np.sqrt(max(Fneg(R), 1e-300)), R_in * (1 + 1e-9), R_out * (1 - 1e-9), limit=400)
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:59: RuntimeWarning: overflow encountered in cosh
+  return -self.rho_c * 0.5 / (self.delta * np.cosh(z) ** 2)
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:59: RuntimeWarning: overflow encountered in scalar power
+  return -self.rho_c * 0.5 / (self.delta * np.cosh(z) ** 2)
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:108: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  pt_int, _ = quad(lambda R: (-fam.rho(R) - R * fam.drho(R) / 2) / np.sqrt(max(-float(fam.geometry(R)["f"]), 1e-300)),
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:59: RuntimeWarning: overflow encountered in cosh
+  return -self.rho_c * 0.5 / (self.delta * np.cosh(z) ** 2)
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:59: RuntimeWarning: overflow encountered in square
+  return -self.rho_c * 0.5 / (self.delta * np.cosh(z) ** 2)
+<repo>\inner-extremal-rbh\src\ks_curvature_transition\ks.py:59: RuntimeWarning: overflow encountered in scalar power
+  return -self.rho_c * 0.5 / (self.delta * np.cosh(z) ** 2)
+<repo>\inner-extremal-rbh\src\approach_map\approach_map.py:243: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  val, err = quad(lambda t: 4 * np.pi * float(fam.geometry(t)["R"] ** 2 / np.sqrt(fam.geometry(t)["f"])),
+Anisotropic curvature transition in the Kantowski-Sachs region (M = 1)
+  B_c/2M= 0.5 δ/B_c=  0.3: K_c=48, rho_c=0.1953 (expected 0.2387), ell/B_c=0.782; horizons=2 R-=0.8243471428676633, κ-=-0.9381425083760843 (dS: -1.28); K(0)/K_c=1.336, K_max/K_c=1.336 at R=0.001; WEC violated=False NEC violated=False min ρ+p⊥=-8.67e-19; p⊥max/ρ_c=0.489 (expected 0.833); τ(2M→R-)=3.4165 vs Schwarzschild πM=3.1416; |a_r|max=2.98, |a⊥|max=1.13; S_shell=0.226 vs ∫p⊥dτ=-4.11e+149; outside: ΔT_H=-2.3e-02, Δb_c=-5.8e-06; err(ρ,p⊥)=2.8e-16,5.7e-16
+  B_c/2M= 0.5 δ/B_c=  0.1: K_c=48, rho_c=0.233 (expected 0.2387), ell/B_c=0.716; horizons=2 R-=0.7159994683386138, κ-=-1.390819016500914 (dS: -1.4); K(0)/K_c=1.905, K_max/K_c=14.247 at R=1; WEC violated=False NEC violated=False min ρ+p⊥=-1.39e-17; p⊥max/ρ_c=2.06 (expected 2.5); τ(2M→R-)=3.2080 vs Schwarzschild πM=3.1416; |a_r|max=12.9, |a⊥|max=1.94; S_shell=0.136 vs ∫p⊥dτ=-1.2e+149; outside: ΔT_H=-1.5e-07, Δb_c=9.9e-08; err(ρ,p⊥)=3.6e-16,3.5e-16
+  B_c/2M= 0.5 δ/B_c= 0.03: K_c=48, rho_c=0.2382 (expected 0.2387), ell/B_c=0.708; horizons=2 R-=0.7078913523618181, κ-=-1.4126454593356335 (dS: -1.41); K(0)/K_c=1.991, K_max/K_c=192.127 at R=1; WEC violated=False NEC violated=False min ρ+p⊥=-2.66e-15; p⊥max/ρ_c=7.85 (expected 8.33); τ(2M→R-)=3.1948 vs Schwarzschild πM=3.1416; |a_r|max=47.8, |a⊥|max=2; S_shell=0.123 vs ∫p⊥dτ=0.0408; outside: ΔT_H=-8.9e-08, Δb_c=8.9e-08; err(ρ,p⊥)=4.7e-16,3.6e-16
+  B_c/2M= 0.5 δ/B_c= 0.01: K_c=48, rho_c=0.2387 (expected 0.2387), ell/B_c=0.707; horizons=2 R-=0.7071939438788304, κ-=-1.4140388521962235 (dS: -1.41); K(0)/K_c=1.999, K_max/K_c=1825.447 at R=1; WEC violated=False NEC violated=False min ρ+p⊥=-2.66e-15; p⊥max/ρ_c=24.5 (expected 25); τ(2M→R-)=3.1939 vs Schwarzschild πM=3.1416; |a_r|max=144, |a⊥|max=2; S_shell=0.121 vs ∫p⊥dτ=0.1; outside: ΔT_H=-8.3e-08, Δb_c=8.3e-08; err(ρ,p⊥)=3.5e-16,4.6e-16
+  B_c/2M= 0.2 δ/B_c=  0.3: K_c=1.17e+04, rho_c=3.052 (expected 3.73), ell/B_c=0.494; horizons=2 R-=0.19954756924383724, κ-=-4.886522965654191 (dS: -5.06); K(0)/K_c=1.336, K_max/K_c=1.336 at R=0.001; WEC violated=False NEC violated=False min ρ+p⊥=-6.94e-18; p⊥max/ρ_c=0.489 (expected 0.833); τ(2M→R-)=3.3039 vs Schwarzschild πM=3.1416; |a_r|max=46.5, |a⊥|max=24.5; S_shell=0.504 vs ∫p⊥dτ=-2.3e+150; outside: ΔT_H=-1.0e-07, Δb_c=1.0e-07; err(ρ,p⊥)=2.9e-16,5.8e-16
+  B_c/2M= 0.2 δ/B_c=  0.1: K_c=1.17e+04, rho_c=3.64 (expected 3.73), ell/B_c=0.453; horizons=2 R-=0.18107930685715876, κ-=-5.52233328943057 (dS: -5.52); K(0)/K_c=1.905, K_max/K_c=14.247 at R=0.402; WEC violated=False NEC violated=False min ρ+p⊥=-1.11e-16; p⊥max/ρ_c=2.06 (expected 2.5); τ(2M→R-)=3.2750 vs Schwarzschild πM=3.1416; |a_r|max=202, |a⊥|max=30.5; S_shell=0.403 vs ∫p⊥dτ=-3.68e+149; outside: ΔT_H=-8.8e-08, Δb_c=8.8e-08; err(ρ,p⊥)=3.7e-16,3.6e-16
+  B_c/2M= 0.2 δ/B_c= 0.03: K_c=1.17e+04, rho_c=3.722 (expected 3.73), ell/B_c=0.448; horizons=2 R-=0.1790839259422615, κ-=-5.583971825132153 (dS: -5.58); K(0)/K_c=1.991, K_max/K_c=192.127 at R=0.4; WEC violated=False NEC violated=False min ρ+p⊥=-4.26e-14; p⊥max/ρ_c=7.85 (expected 8.33); τ(2M→R-)=3.2726 vs Schwarzschild πM=3.1416; |a_r|max=749, |a⊥|max=31.2; S_shell=0.381 vs ∫p⊥dτ=0.169; outside: ΔT_H=-7.8e-08, Δb_c=7.8e-08; err(ρ,p⊥)=3.6e-16,3.6e-16
+  B_c/2M= 0.2 δ/B_c= 0.01: K_c=1.17e+04, rho_c=3.729 (expected 3.73), ell/B_c=0.447; horizons=2 R-=0.17890748506512424, κ-=-5.5894791070938314 (dS: -5.59); K(0)/K_c=1.999, K_max/K_c=1825.447 at R=0.4; WEC violated=False NEC violated=False min ρ+p⊥=-4.26e-14; p⊥max/ρ_c=24.5 (expected 25); τ(2M→R-)=3.2724 vs Schwarzschild πM=3.1416; |a_r|max=2.3e+03, |a⊥|max=31.2; S_shell=0.375 vs ∫p⊥dτ=0.314; outside: ΔT_H=-7.3e-08, Δb_c=7.3e-08; err(ρ,p⊥)=3.6e-16,3.1e-16
+  B_c/2M=0.05 δ/B_c=  0.3: K_c=4.8e+07, rho_c=195.3 (expected 238.7), ell/B_c=0.247; horizons=2 R-=0.024776132107832926, κ-=-40.238843693425366 (dS: -40.5); K(0)/K_c=1.335, K_max/K_c=1.335 at R=0.001; WEC violated=False NEC violated=False min ρ+p⊥=-8.88e-16; p⊥max/ρ_c=0.489 (expected 0.833); τ(2M→R-)=3.1800 vs Schwarzschild πM=3.1416; |a_r|max=2.98e+03, |a⊥|max=1.62e+03; S_shell=3.48 vs ∫p⊥dτ=-3.22e+151; outside: ΔT_H=-8.3e-08, Δb_c=8.3e-08; err(ρ,p⊥)=4.4e-16,4.4e-16
+  B_c/2M=0.05 δ/B_c=  0.1: K_c=4.8e+07, rho_c=233 (expected 238.7), ell/B_c=0.226; horizons=2 R-=0.02263486165800286, κ-=-44.17962003209213 (dS: -44.2); K(0)/K_c=1.905, K_max/K_c=14.247 at R=0.1; WEC violated=False NEC violated=False min ρ+p⊥=-7.11e-15; p⊥max/ρ_c=2.06 (expected 2.5); τ(2M→R-)=3.1757 vs Schwarzschild πM=3.1416; |a_r|max=1.29e+04, |a⊥|max=1.95e+03; S_shell=2.92 vs ∫p⊥dτ=-6.14e+149; outside: ΔT_H=-7.2e-08, Δb_c=7.2e-08; err(ρ,p⊥)=4.9e-16,3.6e-16
+  B_c/2M=0.05 δ/B_c= 0.03: K_c=4.8e+07, rho_c=238.2 (expected 238.7), ell/B_c=0.224; horizons=2 R-=0.022385491071512994, κ-=-44.67177591305112 (dS: -44.7); K(0)/K_c=1.991, K_max/K_c=192.127 at R=0.1; WEC violated=False NEC violated=False min ρ+p⊥=-2.73e-12; p⊥max/ρ_c=7.85 (expected 8.33); τ(2M→R-)=3.1751 vs Schwarzschild πM=3.1416; |a_r|max=4.79e+04, |a⊥|max=2e+03; S_shell=2.79 vs ∫p⊥dτ=1.28; outside: ΔT_H=-6.3e-08, Δb_c=6.3e-08; err(ρ,p⊥)=3.6e-16,3.6e-16
+  B_c/2M=0.05 δ/B_c= 0.01: K_c=4.8e+07, rho_c=238.7 (expected 238.7), ell/B_c=0.224; horizons=2 R-=0.02236343523700153, κ-=-44.71583127258259 (dS: -44.7); K(0)/K_c=1.999, K_max/K_c=1825.447 at R=0.1; WEC violated=False NEC violated=False min ρ+p⊥=-1.82e-12; p⊥max/ρ_c=24.5 (expected 25); τ(2M→R-)=3.1750 vs Schwarzschild πM=3.1416; |a_r|max=1.47e+05, |a⊥|max=2e+03; S_shell=2.75 vs ∫p⊥dτ=2.3; outside: ΔT_H=-5.9e-08, Δb_c=5.9e-08; err(ρ,p⊥)=4.8e-16,3.1e-16
+
+-> <repo>\inner-extremal-rbh\data\ks_curvature_transition

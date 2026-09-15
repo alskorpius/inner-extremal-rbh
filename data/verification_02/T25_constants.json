@@ -1,0 +1,108 @@
+{
+ "constants": {
+  "s1": 2.8424206998517088,
+  "u_s": 2.907567774706452,
+  "lam": 0.27101577964329177,
+  "R_minus": 0.6776295999999999,
+  "R_plus": 1.9846481546842656,
+  "kappa_plus": 0.22108218686311965,
+  "kappa_minus": 5.8841820305133297e-08,
+  "sign_changes": [
+   0.6774352,
+   0.6776295999999999,
+   0.6778112
+  ],
+  "grid_dlnu": 0.00028694513232707664,
+  "R1": 0.23299037322092286,
+  "rho_c": 1.6251454602929816,
+  "note_precision": "the merger point of the stationary points of H is set by the grid in ln u (step 2.9e-04), so R-, lambda and R+ are reliable to ~4 significant figures; kappa+ ~4 digits"
+ },
+ "rows": [
+  {
+   "name": "lambda",
+   "x": 0.27101577964329177,
+   "tol": 0.0001,
+   "identify": "((-1/2) + (1/2)*pi + (-1/2)*e + (-1/2)*sqrt(2) + 1*sqrt(3))/e",
+   "poly": {
+    "complexity": 11,
+    "coeffs": [
+     -1,
+     3,
+     2,
+     2
+    ],
+    "dist": 5.339062712211907e-05
+   },
+   "random_best": 10,
+   "random_identify_hits": 10,
+   "verdict": "match not simpler than random -- not accepted"
+  },
+  {
+   "name": "R-/M",
+   "x": 0.6776295999999999,
+   "tol": 0.0002,
+   "identify": "((-5) + 4*e + (-3)*sqrt(3))",
+   "poly": {
+    "complexity": 10,
+    "coeffs": [
+     -2,
+     0,
+     3,
+     2
+    ],
+    "dist": 2.1099265206136785e-05
+   },
+   "random_best": 8,
+   "random_identify_hits": 10,
+   "verdict": "match not simpler than random -- not accepted"
+  },
+  {
+   "name": "R+/M",
+   "x": 1.9846481546842656,
+   "tol": 0.0001,
+   "identify": "((4-sqrt(0))/2)",
+   "poly": null,
+   "random_best": 16,
+   "random_identify_hits": 10,
+   "verdict": "match not simpler than random -- not accepted"
+  },
+  {
+   "name": "kappa+",
+   "x": 0.22108218686311965,
+   "tol": 0.0001,
+   "identify": "((1/2) + (-1)*e + (1/2)*sqrt(2) + 1*sqrt(3))",
+   "poly": {
+    "complexity": 15,
+    "coeffs": [
+     -2,
+     9,
+     0,
+     1
+    ],
+    "dist": 5.96492252806637e-05
+   },
+   "random_best": 12,
+   "random_identify_hits": 10,
+   "verdict": "match not simpler than random -- not accepted"
+  },
+  {
+   "name": "lambda_max",
+   "x": 1.066,
+   "tol": 0.002,
+   "identify": "(1*e + (-2)*sqrt(2) + 2*sqrt(3))/pi",
+   "poly": {
+    "complexity": 14,
+    "coeffs": [
+     -6,
+     0,
+     1,
+     4
+    ],
+    "dist": 0.0011556127393032847
+   },
+   "random_best": 6,
+   "random_identify_hits": 10,
+   "verdict": "match not simpler than random -- not accepted"
+  }
+ ]
+}

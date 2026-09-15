@@ -1,0 +1,35 @@
+<repo>\inner-extremal-rbh\src\approach_map\approach_map.py:243: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  val, err = quad(lambda t: 4 * np.pi * float(fam.geometry(t)["R"] ** 2 / np.sqrt(fam.geometry(t)["f"])),
+<repo>\inner-extremal-rbh\src\approach_map\approach_map.py:243: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  val, err = quad(lambda t: 4 * np.pi * float(fam.geometry(t)["R"] ** 2 / np.sqrt(fam.geometry(t)["f"])),
+B. Merger of the first maximum and minimum of H (ascending inflection): scan of the slope excess s1 at sigma_min=1
+  s1* = 2.842021982768752, u_s = 2.9084022068387094, first pair merged: True; points at s1 slightly above: [2.9079849309135217, 2.908819482763897, 7.909290286218054]; below: [7.909290286218054]
+    scale*H(u_s)=1.0: horizons R=[0.28407, 1.54878], kappa=[-0.0, 0.154431]; m(R+)/M=0.7743882103454772; K(0)=1.439e+05, K_max=1.439e+05 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=3.62e-06; ell=0.1136, R1=0.09769; T_H/S=0.6177222968119184, b_c/S=0.9378881868260991, min sigma=0.000
+    scale*H(u_s)=0.999: horizons R=[0.31854, 1.54708], kappa=[-0.04178, 0.154156]; m(R+)/M=0.7735414690819877; K(0)=1.43e+05, K_max=1.43e+05 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=3.6e-06; ell=0.1138, R1=0.09779; T_H/S=0.6166226821823805, b_c/S=0.9376550557164984, min sigma=0.000
+    scale*H(u_s)=1.001: horizons R=[0.25278, 1.55046], kappa=[-0.05028, 0.154704]; m(R+)/M=0.7752303972463266; K(0)=1.448e+05, K_max=1.448e+05 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=3.65e-06; ell=0.1135, R1=0.09759; T_H/S=0.6188172673079221, b_c/S=0.938120025302726, min sigma=0.000
+
+A. Merger of the minimum and the outer maximum (descending inflection) -- for completeness:
+Profile: sigma from 0 to 3.0, dip of depth d near u2=4.0, then to 6 near u3=20.0
+  number of stationary points of H at d=0: 1, at d=2.99: 3; merger at d* = 1.3789589061955438
+
+  d=1.5290: stationary points of H at u = [2.356 4.099 5.914], min sigma = 0.000 (>=0 => rho monotone)
+    scale*H(u_s)=1.0: horizons R=[0.2445, 0.99752], kappa=[-0.598605, 0.070027]; K(0)=4.536e+04, K_max=4.536e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=5.47e-07; ell=0.1517, R1=0.1375; T_H/S=0.2801066705075719, b_c/S=0.828122828281272
+    scale*H(u_s)=0.999: horizons R=[0.24559, 0.53096, 0.60126, 0.99126], kappa=[-0.586792, 0.030979, -0.025331, 0.067852]; K(0)=4.509e+04, K_max=4.509e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=5.43e-07; ell=0.1519, R1=0.1377; T_H/S=0.27140763042992466, b_c/S=0.8273741264627034
+    scale*H(u_s)=1.001: horizons R=[0.24343, 1.00355], kappa=[-0.610372, 0.072088]; K(0)=4.563e+04, K_max=4.563e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=5.5e-07; ell=0.1514, R1=0.1374; T_H/S=0.2883520510712083, b_c/S=0.8288666211690805
+
+  d=1.3790: stationary points of H at u = [2.351 4.869 4.87 ], min sigma = 0.000 (>=0 => rho monotone)
+    scale*H(u_s)=1.0: horizons R=[0.24953, 0.70741], kappa=[-0.679144, 0.0]; K(0)=3.723e+04, K_max=3.723e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=3.98e-07; ell=0.1593, R1=0.1453; T_H/S=1.865510115273139e-07, b_c/S=0.798197849517536
+    scale*H(u_s)=0.999: horizons R=[0.25052, 0.62516], kappa=[-0.668329, 0.018541]; K(0)=3.7e+04, K_max=3.7e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=3.95e-07; ell=0.1596, R1=0.1454; T_H/S=0.07416222857704291, b_c/S=0.7973309838925243
+    scale*H(u_s)=1.001: horizons R=[0.24855, 0.79898], kappa=[-0.689934, 0.015119]; K(0)=3.745e+04, K_max=3.745e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=4e-07; ell=0.1591, R1=0.1452; T_H/S=0.06047787760384793, b_c/S=0.7990589934003803
+
+  d=1.2290: stationary points of H at u = [2.347], min sigma = 0.000 (>=0 => rho monotone)
+    scale*H(u_s)=1.0: horizons R=[], kappa=[]; K(0)=2.156e+04, K_max=2.156e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=1.93e-07; ell=0.1827, R1=0.1626; T_H/S=None, b_c/S=0.5550350298728886
+    scale*H(u_s)=0.999: horizons R=[], kappa=[]; K(0)=2.143e+04, K_max=2.143e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=1.92e-07; ell=0.1829, R1=0.1628; T_H/S=None, b_c/S=0.5500288635260567
+    scale*H(u_s)=1.001: horizons R=[0.3629, 0.40152], kappa=[-0.056841, 0.046947]; K(0)=2.169e+04, K_max=2.169e+04 at R=0.001; WEC viol=False, NEC viol=False, min(rho+p_perp)*8pi=1.94e-07; ell=0.1824, R1=0.1624; T_H/S=0.18778735216570475, b_c/S=0.5601518930920313
+
+-> <repo>\inner-extremal-rbh\data\stability

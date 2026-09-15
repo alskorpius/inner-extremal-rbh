@@ -1,0 +1,23 @@
+T31: Gurses-Gursey class (Kerr with M -> m(r)) with the scenario profile and Hayward
+  base: d = 1.84242, scale = 1.10861, R1 = 0.23299, sigma_min = 0.000; Hayward ell = 0.271
+
+(a) Horizons and kappa = Delta'/(2(r_h^2 + a^2))
+  base, a = 0.0: 4 roots: r = 0.6774, kappa = -1.3973e-07; r = 0.6776, kappa = +6.9039e-08; r = 0.6779, kappa = -1.3647e-07; r = 1.9846, kappa = +2.2108e-01; min Delta for r < 1.5: -3.173e-01 (r = 1.500)
+  base, a = 0.3: 2 roots: r = 1.1189, kappa = -1.9895e-01; r = 1.9298, kappa = +2.0108e-01; min Delta for r < 1.5: -2.273e-01 (r = 1.500)
+  base, a = 0.6: 0 roots: ; min Delta for r < 1.5: +4.272e-02 (r = 1.500)
+  base, a = 0.9: 0 roots: ; min Delta for r < 1.5: +4.927e-01 (r = 1.500)
+  Hayward, a = 0.0: 2 roots: r = 0.2934, kappa = -2.6587e+00; r = 1.9618, kappa = +2.4027e-01; min Delta for r < 1.5: -7.749e-01 (r = 1.152)
+  Hayward, a = 0.3: 2 roots: r = 0.4066, kappa = -2.1680e+00; r = 1.9117, kappa = +2.3281e-01; min Delta for r < 1.5: -6.849e-01 (r = 1.152)
+  Hayward, a = 0.6: 2 roots: r = 0.6040, kappa = -9.8788e-01; r = 1.7385, kappa = +2.0292e-01; min Delta for r < 1.5: -4.149e-01 (r = 1.152)
+  Hayward, a = 0.9: 0 roots: ; min Delta for r < 1.5: +3.506e-02 (r = 1.152)
+
+  disruption of the base triple root by small spin: kappa_-(a) (expectation ∝ a^{4/3}: delta Delta = a^2 when f''' != 0)
+    a = 0.003: r_- = 0.69834, kappa_- = -1.3467e-03, kappa/a^(4/3) = -3.1125
+    a = 0.01: r_- = 0.72345, kappa_- = -6.3465e-03, kappa/a^(4/3) = -2.9458
+    a = 0.03: r_- = 0.77165, kappa_- = -2.4627e-02, kappa/a^(4/3) = -2.6419
+    a = 0.1: r_- = 0.88390, kappa_- = -9.3040e-02, kappa/a^(4/3) = -2.0045
+    a = 0.3: no inner root (Delta > 0 inside) — the triple root is lifted, trapped region ...
+    fit exponent: 1.210
+
+  recovery of the triple root of Delta at a = 0.6: fsolve over (d, scale, r*)
+    matching not found

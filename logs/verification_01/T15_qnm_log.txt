@@ -1,0 +1,9 @@
+T15-2. (a) Repeated maximization of lambda with s1 up to 30 (checking the s1 search boundary)
+  parameters: u1 = 2.05, u2 = 2.99, u3 = 3.99, w1 = 0.122, w2 = 0.239, w3 = 0.135, s_end = 32.3, sigma_min = 0.464
+  optimum (s1 up to 30): lam = 1.0655 (identity 1.0655); R- = 1.559, R+ = 1.619, kappa+ = 0.0002, T_H/T_S = 0.001, halo = 0.1906, m(3M)/M = 0.999995; s(R-) = 0.156, R-/ell = 1.463; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.48; |f,f',f''|(R-) = 0e+00, 8e-09, 4e-05; s1* = 9.134
+
+(b) companion-paper synthesis points: QNM (axial, l = 2) and shadow
+  base: lam = 0.271, R- = 0.677, R+ = 1.985, kappa+ = 0.2211, T_H/T_S = 0.884, halo = 0.0077; QNM l=2: dRe/Re = -1.67e-03, dIm/Im = -2.15e-03; shadow: r_ph = 2.9999, b_c/b_Schw - 1 = -2.4e-06; max|m - M| at r >= 3M: 2.4e-06   [68 s]
+  lambda ~ 0.45: lam = 0.444, R- = 0.807, R+ = 1.995, kappa+ = 0.2315, T_H/T_S = 0.926, halo = 0.0023; QNM l=2: dRe/Re = -3.72e-04, dIm/Im = +2.07e-03; shadow: r_ph = 3.0001, b_c/b_Schw - 1 = +5.7e-10; max|m - M| at r >= 3M: 2.2e-16   [70 s]
+  lambda ~ 0.58: lam = 0.629, R- = 0.993, R+ = 1.875, kappa+ = 0.1241, T_H/T_S = 0.496, halo = 0.0623; QNM l=2: dRe/Re = -8.44e-03, dIm/Im = -2.92e-02; shadow: r_ph = 2.9989, b_c/b_Schw - 1 = -3.4e-05; max|m - M| at r >= 3M: 3.4e-05   [73 s]
+  lambda ~ 0.77: lam = 0.842, R- = 1.236, R+ = 1.824, kappa+ = 0.0862, T_H/T_S = 0.345, halo = 0.0882; QNM l=2: dRe/Re = -8.30e-03, dIm/Im = -3.81e-02; shadow: r_ph = 2.9949, b_c/b_Schw - 1 = -2.7e-04; max|m - M| at r >= 3M: 2.7e-04   [75 s]

@@ -1,0 +1,13 @@
+Branch-A profile: ell = 0.27102, rho_c = 1.6251, R1 = 0.23299; check L = m'/r^2: max relative difference 1.4e-14
+kappa numerical vs. analytic sigma/2 - 1 - sigma'/(2 sigma): max difference for sigma > 1e-3: 3.02e-02
+Horizons (R, kappa_surf): [(0.67639, -5e-06), (1.98465, 0.221076)]; domain of the Moreno-Sarbach theorem: r > r_h = 1.98465
+Outside the horizon: min L = 2.902e-63 > 0: True; min L_F = 8.314e-51 > 0: True; kappa from 5.8631 to 11.0000 (> 0: True); sigma from 16.626 to 24.000
+Inside the horizon (informational, the theorem does not apply): kappa < 0 for R in [0.0319, 1.6303] (core sigma->0 and the dip sigma=1: kappa -> -1 and -0.5); min kappa = -2.999
+l=2: outside the horizon min S11 = 1.224e-05, min S22 = 1.351e-04, min det S = 1.654e-09, min a = 0.009; sufficient condition (48) 2N kappa <= l(l+1) holds everywhere: False (violated for R > 2.777, but there det S >= 1.654e-09 > 0 by direct check)
+l=3: outside the horizon min S11 = 2.453e-05, min S22 = 2.702e-04, min det S = 6.628e-09, min a = 0.009; sufficient condition (48) 2N kappa <= l(l+1) holds everywhere: False (violated for R > 4.402, but there det S >= 6.628e-09 > 0 by direct check)
+l=4: outside the horizon min S11 = 4.091e-05, min S22 = 4.503e-04, min det S = 1.842e-08, min a = 0.009; sufficient condition (48) 2N kappa <= l(l+1) holds everywhere: False (violated for R > 22.000, but there det S >= 1.842e-08 > 0 by direct check)
+Weak field (R > 3M): L ~ F^6.00 (expected s_end/4 = 6): there is no Maxwell term -- the 'magnetic charge' Q does not source a Coulomb field; field energy density ~ R^-24
+Theory constants: L_max = 4 pi rho_c = 20.4222 (= 3/(2 ell^2)), F_1 = Q^2/(2 R1^4) = 169.7 (at Q = 1). Family of solutions of the theory at varying Q: R1 ∝ Q^(1/2), M ∝ Q^(3/2), ell = const.
+  Q/Q* = 0.98: M/M* = 0.9702, horizons (R, kappa): [(0.9166, -0.10004), (1.9189, 0.21701)]
+  Q/Q* = 1.00: M/M* = 1.0000, horizons (R, kappa): [(0.6764, -0.0), (1.9846, 0.22108)]
+  Q/Q* = 1.02: M/M* = 1.0301, horizons (R, kappa): [(0.4948, -0.17521), (2.0493, 0.22219)]

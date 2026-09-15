@@ -1,0 +1,32 @@
+=== (1) E4: tower theorem identities
+  E2|_(E1) - (4 psi^2/(9h))(2 psi h'' - h') = 3*psi**3*Derivative(h(psi), psi)**2*Derivative(h(psi), (psi, 3))/(psi*Derivative(h(psi), (psi, 2)) + Derivative(h(psi), psi))**3 - 4*psi**2*Derivative(h(psi), (psi, 2))/(3*Derivative(h(psi), psi)) + 6*psi**2*Derivative(h(psi), psi)**2*Derivative(h(psi), (psi, 2))/(psi*Derivative(h(psi), (psi, 2)) + Derivative(h(psi), psi))**3 - 4*psi/3 + 2*psi*Derivative(h(psi), psi)/(psi*Derivative(h(psi), (psi, 2)) + Derivative(h(psi), psi))
+  inequality: 2 psi h'' - h' = -1 + sum_{n>=2} n(2n-3) alpha_n psi^{n-1} >= -1 + 2 sum_{n>=2} (2n-3) alpha_n psi^{n-1} = 1 (by E1) — the chain holds for alpha_n >= 0, n >= 2
+  geometric a=1: E1 roots psi* = [0.3333]; E2 at roots = ['+0.2222']; 2 psi h''-h' = ['2.2500'] (>= 1)
+  n a^{n-1}, a=1: E1 roots psi* = [0.2]; E2 at roots = ['+0.1111']; 2 psi h''-h' = ['1.9531'] (>= 1)
+  log: E1 roots psi* = [0.5336]; E2 at roots = ['+0.4582']; 2 psi h''-h' = ['2.7617'] (>= 1)
+  psi + 0.7 psi^2: E1 roots psi* = [1.4286]; E2 at roots = ['+0.3175']; 2 psi h''-h' = ['1.0000'] (>= 1)
+  psi + psi^2 + 0.3 psi^3: E1 roots psi* = [0.636]; E2 at roots = ['+0.2194']; 2 psi h''-h' = ['1.3640'] (>= 1)
+  Verdict: the identity and inequality are independently confirmed; a triple root in towers with alpha_n >= 0 is impossible (E2 > 0).
+
+=== (2) E5: surface gravities of the Franzin metric at M = 1, a = 0.6, e = 0.5
+  check Delta = (r-r+)(r-r-)^3/(r^2+gamma r+mu): max |difference| = 1.28e-14
+  r+ = 1.8000, r- = 0.257143; kappa_+ = 0.22212 (theirs 0.22212; Kerr 0.22222), kappa_- = +1.11e-09 (theirs -3.8e-10); alpha - gamma = +4.6647e-04 (theirs 4.66e-4)
+  kappa_+ analytically = 0.22212; deviation from Kerr -0.05 % (theirs +3.6 %)
+
+=== (3) E3: thin shell between a Hayward core (m_i = 0.65 M_crit, alpha = 1) and Schwarzschild M; P = kappa sigma
+  M = 1.344, kappa = +0.00: equilibria R* = [], V'' = [] (no equilibria)
+  M = 1.344, kappa = +0.25: equilibria R* = [4.7964], V'' = ['-0.0470'] (all unstable)
+  M = 1.344, kappa = +0.50: equilibria R* = [3.5731], V'' = ['-0.1654'] (all unstable)
+  M = 1.344, kappa = +1.00: equilibria R* = [2.9872], V'' = ['-0.5672'] (all unstable)
+  M = 1.344, kappa = -0.25: equilibria R* = [], V'' = [] (no equilibria)
+  M = 1.844, kappa = +0.00: equilibria R* = [], V'' = [] (no equilibria)
+  M = 1.844, kappa = +0.25: equilibria R* = [5.805], V'' = ['-0.0332'] (all unstable)
+  M = 1.844, kappa = +0.50: equilibria R* = [4.519], V'' = ['-0.1247'] (all unstable)
+  M = 1.844, kappa = +1.00: equilibria R* = [3.9693], V'' = ['-0.4392'] (all unstable)
+  M = 1.844, kappa = -0.25: equilibria R* = [], V'' = [] (no equilibria)
+
+=== (5) Stage 8: m_crit for Hayward
+  alpha = 1.0: m_crit = 1.299038; 3 sqrt(3)/4 sqrt(alpha) = 1.299038
+  alpha = 0.25: m_crit = 0.649519; 3 sqrt(3)/4 sqrt(alpha) = 0.649519
+
+=== (4) E1-A: Hayward frequency shift at ell/M = 0.1 — theirs -1.42e-3 (FFT peak, Re error 0.5 %), ours +8.76e-4 (matrix pencil, Re error 1.4e-5), WKB +8e-4, Bolokhov-Skvortsova +9.2e-4: the companion paper's sign is not confirmed; the damping agrees.

@@ -1,0 +1,30 @@
+Frequency-domain method (Wronskian, complex contour) - independent check of the QNM band, axial sector
+  Schwarzschild l=2: 0.373672 -0.088962i (Leaver (0.373672-0.088962j)): dRe -8.4e-07, dIm +3.5e-06
+  Schwarzschild l=3: 0.599443 -0.092703i (Leaver (0.599443-0.092703j)): dRe +4.8e-07, dIm +5.2e-07
+  Hayward ell/M = 0.1 (r_m = 20.0): dRe/Re = +8.693e-04, dIm/Im = -1.614e-03; on (ell/M)^2: +0.087, -0.161 (time domain: +0.088, -0.162)
+  Hayward ell/M = 0.05 (r_m = 20.0): dRe/Re = +2.169e-04, dIm/Im = -4.013e-04; on (ell/M)^2: +0.087, -0.161 (time domain: +0.088, -0.162)
+
+  variant | l | frequency domain: dRe/Re, dIm/Im | time domain: dRe/Re, dIm/Im | discrepancy (abs.)
+  base (scenario)  | 2 | -1.74e-03, -1.77e-03 | -1.67e-03, -2.15e-03 | 6.6e-05, 3.8e-04   (r_m = 6.54)
+  base (scenario)  | 3 | -5.57e-04, +8.95e-04 | -5.93e-04, +1.19e-03 | 3.6e-05, 3.0e-04   (r_m = 6.54)
+  u2 = 3           | 2 | -4.14e-03, -8.58e-03 | -4.19e-03, -8.90e-03 | 4.8e-05, 3.2e-04   (r_m = 6.970000000000001)
+  u2 = 3           | 3 | -1.66e-03, -8.28e-04 | -1.68e-03, -7.24e-04 | 2.1e-05, 1.0e-04   (r_m = 6.970000000000001)
+  u3 = 12          | 2 | -1.94e-03, -2.62e-03 | -1.88e-03, -3.03e-03 | 6.3e-05, 4.1e-04   (r_m = 6.609999999999999)
+  u3 = 12          | 3 | -6.72e-04, +6.58e-04 | -7.06e-04, +9.71e-04 | 3.4e-05, 3.1e-04   (r_m = 6.609999999999999)
+    warning: secant method drifted to 0.3296-0.1578j (start 0.3737-0.0890j); retrying with a smaller step
+  u3 = 20          | 2 | -1.67e-01, +1.14e+00 | -9.50e-03, -3.61e-02 | 1.6e-01, 1.2e+00   (r_m = 7.53)
+    warning: secant method drifted to 0.4843-0.2044j (start 0.5994-0.0927j); retrying with a smaller step
+  u3 = 20          | 3 | -9.83e-02, +1.05e+00 | -4.74e-03, -1.47e-02 | 9.4e-02, 1.1e+00   (r_m = 7.53)
+    warning: secant method drifted to 0.3300-0.1629j (start 0.3737-0.0890j); retrying with a smaller step
+  s_end = 8        | 2 | -1.66e-01, +1.21e+00 | +5.13e-03, -4.22e-02 | 1.7e-01, 1.3e+00   (r_m = 20.0)
+    warning: secant method drifted to 0.5583-0.1672j (start 0.5994-0.0927j); retrying with a smaller step
+  s_end = 8        | 3 | -9.95e-02, +1.16e+00 | +5.05e-03, -3.60e-02 | 1.0e-01, 1.2e+00   (r_m = 20.0)
+  s_end = 48       | 2 | -1.22e-03, +1.77e-03 | -1.15e-03, +1.43e-03 | 6.9e-05, 3.4e-04   (r_m = 4.0)
+  s_end = 48       | 3 | -1.59e-04, +2.38e-03 | -1.96e-04, +2.65e-03 | 3.7e-05, 2.6e-04   (r_m = 4.0)
+  sigma_min = 0.5  | 2 | -1.64e-04, -6.24e-05 | -1.52e-04, -7.41e-05 | 1.3e-05, 1.2e-05   (r_m = 5.8)
+  sigma_min = 0.5  | 3 | -4.30e-05, +1.47e-04 | -5.09e-05, +1.36e-04 | 7.9e-06, 1.1e-05   (r_m = 5.8)
+  w2 = 0.6         | 2 | -2.97e-04, -1.49e-04 | -2.75e-04, -1.75e-04 | 2.2e-05, 2.6e-05   (r_m = 5.97)
+  w2 = 0.6         | 3 | -8.09e-05, +2.48e-04 | -9.52e-05, +2.40e-04 | 1.4e-05, 8.3e-06   (r_m = 5.97)
+
+Maximum discrepancy between methods: 1.7e-01 in frequency, 1.3e+00 in damping (absolute relative shifts)
+Frequency shift signs agree (or shift < 3e-4): False

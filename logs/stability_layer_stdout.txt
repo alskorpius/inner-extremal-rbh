@@ -1,0 +1,13 @@
+Curvature transition layer (M=1): transverse effective sound speed along the profile
+  B_c/2M=0.5, δ/B_c=0.3: c_perp^2 in [-3.29, 9.83]; c_perp^2<0 on R∈[0.001, 1.1266355]; c_perp^2>1 on R∈[1.2161425, 3.4]; sign changes of d(Delta)/d(rho): 1
+  B_c/2M=0.5, δ/B_c=0.1: c_perp^2 in [-9.27, 16.5]; c_perp^2<0 on R∈[0.19999999999999996, 1.0146666666666668]; c_perp^2>1 on R∈[1.0250666666666666, 1.8]; sign changes of d(Delta)/d(rho): 1
+  B_c/2M=0.5, δ/B_c=0.03: c_perp^2 in [-31.9, 39.8]; c_perp^2<0 on R∈[0.76, 1.00128]; c_perp^2>1 on R∈[1.00232, 1.24]; sign changes of d(Delta)/d(rho): 1
+  B_c/2M=0.2, δ/B_c=0.3: c_perp^2 in [-3.29, 9.83]; c_perp^2<0 on R∈[0.001, 0.4506025]; c_perp^2>1 on R∈[0.48638950000000003, 1.3599999999999999]; sign changes of d(Delta)/d(rho): 1
+  B_c/2M=0.2, δ/B_c=0.1: c_perp^2 in [-9.27, 16.5]; c_perp^2<0 on R∈[0.07999999999999996, 0.4058666666666667]; c_perp^2>1 on R∈[0.4100266666666667, 0.7200000000000001]; sign changes of d(Delta)/d(rho): 1
+  B_c/2M=0.2, δ/B_c=0.03: c_perp^2 in [-31.9, 39.8]; c_perp^2<0 on R∈[0.30400000000000005, 0.40051200000000003]; c_perp^2>1 on R∈[0.400928, 0.496]; sign changes of d(Delta)/d(rho): 1
+
+Controls: Hayward ell=2/3, Dymnikova r*=0.96 (whole profile 0.001..3)
+  Hayward ell=2/3: c_perp^2 in [-2.5, 1.86]; c_perp^2<0 on R∈[0.001, 1.035655]; c_perp^2>1 on R∈[1.4600134999999999, 3.0]; sign changes of d(Delta)/d(rho): 1
+  Dymnikova r*=0.96: c_perp^2 in [-2.5, 43.1]; c_perp^2<0 on R∈[0.001, 1.1396203333333332]; c_perp^2>1 on R∈[1.275575, 3.0]; sign changes of d(Delta)/d(rho): 1
+
+-> <repo>\inner-extremal-rbh\data\stability

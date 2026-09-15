@@ -1,0 +1,122 @@
+[
+  {
+    "label": "B_c/2M=0.5, δ/B_c=0.3",
+    "cs2_perp_min": -3.2877798765351263,
+    "cs2_perp_max": 9.832386984852796,
+    "region_cs2_neg": [
+      0.001,
+      1.1266355
+    ],
+    "region_cs2_gt1": [
+      1.2161425,
+      3.4
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "B_c/2M=0.5, δ/B_c=0.1",
+    "cs2_perp_min": -9.266347003098739,
+    "cs2_perp_max": 16.498662174060044,
+    "region_cs2_neg": [
+      0.19999999999999996,
+      1.0146666666666668
+    ],
+    "region_cs2_gt1": [
+      1.0250666666666666,
+      1.8
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "B_c/2M=0.5, δ/B_c=0.03",
+    "cs2_perp_min": -31.92841958992876,
+    "cs2_perp_max": 39.83199286645585,
+    "region_cs2_neg": [
+      0.76,
+      1.00128
+    ],
+    "region_cs2_gt1": [
+      1.00232,
+      1.24
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "B_c/2M=0.2, δ/B_c=0.3",
+    "cs2_perp_min": -3.287780256728299,
+    "cs2_perp_max": 9.832385258006271,
+    "region_cs2_neg": [
+      0.001,
+      0.4506025
+    ],
+    "region_cs2_gt1": [
+      0.48638950000000003,
+      1.3599999999999999
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "B_c/2M=0.2, δ/B_c=0.1",
+    "cs2_perp_min": -9.266347003085583,
+    "cs2_perp_max": 16.49866226428665,
+    "region_cs2_neg": [
+      0.07999999999999996,
+      0.4058666666666667
+    ],
+    "region_cs2_gt1": [
+      0.4100266666666667,
+      0.7200000000000001
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "B_c/2M=0.2, δ/B_c=0.03",
+    "cs2_perp_min": -31.92841958988099,
+    "cs2_perp_max": 39.83198545614213,
+    "region_cs2_neg": [
+      0.30400000000000005,
+      0.40051200000000003
+    ],
+    "region_cs2_gt1": [
+      0.400928,
+      0.496
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "Hayward ell=2/3",
+    "cs2_perp_min": -2.5,
+    "cs2_perp_max": 1.856538989208259,
+    "region_cs2_neg": [
+      0.001,
+      1.035655
+    ],
+    "region_cs2_gt1": [
+      1.4600134999999999,
+      3.0
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  },
+  {
+    "label": "Dymnikova r*=0.96",
+    "cs2_perp_min": -2.5000002708786493,
+    "cs2_perp_max": 43.09623430962335,
+    "region_cs2_neg": [
+      0.001,
+      1.1396203333333332
+    ],
+    "region_cs2_gt1": [
+      1.275575,
+      3.0
+    ],
+    "dDelta_drho_sign_changes": 1,
+    "cs2_radial": -1.0
+  }
+]

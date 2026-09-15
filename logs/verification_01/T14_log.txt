@@ -1,0 +1,46 @@
+T14: Polyakov tensor (2D, Unruh state) for the scenario profile, Hayward, and the perturbed scenario
+Schwarzschild control: T_uu(∞) = 4.144660e-04 vs 1/(768π) = 4.144660e-04; T_vv(R₊) = -4.144660e-04 vs −1/(768π) = -4.144660e-04; T_uu(R₊) = 0.0e+00; conservation residual 1.2e-03
+
+Scenario (triple root): R₋ = 0.677435 (κ₋ = -5.377e-08), R₊ = 1.984648 (κ₊ = 0.22108); roots of f: 4, touch at 0.67781
+  T_uu(R₋) = +3.24110e-04 vs (κ₊²−κ₋²)/48π = +3.24110e-04; T_vv(R₋) = -1.91759e-17 vs −κ₋²/48π = -1.91759e-17; T_uv(R₋) = +0.00e+00
+  T_uu(R₊) = +0.00e+00 (regularity: 0), T_vv(R₊) = -3.24110e-04 vs −κ₊²/48π = -3.24110e-04
+  flux T_uu − T_vv: min 3.241101e-04, max 3.241101e-04 (expected κ₊²/48π = 3.241101e-04); T_uu(40) = 3.23911e-04
+  signs in the trapped region R₋<r<R₊: T_uu ∈ [-3.16e-04, +3.27e-04], T_vv ∈ [-6.40e-04, +3.33e-06], T_uv ∈ [-6.29e-04, +8.03e-05]
+  conservation residual (relative, max): inside 1.7e-04, outside 3.8e-03
+  ρ_ff (E = 1) as r → R₋⁺: sign +; local exponent |ρ_ff| ∝ (r−R₋)^p: [1e-05,0.0001]: -2.00, [0.0001,0.001]: -4.39, [0.003,0.03]: -6.10; f″(R₋) = +2.47e-03, f‴(R₋)/6 = -2.1566 (f ≈ κ₋·2d + f″d²/2 − a₃d³); asymptotics 4E²T_uu(R₋)/f²: ratio to direct evaluation at d = 1e-3: 1.0006
+
+Hayward ℓ/M = 0.271: R₋ = 0.293369 (κ₋ = -2.659e+00), R₊ = 1.961837 (κ₊ = 0.24027); roots of f: 2, touch at 0.29337
+  T_uu(R₋) = -4.64919e-02 vs (κ₊²−κ₋²)/48π = -4.64919e-02; T_vv(R₋) = -4.68748e-02 vs −κ₋²/48π = -4.68748e-02; T_uv(R₋) = -2.16e-18
+  T_uu(R₊) = +0.00e+00 (regularity: 0), T_vv(R₊) = -3.82843e-04 vs −κ₊²/48π = -3.82843e-04
+  flux T_uu − T_vv: min 3.828434e-04, max 3.828434e-04 (expected κ₊²/48π = 3.828434e-04); T_uu(40) = 3.82644e-04
+  signs in the trapped region R₋<r<R₊: T_uu ∈ [-6.09e-02, +2.17e-04], T_vv ∈ [-6.13e-02, -1.65e-04], T_uv ∈ [-5.08e-02, +1.33e-03]
+  conservation residual (relative, max): inside 1.8e-04, outside 1.0e-03
+  ρ_ff (E = 1) as r → R₋⁺: sign −; local exponent |ρ_ff| ∝ (r−R₋)^p: [1e-05,0.0001]: -2.00, [0.0001,0.001]: -2.00, [0.003,0.03]: -1.95; f″(R₋) = +2.94e+00, f‴(R₋)/6 = +30.7922 (f ≈ κ₋·2d + f″d²/2 − a₃d³); asymptotics 4E²T_uu(R₋)/f²: ratio to direct evaluation at d = 1e-3: 1.0027
+
+Perturbed scenario (ε = 3.39e-04): R₋ = 0.625223 (κ₋ = -1.000e-02), R₊ = 1.985415 (κ₊ = 0.22115); roots of f: 2, touch at 0.62522
+  T_uu(R₋) = +3.23676e-04 vs (κ₊²−κ₋²)/48π = +3.23676e-04; T_vv(R₋) = -6.63146e-07 vs −κ₋²/48π = -6.63146e-07; T_uv(R₋) = +0.00e+00
+  T_uu(R₊) = +0.00e+00 (regularity: 0), T_vv(R₊) = -3.24339e-04 vs −κ₊²/48π = -3.24339e-04
+  flux T_uu − T_vv: min 3.243389e-04, max 3.243389e-04 (expected κ₊²/48π = 3.243389e-04); T_uu(40) = 3.24139e-04
+  signs in the trapped region R₋<r<R₊: T_uu ∈ [-3.18e-04, +3.29e-04], T_vv ∈ [-6.42e-04, +4.55e-06], T_uv ∈ [-6.31e-04, +8.12e-05]
+  conservation residual (relative, max): inside 1.7e-04, outside 3.8e-03
+  ρ_ff (E = 1) as r → R₋⁺: sign +; local exponent |ρ_ff| ∝ (r−R₋)^p: [1e-05,0.0001]: -2.00, [0.0001,0.001]: -1.99, [0.003,0.03]: -1.53; f″(R₋) = +8.08e-01, f‴(R₋)/6 = -3.0110 (f ≈ κ₋·2d + f″d²/2 − a₃d³); asymptotics 4E²T_uu(R₋)/f²: ratio to direct evaluation at d = 1e-3: 1.0001
+
+Divergence coefficient T_uu(R₋) = (κ₊² − κ₋²)/48π across the family of perturbations m→(1+ε)m:
+  ε = 0e+00: κ₋ = -5.3774e-08, κ₊ = 0.22108, (κ₊²−κ₋²)/48π = +3.2411e-04; κ₋ ∝ ε^(2/3): κ₋/ε^(2/3) = +nan
+  ε = 1e-05: κ₋ = -9.1641e-04, κ₊ = 0.22108, (κ₊²−κ₋²)/48π = +3.2411e-04; κ₋ ∝ ε^(2/3): κ₋/ε^(2/3) = -1.974
+  ε = 1e-04: κ₋ = -4.3446e-03, κ₊ = 0.22110, (κ₊²−κ₋²)/48π = +3.2405e-04; κ₋ ∝ ε^(2/3): κ₋/ε^(2/3) = -2.017
+  ε = 1e-03: κ₋ = -2.1061e-02, κ₊ = 0.22130, (κ₊²−κ₋²)/48π = +3.2184e-04; κ₋ ∝ ε^(2/3): κ₋/ε^(2/3) = -2.106
+  ε = 1e-02: κ₋ = -1.0680e-01, κ₊ = 0.22305, (κ₊²−κ₋²)/48π = +2.5427e-04; κ₋ ∝ ε^(2/3): κ₋/ε^(2/3) = -2.301
+  ε = 3e-02: κ₋ = -2.3908e-01, κ₊ = 0.22523, (κ₊²−κ₋²)/48π = -4.2660e-05; κ₋ ∝ ε^(2/3): κ₋/ε^(2/3) = -2.476
+  coefficient zero at |κ₋| = κ₊ = 0.2211 (for Hayward ℓ = 0.271: κ₋ = -2.659 — |κ₋| > κ₊, coefficient -4.649e-02 < 0)
+
+Dimensional estimate (ħ restored; 4D density = T_2D ħc/(4πR²), compared with ρ_c = 3c⁴/(8πGℓ²)):
+  M = 3 M☉: required ρ_ff = 7.04e+77 (units M⁻²), f_crit = 4.29e-41, layer |r−R₋| = 2.71e-14 M = 1.20e-10 m; (l_P² GM/c²)^(1/3) = 1.0e-22 m; project estimate (McMaken 58a): 3 M☉ 1.3e-10, 10 M☉ 2.8e-10, Sgr A* 1.5e-6 m
+  M = 10 M☉: required ρ_ff = 7.82e+78 (units M⁻²), f_crit = 1.29e-41, layer |r−R₋| = 1.81e-14 M = 2.68e-10 m; (l_P² GM/c²)^(1/3) = 1.6e-22 m; project estimate (McMaken 58a): 3 M☉ 1.3e-10, 10 M☉ 2.8e-10, Sgr A* 1.5e-6 m
+  M = 4e+06 M☉: required ρ_ff = 1.25e+90 (units M⁻²), f_crit = 3.22e-47, layer |r−R₋| = 2.46e-16 M = 1.45e-06 m; (l_P² GM/c²)^(1/3) = 1.2e-20 m; project estimate (McMaken 58a): 3 M☉ 1.3e-10, 10 M☉ 2.8e-10, Sgr A* 1.5e-6 m
+
+Dissipation channel:
+  10 M☉: semiclassical luminosity L = κ₊²ħc⁶/(48πG²M²) = 1.41e-29 W (Schwarzschild: 1.80e-29 W); required negative ingoing flux at Eddington accretion 0.2 Ṁc² = 2.27e+31 W; ratio 6.2e-61
+  sign: T_vv(R₊) = -3.241e-04 < 0 — ingoing negative-energy flux (partners of the Hawking quanta), same sign as required; T_vv in the trapped region: [-6.40e-04, +3.33e-06]
+
+Plot: <repo>\inner-extremal-rbh\data\verification_01\T14_rset.png

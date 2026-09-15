@@ -1,0 +1,60 @@
+(1) KS equations on the base profile: identity checks
+  (C): max|LHS/(8πρ) - 1| = 8.9e-16;  (X) with p_x = -ρ: 8.9e-16;  (Θ) with p_⊥ = -ρ - bρ'/2: 1.3e-12
+  Schwarzschild: LHS_C = 0.0e+00 (=0);  de Sitter: LHS_C·ℓ²/3 = 1.000000 (=1);  conservation (S) with p_x = -ρ ⇔ dρ/db = -2(ρ+p_⊥)/b -- an identity by the definition of p_⊥
+  base profile roots: [0.677435, 0.67763, 0.677811, 1.984648] (R- = 0.677435, R+ = 1.984648)
+  trajectory b(τ) from R+: over τ = 60.0 M it reached b = 0.67820 (R- = 0.67744); max|ḃ² + f(b)| = 7.3e-06 -- the profile f(b) = -ḃ² is recovered as a single trajectory
+
+(2) Phase portrait and proper time to R-
+  τ(R- + x): x = [0.3, 0.1, 0.03, 0.01, 0.003, 0.001]
+           τ = [3.947, 6.097, 9.856, 15.811, 27.834, 50.39];  slope d ln τ/d ln x (x ≤ 3e-2) = -0.479 (expected -1/2 for f ∝ x³)
+  ε = +0e+00: roots 4, R- = 0.67744, R+ = 1.98465, κ- = -5.38e-08, b̈(R-) = -f'/2 = +5.38e-08, τ(R+→R-) = ∞
+  ε = +1e-04: roots 2, R- = 0.64241, R+ = 1.98487, κ- = -4.34e-03, b̈(R-) = -f'/2 = +4.34e-03, τ(R+→R-) = 16.897316121203534
+  ε = -1e-04: roots 2, R- = 0.71435, R+ = 1.98442, κ- = -4.00e-03, b̈(R-) = -f'/2 = +4.00e-03, τ(R+→R-) = 10.6738476636067
+  ε = +1e-02: roots 2, R- = 0.52510, R+ = 2.00705, κ- = -1.07e-01, b̈(R-) = -f'/2 = +1.07e-01, τ(R+→R-) = 8.310523427445913
+  ε = -1e-02: roots 2, R- = 0.86590, R+ = 1.96178, κ- = -6.95e-02, b̈(R-) = -f'/2 = +6.95e-02, τ(R+→R-) = 5.754714558431114
+  ε = +1e-01: roots 2, R- = 0.38375, R+ = 2.19711, κ- = -6.04e-01, b̈(R-) = -f'/2 = +6.04e-01, τ(R+→R-) = 5.8090983399421
+  ε = -1e-01: roots 2, R- = 1.26023, R+ = 1.69933, κ- = -1.09e-01, b̈(R-) = -f'/2 = +1.09e-01, τ(R+→R-) = 4.2546089562255185
+  slope d ln τ_tot / d ln|ε| for sign(ε) = +1: -0.155 (analytics: -1/6)
+  slope d ln τ_tot / d ln|ε| for sign(ε) = -1: -0.133 (analytics: -1/6)
+  plot: <repo>\inner-extremal-rbh\data\verification_02\T26_phase.png
+
+(3a) Fluid with EOS p_x = -ρ, p_⊥ = w(ρ)ρ: (S) gives d ln ρ/d ln b = -2(1 + w(ρ)) ⇒ σ = 2(1 + w); the equation is autonomous in ln b ⇒ the solutions are shifts ρ(b) = P(b/b₀) (one free scale b₀); triple root: w(ρ*) = 0 at the point b* = ξ* b₀ and 8πb*²ρ* = 1 ⇒ b₀ is fixed ⇒ M* = m(∞) is unique: codimension 1. A scale-free EOS (w = const ⇔ power-law profile) has no slope dip ⇒ no triple root.
+  base: w(ρ) ranges from -0.997 (core, σ = 0) to +6.201 (cutoff); descending zero of w (σ = 2, p_⊥ = 0) at b = 0.676 (R- = 0.677)
+  scale shift b₀ → 1.01 b₀ at the same EOS: 8πR-²ρ(R-) → 1.0201, M → 1.01 M: κ- ≠ 0 by T1 (ε ≈ 0.01 → κ- ≈ -0.093)
+
+(3b) Scalar field φ(τ) with a potential in KS: Nariai fixed points (b = b*, φ = φ*, V'(φ*) = 0, 1/b*² = 8πV*, h = ±1/b*)
+  φ* = 1.0 (minimum of V), V* = 0.0500, b* = 0.8921, h* = +1.1210: |rhs| = 9.9e-17, |C| = 2.2e-16
+      Jacobian eigenvalues: [-2.242 +0.j    -1.121 +0.j    -0.5605-0.697j -0.5605+0.697j
+  1.121 +0.j   ]
+      analytics {±1/b*, -2h*, roots of s²+h*s+V''}: [-2.242 +0.j    -1.121 +0.j    -0.5605-0.697j -0.5605+0.697j
+  1.121 +0.j   ]  -> max Re = +1.1210 > 0: saddle
+  φ* = 1.0 (minimum of V), V* = 0.0500, b* = 0.8921, h* = -1.1210: |rhs| = 9.9e-17, |C| = 2.2e-16
+      Jacobian eigenvalues: [-1.121 +0.j     0.5605-0.697j  0.5605+0.697j  1.121 +0.j
+  2.242 +0.j   ]
+      analytics {±1/b*, -2h*, roots of s²+h*s+V''}: [-1.121 +0.j     0.5605-0.697j  0.5605+0.697j  1.121 +0.j
+  2.242 +0.j   ]  -> max Re = +2.2420 > 0: saddle
+      start δb/b* = +1e-03, ḃ = 0.001: over τ = 8.06 (9.0 b*) -- b → ∞ (sphere inflates); |C| at the end 2.1e-11; φ at the end 1.0000
+      start δb/b* = -1e-03, ḃ = -0.001: over τ = 5.65 (6.3 b*) -- b → 0 (sphere collapses); |C| at the end 5.4e-08; φ at the end 1.0000
+  φ* = 0.0 (maximum of V), V* = 0.1500, b* = 0.5150, h* = +1.9416: |rhs| = 4.4e-16, |C| = 4.4e-16
+      Jacobian eigenvalues: [-3.8833 -2.1295 -1.9416  0.1878  1.9416]
+      analytics {±1/b*, -2h*, roots of s²+h*s+V''}: [-3.8833 -2.1295 -1.9416  0.1878  1.9416]  -> max Re = +1.9416 > 0: saddle
+  φ* = 0.0 (maximum of V), V* = 0.1500, b* = 0.5150, h* = -1.9416: |rhs| = 4.4e-16, |C| = 4.4e-16
+      Jacobian eigenvalues: [-1.9416 -0.1878  1.9416  2.1295  3.8833]
+      analytics {±1/b*, -2h*, roots of s²+h*s+V''}: [-1.9416 -0.1878  1.9416  2.1295  3.8833]  -> max Re = +3.8833 > 0: saddle
+      start δb/b* = +1e-03, ḃ = 0.001: over τ = 4.66 (9.0 b*) -- b → ∞ (sphere inflates); |C| at the end 7.1e-11; φ at the end 0.0000
+      start δb/b* = -1e-03, ḃ = -0.001: over τ = 3.26 (6.3 b*) -- b → 0 (sphere collapses); |C| at the end 1.6e-07; φ at the end 0.0000
+
+(3c) k-essence L = K(X), X = φ̇²/2, K = -X + X²/(2X*): ghost condensate K'(X*) = 0, ρ* = -K(X*) = X*/2, p* = -ρ*
+  branch C = 0: X ≡ X* exactly for any a, b -- the source is identically Λ = 8πρ* (Schwarzschild-de Sitter in the T-region: f = 1 - 2M/b - Λb²/3, no more than two positive roots, no degenerate inner one)
+  C = 1e-03: b = [1.9    1.5    1.2    1.     0.8    0.7    0.68   0.6775]
+            a b² = [6.951e-01 8.449e-01 4.448e-01 1.943e-01 3.597e-02 2.360e-03 7.805e-05
+ 1.530e-06]
+            X/X* − 1 = [1.438e-03 1.183e-03 2.246e-03 5.133e-03 2.743e-02 3.630e-01 5.161e+00
+ 7.499e+01]  -- diverges as a → 0 (any horizon), regular only at C = 0
+  C = 1e-02: b = [1.9    1.5    1.2    1.     0.8    0.7    0.68   0.6775]
+            a b² = [6.951e-01 8.449e-01 4.448e-01 1.943e-01 3.597e-02 2.360e-03 7.805e-05
+ 1.530e-06]
+            X/X* − 1 = [1.429e-02 1.177e-02 2.223e-02 5.022e-02 2.488e-01 2.324e+00 2.509e+01
+ 3.493e+02]  -- diverges as a → 0 (any horizon), regular only at C = 0
+
+Summary (3): a regular exit from the T-region = a trajectory asymptotically approaching a fixed point (b*, ḃ = 0) (a degenerate horizon in the static picture). For a smooth autonomous system such trajectories form the stable manifold of a saddle (measure zero) or a degenerate point (triple root: coefficient 1/b*² + 4πb*ρ'(b*) = 0) -- there is no open set, by uniqueness of solutions. A sink would require a term with ḃ in p_x (a dissipative, non-Lagrangian medium) or a non-smooth right-hand side.

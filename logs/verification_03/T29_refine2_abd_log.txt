@@ -1,0 +1,30 @@
+(a) Sensitivity of the landing to the starting offset δ from R₊ (Eckart, variant I, n = 0, ζ₀ = −0.2, ε = 0)
+    δ = 1e-02: rho<0, b* = 0.4717, m(b*) = 0.3708, W_visc = -0.1175, W_adiab = +0.1160, |Π|max = 4.51e-01, fraction of τ with Θ > 0: 0.10, min NEC_⊥ -18714.57
+    δ = 1e-03: asymptotic, b* = 1.1861, m(b*) = 0.5930, W_visc = -0.0192, W_adiab = +0.0462, |Π|max = 1.46e+00, fraction of τ with Θ > 0: 0.00, min NEC_⊥ +0.97
+    δ = 1e-04: asymptotic, b* = 1.5230, m(b*) = 0.7615, W_visc = -0.0072, W_adiab = +0.0232, |Π|max = 3.95e+00, fraction of τ with Θ > 0: 0.01, min NEC_⊥ +0.68
+    δ = 1e-05: asymptotic, b* = 1.5729, m(b*) = 0.7865, W_visc = -0.0054, W_adiab = +0.0202, |Π|max = 6.48e+00, fraction of τ with Θ > 0: 0.01, min NEC_⊥ +0.73
+    δ = 1e-06: asymptotic, b* = 1.5795, m(b*) = 0.7897, W_visc = -0.0051, W_adiab = +0.0198, |Π|max = 7.12e+00, fraction of τ with Θ > 0: 0.01, min NEC_⊥ +0.75
+    δ = 1e-07: asymptotic, b* = 1.5802, m(b*) = 0.7901, W_visc = -0.0051, W_adiab = +0.0198, |Π|max = 7.19e+00, fraction of τ with Θ > 0: 0.01, min NEC_⊥ +0.73
+
+(b) Energy balance at the attractor (n = 0, ζ₀ = −0.2, δ = 1e-5): W_visc — energy injected by the −ζΘ term (∫(2|ḃ|/b)Π dτ), W_adiab — adiabatic compression
+    ε = +0e+00: asymptotic, b* = 1.573, m* = 0.786, ρ* = 0.0161, W_visc = -0.0054, W_adiab = +0.0202, Θ > 0 for 1% of the path, min NEC_⊥ +0.73
+    ε = +1e-04: asymptotic, b* = 1.512, m* = 0.756, ρ* = 0.0174, W_visc = -0.0077, W_adiab = +0.0238, Θ > 0 for 1% of the path, min NEC_⊥ +0.67
+    ε = -1e-04: asymptotic, b* = 1.517, m* = 0.758, ρ* = 0.0173, W_visc = -0.0075, W_adiab = +0.0235, Θ > 0 for 1% of the path, min NEC_⊥ +0.67
+    ε = +1e-02: asymptotic, b* = 1.524, m* = 0.762, ρ* = 0.0171, W_visc = -0.0079, W_adiab = +0.0240, Θ > 0 for 1% of the path, min NEC_⊥ +0.64
+    ε = -1e-02: asymptotic, b* = 1.476, m* = 0.738, ρ* = 0.0183, W_visc = -0.0083, W_adiab = +0.0251, Θ > 0 for 1% of the path, min NEC_⊥ +0.63
+    ε = +1e-01: asymptotic, b* = 1.717, m* = 0.859, ρ* = 0.0135, W_visc = -0.0069, W_adiab = +0.0202, Θ > 0 for 1% of the path, min NEC_⊥ +0.55
+    ε = -1e-01: asymptotic, b* = 1.442, m* = 0.721, ρ* = 0.0191, W_visc = -0.0038, W_adiab = +0.0150, Θ > 0 for 1% of the path, min NEC_⊥ +0.60
+
+(d) T1 test (Eckart, n = 0, ζ₀ = −0.2): landing b*, m*, ḃ, b̈ vs ε
+    ε = +1e-05: asymptotic, b* = 1.5653, m* = 0.7826, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.70
+    ε = +1e-04: asymptotic, b* = 1.5123, m* = 0.7562, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.67
+    ε = +1e-03: asymptotic, b* = 1.5446, m* = 0.7723, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.68
+    ε = +1e-02: asymptotic, b* = 1.5239, m* = 0.7619, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.64
+    ε = +3e-02: asymptotic, b* = 1.5595, m* = 0.7797, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.73
+    ε = +1e-01: asymptotic, b* = 1.7171, m* = 0.8585, ḃ = +6e-16, b̈ = +0e+00, min NEC_⊥ +0.55
+    ε = -1e-05: asymptotic, b* = 1.5813, m* = 0.7906, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.76
+    ε = -1e-04: asymptotic, b* = 1.5166, m* = 0.7583, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.67
+    ε = -1e-03: asymptotic, b* = 1.4894, m* = 0.7447, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.66
+    ε = -1e-02: asymptotic, b* = 1.4757, m* = 0.7379, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.63
+    ε = -3e-02: asymptotic, b* = 1.5361, m* = 0.7680, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.70
+    ε = -1e-01: asymptotic, b* = 1.4425, m* = 0.7212, ḃ = +1e-15, b̈ = +0e+00, min NEC_⊥ +0.60

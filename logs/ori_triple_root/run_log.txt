@@ -1,0 +1,78 @@
+Generalized Ori model: m-(v) = m0 - beta/v^p, dR/dv = f-/2, m+' = m-' (f+/f-) A-/A+ (equation (32) CR 2021).
+  [Reissner-Nordstrom e] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Reissner-Nordstrom e = 0.9 (control: expected d ln M+/dv -> |kappa0| - (p+1)/v): horizons (R, kappa) = [(0.56411, -1.36977), (1.43589, 0.21141)]; kappa0 = -1.36977; start R0 = 1.0000, m+(v0) = m-(v0)(1 + 0.0001); p = 11, delta m/m0 = 0.001 at v0 = 20.0; status 0, v_last = 90
+  v =        40: R - r0 = +7.938e-07, f- = -4.471e-07, m+ = nan, M+(v,R) = 1.36911, d ln M+/dv = +8.434e-01, d ln M+/d ln v = +33.742
+  v =        90: R - r0 = +9.284e-11, f- = -2.289e-11, m+ = nan, M+(v,R) = 3.04862e+25, d ln M+/dv = +1.235e+00, d ln M+/d ln v = +111.116
+  v =        90: R - r0 = +9.284e-11, f- = -2.289e-11, m+ = nan, M+(v,R) = 3.04862e+25, d ln M+/dv = +1.235e+00, d ln M+/d ln v = +111.116
+  v =        90: R - r0 = +9.284e-11, f- = -2.289e-11, m+ = nan, M+(v,R) = 3.04862e+25, d ln M+/dv = +1.235e+00, d ln M+/d ln v = +111.116
+  v =        90: R - r0 = +9.284e-11, f- = -2.289e-11, m+ = nan, M+(v,R) = 3.04862e+25, d ln M+/dv = +1.235e+00, d ln M+/d ln v = +111.116
+  v =        90: R - r0 = +9.284e-11, f- = -2.289e-11, m+ = nan, M+(v,R) = 3.04862e+25, d ln M+/dv = +1.235e+00, d ln M+/d ln v = +111.116
+  v =        90: R - r0 = +9.284e-11, f- = -2.289e-11, m+ = nan, M+(v,R) = 3.04862e+25, d ln M+/dv = +1.235e+00, d ln M+/d ln v = +111.116
+  [Hayward ell = 0.3 (e] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Hayward ell = 0.3 (expectation: exponential, then M+ ~ v^{p+1} = v^12): horizons (R, kappa) = [(0.32812, -2.29766), (1.9528, 0.23791)]; kappa0 = -2.29766; start R0 = 1.1405, m+(v0) = m-(v0)(1 + 0.0001); p = 11, delta m/m0 = 0.001 at v0 = 20.0; status 0, v_last = 3e+03
+  v =        40: R - r0 = +2.011e-08, f- = -1.121e-08, m+ = -0.196259, M+(v,R) = 52590.5, d ln M+/dv = +1.979e+00, d ln M+/d ln v = +79.070
+  v =      99.8: R - r0 = +1.167e-12, f- = -1.944e-12, m+ = -0.196259, M+(v,R) = 2.53794e+08, d ln M+/dv = -8.035e-03, d ln M+/d ln v = -0.802
+  v =       999: R - r0 = +1.887e-14, f- = -8.704e-14, m+ = -0.196259, M+(v,R) = 1.21441e+08, d ln M+/dv = -8.573e-08, d ln M+/d ln v = -0.000
+  v =     3e+03: R - r0 = -5.551e-17, f- = +2.220e-16, m+ = -0.196259, M+(v,R) = 1.21428e+08, d ln M+/dv = +0.000e+00, d ln M+/d ln v = +0.000
+  v =     3e+03: R - r0 = -5.551e-17, f- = +2.220e-16, m+ = -0.196259, M+(v,R) = 1.21428e+08, d ln M+/dv = +0.000e+00, d ln M+/d ln v = +0.000
+  v =     3e+03: R - r0 = -5.551e-17, f- = +2.220e-16, m+ = -0.196259, M+(v,R) = 1.21428e+08, d ln M+/dv = +0.000e+00, d ln M+/d ln v = +0.000
+  v =     3e+03: R - r0 = -5.551e-17, f- = +2.220e-16, m+ = -0.196259, M+(v,R) = 1.21428e+08, d ln M+/dv = +0.000e+00, d ln M+/d ln v = +0.000
+  [Scenario (branch A, ] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Scenario (branch A, triple root, ell fixed; kappa0 = 0): horizons (R, kappa) = [(0.67604, -5e-05), (1.98465, 0.22108)]; kappa0 = -0.00005; start R0 = 1.3303, m+(v0) = m-(v0)(1 + 0.0001); p = 11, delta m/m0 = 0.001 at v0 = 50.0; status 0, v_last = 1e+07
+  total change of the m+ parameter over the integration: +1.001e-03 (relative +1.002e-03)
+  v =      99.9: R - r0 = +1.184e-01, f- = -2.775e-03, m+ = 1.0001, M+(v,R) = 0.398332, d ln M+/dv = -1.838e-03, d ln M+/d ln v = -0.184
+  v =      99.9: R - r0 = +1.184e-01, f- = -2.775e-03, m+ = 1.0001, M+(v,R) = 0.398332, d ln M+/dv = -1.838e-03, d ln M+/d ln v = -0.184
+  v =     1e+03: R - r0 = +2.462e-02, f- = -2.527e-05, m+ = 1.0001, M+(v,R) = 0.350361, d ln M+/dv = -1.808e-05, d ln M+/d ln v = -0.018
+  v =     1e+04: R - r0 = +8.485e-03, f- = -7.042e-07, m+ = 1.0001, M+(v,R) = 0.342284, d ln M+/dv = -5.143e-07, d ln M+/d ln v = -0.005
+  v =  9.96e+04: R - r0 = +3.631e-03, f- = -1.941e-08, m+ = 1.0001, M+(v,R) = 0.339857, d ln M+/dv = -1.428e-08, d ln M+/d ln v = -0.001
+  v =  9.98e+05: R - r0 = +1.691e-03, f- = +9.992e-16, m+ = 1.0001, M+(v,R) = 0.338886, d ln M+/dv = +2.396e-17, d ln M+/d ln v = +0.000
+  v =     1e+07: R - r0 = +1.691e-03, f- = +1.110e-16, m+ = 1.0001, M+(v,R) = 0.338886, d ln M+/dv = +3.806e-19, d ln M+/d ln v = +0.000
+  [Scenario, m+(v0) = m] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Scenario, m+(v0) = m-(v0)(1 + -0.0001): horizons (R, kappa) = [(0.67604, -5e-05), (1.98465, 0.22108)]; kappa0 = -0.00005; start R0 = 1.3303, m+(v0) = m-(v0)(1 + -0.0001); p = 11, delta m/m0 = 0.001 at v0 = 50.0; status 0, v_last = 1e+06
+  total change of the m+ parameter over the integration: +9.987e-04 (relative +9.998e-04)
+  v =       100: R - r0 = +1.182e-01, f- = -2.760e-03, m+ = 0.999898, M+(v,R) = 0.398165, d ln M+/dv = -1.829e-03, d ln M+/d ln v = -0.183
+  v =       100: R - r0 = +1.182e-01, f- = -2.760e-03, m+ = 0.999898, M+(v,R) = 0.398165, d ln M+/dv = -1.829e-03, d ln M+/d ln v = -0.183
+  v =       997: R - r0 = +2.467e-02, f- = -2.543e-05, m+ = 0.999899, M+(v,R) = 0.350337, d ln M+/dv = -1.819e-05, d ln M+/d ln v = -0.018
+  v =     1e+04: R - r0 = +8.493e-03, f- = -7.057e-07, m+ = 0.999899, M+(v,R) = 0.342242, d ln M+/dv = -5.154e-07, d ln M+/d ln v = -0.005
+  v =  9.97e+04: R - r0 = +3.631e-03, f- = -1.950e-08, m+ = 0.999899, M+(v,R) = 0.339811, d ln M+/dv = -1.434e-08, d ln M+/d ln v = -0.001
+  v =     1e+06: R - r0 = +1.691e-03, f- = +0.000e+00, m+ = 0.999899, M+(v,R) = 0.338841, d ln M+/dv = +6.518e-17, d ln M+/d ln v = +0.000
+  v =     1e+06: R - r0 = +1.691e-03, f- = +0.000e+00, m+ = 0.999899, M+(v,R) = 0.338841, d ln M+/dv = +6.518e-17, d ln M+/d ln v = +0.000
+  [Scenario, m+(v0) = m] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Scenario, m+(v0) = m-(v0)(1 + 0.01): horizons (R, kappa) = [(0.67604, -5e-05), (1.98465, 0.22108)]; kappa0 = -0.00005; start R0 = 1.3303, m+(v0) = m-(v0)(1 + 0.01); p = 11, delta m/m0 = 0.001 at v0 = 50.0; status 0, v_last = 1e+06
+  total change of the m+ parameter over the integration: +1.129e-03 (relative +1.119e-03)
+  v =       100: R - r0 = +1.182e-01, f- = -2.760e-03, m+ = 1.01012, M+(v,R) = 0.400804, d ln M+/dv = -1.825e-03, d ln M+/d ln v = -0.183
+  v =       100: R - r0 = +1.182e-01, f- = -2.760e-03, m+ = 1.01012, M+(v,R) = 0.400804, d ln M+/dv = -1.825e-03, d ln M+/d ln v = -0.183
+  v =       997: R - r0 = +2.467e-02, f- = -2.543e-05, m+ = 1.01012, M+(v,R) = 0.352718, d ln M+/dv = -1.818e-05, d ln M+/d ln v = -0.018
+  v =     1e+04: R - r0 = +8.493e-03, f- = -7.057e-07, m+ = 1.01012, M+(v,R) = 0.34457, d ln M+/dv = -5.155e-07, d ln M+/d ln v = -0.005
+  v =  9.97e+04: R - r0 = +3.631e-03, f- = -1.950e-08, m+ = 1.01012, M+(v,R) = 0.342122, d ln M+/dv = -1.434e-08, d ln M+/d ln v = -0.001
+  v =     1e+06: R - r0 = +1.691e-03, f- = +0.000e+00, m+ = 1.01012, M+(v,R) = 0.341146, d ln M+/dv = +8.558e-17, d ln M+/d ln v = +0.000
+  v =     1e+06: R - r0 = +1.691e-03, f- = +0.000e+00, m+ = 1.01012, M+(v,R) = 0.341146, d ln M+/dv = +8.558e-17, d ln M+/d ln v = +0.000
+  [Scenario, p = 12, de] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Scenario, p = 12, delta m/m0 = 1e-2: horizons (R, kappa) = [(0.67604, -5e-05), (1.98465, 0.22108)]; kappa0 = -0.00005; start R0 = 1.3303, m+(v0) = m-(v0)(1 + 0.0001); p = 12, delta m/m0 = 0.01 at v0 = 50.0; status 0, v_last = 1e+06
+  total change of the m+ parameter over the integration: +1.001e-02 (relative +1.011e-02)
+  v =       100: R - r0 = +1.188e-01, f- = -2.802e-03, m+ = 1.00011, M+(v,R) = 0.398566, d ln M+/dv = -1.856e-03, d ln M+/d ln v = -0.186
+  v =       100: R - r0 = +1.188e-01, f- = -2.802e-03, m+ = 1.00011, M+(v,R) = 0.398566, d ln M+/dv = -1.856e-03, d ln M+/d ln v = -0.186
+  v =       997: R - r0 = +2.467e-02, f- = -2.545e-05, m+ = 1.00011, M+(v,R) = 0.35039, d ln M+/dv = -1.820e-05, d ln M+/d ln v = -0.018
+  v =     1e+04: R - r0 = +8.493e-03, f- = -7.058e-07, m+ = 1.00011, M+(v,R) = 0.34229, d ln M+/dv = -5.155e-07, d ln M+/d ln v = -0.005
+  v =  9.97e+04: R - r0 = +3.631e-03, f- = -1.949e-08, m+ = 1.00011, M+(v,R) = 0.339859, d ln M+/dv = -1.434e-08, d ln M+/d ln v = -0.001
+  v =     1e+06: R - r0 = +1.691e-03, f- = +3.331e-16, m+ = 1.00011, M+(v,R) = 0.338889, d ln M+/dv = +9.934e-17, d ln M+/d ln v = +0.000
+  v =     1e+06: R - r0 = +1.691e-03, f- = +3.331e-16, m+ = 1.00011, M+(v,R) = 0.338889, d ln M+/dv = +9.934e-17, d ln M+/d ln v = +0.000
+  [Scenario, worst case] integrator: status 0, The solver successfully reached the end of the integration interval., points 1500
+
+=== Scenario, worst case: delta m/m0 = 0.1 at v0 = 50, start R0 = r0 + 0.05: horizons (R, kappa) = [(0.67604, -5e-05), (1.98465, 0.22108)]; kappa0 = -0.00005; start R0 = 0.7260, m+(v0) = m-(v0)(1 + 0.0001); p = 11, delta m/m0 = 0.1 at v0 = 50.0; status 0, v_last = 1e+06
+  total change of the m+ parameter over the integration: +9.989e-02 (relative +1.110e-01)
+  v =       100: R - r0 = +1.065e-01, f- = -2.027e-03, m+ = 0.999928, M+(v,R) = 0.392068, d ln M+/dv = -1.348e-03, d ln M+/d ln v = -0.135
+  v =       100: R - r0 = +1.065e-01, f- = -2.027e-03, m+ = 0.999928, M+(v,R) = 0.392068, d ln M+/dv = -1.348e-03, d ln M+/d ln v = -0.135
+  v =       997: R - r0 = +2.455e-02, f- = -2.504e-05, m+ = 0.999976, M+(v,R) = 0.350295, d ln M+/dv = -1.791e-05, d ln M+/d ln v = -0.018
+  v =     1e+04: R - r0 = +8.490e-03, f- = -7.052e-07, m+ = 0.999976, M+(v,R) = 0.342258, d ln M+/dv = -5.150e-07, d ln M+/d ln v = -0.005
+  v =  9.97e+04: R - r0 = +3.631e-03, f- = -1.951e-08, m+ = 0.999976, M+(v,R) = 0.339828, d ln M+/dv = -1.435e-08, d ln M+/d ln v = -0.001
+  v =     1e+06: R - r0 = +1.691e-03, f- = -2.220e-16, m+ = 0.999976, M+(v,R) = 0.338858, d ln M+/dv = +9.398e-17, d ln M+/d ln v = +0.000
+  v =     1e+06: R - r0 = +1.691e-03, f- = -2.220e-16, m+ = 0.999976, M+(v,R) = 0.338858, d ln M+/dv = +9.398e-17, d ln M+/d ln v = +0.000
+
+Scenario: exponent of the shell's approach to r0: d ln(R - r0)/d ln v = -0.253 (expected -1/2 for a triple root); total increase of M+ for v from 50 to 1e7: -5.945e-02 (bounded)

@@ -1,0 +1,66 @@
+OK  schwarzschild: f' vs FD: err=3.995e-08 tol=1.0e-07
+OK  schwarzschild: f'' vs FD: err=1.092e-06 tol=1.0e-04
+OK  schwarzschild: R' vs FD: err=1.893e-11 tol=1.0e-07
+OK  schwarzschild: R'' vs FD: err=0.000e+00 tol=1.0e-04
+OK  hayward: f' vs FD: err=8.735e-11 tol=1.0e-07
+OK  hayward: f'' vs FD: err=1.326e-06 tol=1.0e-04
+OK  hayward: R' vs FD: err=1.893e-11 tol=1.0e-07
+OK  hayward: R'' vs FD: err=0.000e+00 tol=1.0e-04
+OK  bardeen: f' vs FD: err=2.644e-10 tol=1.0e-07
+OK  bardeen: f'' vs FD: err=1.744e-06 tol=1.0e-04
+OK  bardeen: R' vs FD: err=1.893e-11 tol=1.0e-07
+OK  bardeen: R'' vs FD: err=0.000e+00 tol=1.0e-04
+OK  bardeen_samerho: f' vs FD: err=1.179e-10 tol=1.0e-07
+OK  bardeen_samerho: f'' vs FD: err=1.367e-06 tol=1.0e-04
+OK  bardeen_samerho: R' vs FD: err=1.893e-11 tol=1.0e-07
+OK  bardeen_samerho: R'' vs FD: err=0.000e+00 tol=1.0e-04
+OK  dymnikova: f' vs FD: err=5.562e-11 tol=1.0e-07
+OK  dymnikova: f'' vs FD: err=1.092e-06 tol=1.0e-04
+OK  dymnikova: R' vs FD: err=1.893e-11 tol=1.0e-07
+OK  dymnikova: R'' vs FD: err=0.000e+00 tol=1.0e-04
+OK  simpson_visser: f' vs FD: err=1.273e-10 tol=1.0e-07
+OK  simpson_visser: f'' vs FD: err=1.861e-06 tol=1.0e-04
+OK  simpson_visser: R' vs FD: err=2.424e-11 tol=1.0e-07
+OK  simpson_visser: R'' vs FD: err=4.908e-06 tol=1.0e-04
+OK  triple_root: f' vs FD: err=3.584e-09 tol=1.0e-07
+OK  triple_root: f'' vs FD: err=2.696e-06 tol=1.0e-04
+OK  triple_root: R' vs FD: err=1.893e-11 tol=1.0e-07
+OK  triple_root: R'' vs FD: err=0.000e+00 tol=1.0e-04
+OK  pocket: f' vs FD: err=4.560e-08 tol=1.0e-07
+OK  pocket: f'' vs FD: err=1.326e-06 tol=1.0e-04
+OK  pocket: R' vs FD: err=1.146e-08 tol=1.0e-07
+OK  pocket: R'' vs FD: err=1.277e-07 tol=1.0e-04
+OK  schwarzschild: G=0: err=1.421e-14 tol=1.0e-12
+OK  schwarzschild: K=48m^2/R^6: err=4.441e-16 tol=1.0e-10
+OK  hayward: 8pi rho(0) = 3/ell_eff^2: err=2.250e-09 tol=1.0e-04
+OK  hayward: p_perp/rho(0) = -1: err=3.375e-09 tol=1.0e-04
+OK  hayward: p_r/rho = -1 (everywhere, R=x): err=0.000e+00 tol=1.0e-10
+OK  bardeen: 8pi rho(0) = 3/ell_eff^2: err=5.625e-06 tol=1.0e-04
+OK  bardeen: p_perp/rho(0) = -1: err=5.625e-06 tol=1.0e-04
+OK  bardeen: p_r/rho = -1 (everywhere, R=x): err=0.000e+00 tol=1.0e-10
+OK  dymnikova: 8pi rho(0) = 3/ell_eff^2: err=1.125e-09 tol=1.0e-04
+OK  dymnikova: p_perp/rho(0) = -1: err=1.688e-09 tol=1.0e-04
+OK  dymnikova: p_r/rho = -1 (everywhere, R=x): err=0.000e+00 tol=1.0e-10
+OK  schwarzschild: conservation (f>0): err=1.361e-11 tol=1.0e-05
+OK  hayward: conservation (f>0): err=4.749e-11 tol=1.0e-05
+OK  bardeen: conservation (f>0): err=4.389e-11 tol=1.0e-05
+OK  bardeen_samerho: conservation (f>0): err=8.867e-11 tol=1.0e-05
+OK  dymnikova: conservation (f>0): err=5.945e-11 tol=1.0e-05
+OK  simpson_visser: conservation (f>0): err=1.922e-11 tol=1.0e-05
+OK  triple_root: conservation (f>0): err=8.409e-11 tol=1.0e-05
+OK  pocket: conservation (f>0): err=1.739e-08 tol=1.0e-05
+OK  pocket: K vs baseline: err=1.423e-15 tol=1.0e-09
+OK  pocket: epsilon8pi vs baseline: err=6.356e-15 tol=1.0e-09
+OK  pocket: radial_pressure8pi vs baseline: err=0.000e+00 tol=1.0e-09
+OK  pocket: transverse_pressure8pi vs baseline: err=2.808e-14 tol=1.0e-09
+OK  pocket: NEC8pi vs baseline: err=5.799e-16 tol=1.0e-09
+OK  simpson_visser: 8pi T(n,n)|throat = -2/a^2: err=2.220e-16 tol=1.0e-12
+OK  simpson_visser: rho+p_r|throat = -2|f|/a^2: err=1.776e-15 tol=1.0e-12
+OK  triple_root: F(r_-)=F(r_+)=0: err=0.000e+00 tol=1.0e-12
+OK  triple_root: F'(r_-)=0 (kappa_-=0): err=0.000e+00 tol=1.0e-12
+OK  triple_root: F'(r_+) != 0: err=5.407e-03 tol=1.0e+00
+OK  triple_root: D>0 on [0,50]: err=0.000e+00 tol=0.0e+00
+OK  triple_root: 8pi rho(0)=3 b2/(r_-^3 r_+): err=1.341e-05 tol=1.0e-04
+OK  triple_root: 1-F -> 2m/R at large R: err=1.781e-04 tol=1.0e-02
+
+64/64 checks passed -> <repo>\inner-extremal-rbh\data\approach_map\checks.json

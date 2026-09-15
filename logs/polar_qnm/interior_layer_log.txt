@@ -1,0 +1,38 @@
+
+=== Scenario (branch A, NED realization): R- = 0.67639, R+ = 1.98465
+  kappa_MS inside: min -1.990 at R = 1.094; intervals of kappa < 0: [(0.895, 1.63)]; kappa(R-+) = +1.001, kappa(R+-) = +5.855
+  at R-: V11 = +8.741, V22 = +17.514, V12 = -6.192 (l=2); N V22 -> -1.20e-07; sign of N V (growth in r* when N V > 0): V11: oscillation, V22: oscillation
+  l=2: N V22 > 0 (Phi growth) for R in [0.902, 1.517] (45% of interval); N V11 > 0 (Psi growth): 0% of interval
+  l=5: N V22 > 0 (Phi growth) for R in [0.897, 1.605] (54% of interval); N V11 > 0 (Psi growth): 0% of interval
+  l=10: N V22 > 0 (Phi growth) for R in [0.896, 1.624] (56% of interval); N V11 > 0 (Psi growth): 0% of interval
+  l=20: N V22 > 0 (Phi growth) for R in [0.895, 1.629] (56% of interval); N V11 > 0 (Psi growth): 0% of interval
+  transfer R+ -> R- (δ = 0.001): l=2, k=0.0: ln||T|| = +10.64; status 0
+  transfer R+ -> R- (δ = 0.001): l=2, k=0.5: ln||T|| = +3.61; status 0
+  transfer R+ -> R- (δ = 0.001): l=5, k=0.0: ln||T|| = +17.88; status 0
+  transfer R+ -> R- (δ = 0.001): l=5, k=0.5: ln||T|| = +12.75; status 0
+  transfer R+ -> R- (δ = 0.001): l=10, k=0.0: ln||T|| = +30.17; status 0
+  transfer R+ -> R- (δ = 0.001): l=10, k=0.5: ln||T|| = +25.96; status 0
+  transfer R+ -> R- (δ = 0.001): l=20, k=0.0: ln||T|| = +53.73; status 0
+  transfer R+ -> R- (δ = 0.001): l=20, k=0.5: ln||T|| = +50.96; status 0
+  l=2, k=0, up to R-(1+0.01): ln||T|| = +10.10; extent in r*: 7.72e+03
+  l=2, k=0, up to R-(1+0.001): ln||T|| = +10.64; extent in r*: 4.12e+05
+  l=2, k=0, up to R-(1+0.0001): ln||T|| = +14.33; extent in r*: 8.12e+05
+
+=== Hayward ell = 0.271 (NED realization; kappa = sigma - 4): R- = 0.29339, R+ = 1.96183
+  kappa_MS inside: min -1.840 at R = 0.293; intervals of kappa < 0: [(0.293, 0.568)]; kappa(R-+) = -1.840, kappa(R+-) = +1.914
+  at R-: V11 = +60.983, V22 = -135.108, V12 = -59.385 (l=2); N V22 -> +2.11e-02; sign of N V (growth in r* when N V > 0): V11: oscillation, V22: growth
+  l=2: N V22 > 0 (Phi growth) for R in [0.293, 0.403] (7% of interval); N V11 > 0 (Psi growth): 0% of interval
+  l=5: N V22 > 0 (Phi growth) for R in [0.293, 0.515] (13% of interval); N V11 > 0 (Psi growth): 0% of interval
+  l=10: N V22 > 0 (Phi growth) for R in [0.293, 0.552] (15% of interval); N V11 > 0 (Psi growth): 0% of interval
+  l=20: N V22 > 0 (Phi growth) for R in [0.293, 0.564] (16% of interval); N V11 > 0 (Psi growth): 0% of interval
+  transfer R+ -> R- (δ = 0.001): l=2, k=0.0: ln||T|| = +4.97; status 0
+  transfer R+ -> R- (δ = 0.001): l=2, k=0.5: ln||T|| = +3.64; status 0
+  transfer R+ -> R- (δ = 0.001): l=5, k=0.0: ln||T|| = +8.86; status 0
+  transfer R+ -> R- (δ = 0.001): l=5, k=0.5: ln||T|| = +8.05; status 0
+  transfer R+ -> R- (δ = 0.001): l=10, k=0.0: ln||T|| = +15.06; status 0
+  transfer R+ -> R- (δ = 0.001): l=10, k=0.5: ln||T|| = +15.05; status 0
+  transfer R+ -> R- (δ = 0.001): l=20, k=0.0: ln||T|| = +28.87; status 0
+  transfer R+ -> R- (δ = 0.001): l=20, k=0.5: ln||T|| = +28.67; status 0
+  l=2, k=0, up to R-(1+0.01): ln||T|| = +4.63; extent in r*: 13.4
+  l=2, k=0, up to R-(1+0.001): ln||T|| = +4.97; extent in r*: 13.8
+  l=2, k=0, up to R-(1+0.0001): ln||T|| = +5.20; extent in r*: 14.3

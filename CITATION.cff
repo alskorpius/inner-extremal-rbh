@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "inner-extremal-rbh: code and data for inner-extremal regular black holes with NEC-satisfying anisotropic sources"
+abstract: >-
+  Reproduction package for the paper "Inner-extremal regular black holes with
+  NEC-satisfying anisotropic sources: existence, extent, and the absence of a
+  classical selection mechanism". Contains the scripts, result files, figures
+  and raw logs behind every number reported in the paper.
+type: software
+authors:
+  - given-names: Oleh
+    family-names: Popenkov
+    email: oleh.popenkov@gmail.com
+    affiliation: "Independent researcher, Kelowna, BC, Canada"
+    orcid: "https://orcid.org/0009-0008-9894-2982"
+version: 1.0.0
+date-released: "2026-09-14"
+license: MIT
+repository-code: "https://github.com/alskorpius/inner-extremal-rbh"
+keywords:
+  - general relativity
+  - regular black holes
+  - inner horizon
+  - degenerate horizon
+  - mass inflation
+  - quasinormal modes
+  - null energy condition

@@ -1,0 +1,76 @@
+T18: halo and the triple root. Kretschmann formula control:
+  Schwarzschild: K/(48/R^6) = [1. 1.]
+  de Sitter: K/(24/ell^4) = [1. 1.]
+  base: λ = 0.271, R- = 0.6774, R+ = 1.9846, halo = 0.77 %, K(0)/(24/ell^4) = 1.0000, K_max(layer)/K(0) = 0.004 at R = 0.691
+
+(A) Hard truncation of the base profile at R_c (inside the trapped region), M' = m(R_c):
+  R_c = 1.2: f(R_c) = -0.095 (< 0: True), M' = 0.6573, λ' = ℓ/M' = 0.412, R-/M' = 1.0310 (|f|min = 7.0e-14), R+ = 2M' exactly, κ+ = 1/(4M') exactly, halo 0; roots of f: [1.0307, 1.031, 1.0313, 2.0]
+  R_c = 1.4: f(R_c) = -0.136 (< 0: True), M' = 0.7954, λ' = ℓ/M' = 0.341, R-/M' = 0.8520 (|f|min = 1.2e-13), R+ = 2M' exactly, κ+ = 1/(4M') exactly, halo 0; QNM l=2: δRe/Re = +0.0e+00, δIm/Im = +0.0e+00 (method error level ~1e-5/3e-4); roots of f: [0.8517, 0.852, 0.8522, 2.0]
+  R_c = 1.6: f(R_c) = -0.133 (< 0: True), M' = 0.9061, λ' = ℓ/M' = 0.299, R-/M' = 0.7476 (|f|min = 2.0e-13), R+ = 2M' exactly, κ+ = 1/(4M') exactly, halo 0; roots of f: [0.7476, 0.7478, 0.748, 2.0]
+
+(B) Smooth versions: halo and curvature of the truncation layer (K_max for R > R-) versus K(0) = 24/ell^4:
+  s_end= 24.0, w3=0.1  , σ_min=1.0: λ = 0.271, R- = 0.677, R+ = 1.9846, T_H/T_S = 0.884, halo = 0.768 %, K_max(layer)/K(0) = 0.004 at R = 0.69, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.1  , σ_min=0.5: λ = 0.234, R- = 0.569, R+ = 1.9987, T_H/T_S = 0.988, halo = 0.067 %, K_max(layer)/K(0) = 0.004 at R = 0.58, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.1  , σ_min=0.2: λ = 0.213, R- = 0.511, R+ = 1.9998, T_H/T_S = 0.998, halo = 0.012 %, K_max(layer)/K(0) = 0.005 at R = 0.52, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.1  , σ_min=0.0: λ = 0.199, R- = 0.474, R+ = 1.9999, T_H/T_S = 0.999, halo = 0.003 %, K_max(layer)/K(0) = 0.005 at R = 0.48, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.05 , σ_min=1.0: λ = 0.244, R- = 0.610, R+ = 1.9975, T_H/T_S = 0.976, halo = 0.123 %, K_max(layer)/K(0) = 0.004 at R = 0.62, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.05 , σ_min=0.5: λ = 0.208, R- = 0.506, R+ = 1.9999, T_H/T_S = 0.999, halo = 0.006 %, K_max(layer)/K(0) = 0.004 at R = 0.52, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.05 , σ_min=0.2: λ = 0.188, R- = 0.451, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.001 %, K_max(layer)/K(0) = 0.005 at R = 0.46, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.05 , σ_min=0.0: λ = 0.175, R- = 0.416, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.005 at R = 0.42, p⊥max/ρc = 0.06, NEC False
+  s_end= 24.0, w3=0.02 , σ_min=1.0: λ = 0.234, R- = 0.586, R+ = 1.9990, T_H/T_S = 0.990, halo = 0.051 %, K_max(layer)/K(0) = 0.004 at R = 0.60, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.02 , σ_min=0.5: λ = 0.199, R- = 0.484, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.002 %, K_max(layer)/K(0) = 0.004 at R = 0.49, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.02 , σ_min=0.2: λ = 0.179, R- = 0.429, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.005 at R = 0.44, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.02 , σ_min=0.0: λ = 0.166, R- = 0.396, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.006 at R = 1.18, p⊥max/ρc = 0.06, NEC False
+  s_end= 24.0, w3=0.01 , σ_min=1.0: λ = 0.233, R- = 0.582, R+ = 1.9991, T_H/T_S = 0.991, halo = 0.043 %, K_max(layer)/K(0) = 0.004 at R = 0.59, p⊥max/ρc = 0.06, NEC True
+  s_end= 24.0, w3=0.01 , σ_min=0.5: λ = 0.197, R- = 0.480, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.002 %, K_max(layer)/K(0) = 0.006 at R = 1.39, p⊥max/ρc = 0.07, NEC True
+  s_end= 24.0, w3=0.01 , σ_min=0.2: λ = 0.177, R- = 0.426, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.009 at R = 1.25, p⊥max/ρc = 0.08, NEC True
+  s_end= 24.0, w3=0.01 , σ_min=0.0: λ = 0.165, R- = 0.393, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.011 at R = 1.17, p⊥max/ρc = 0.08, NEC False
+  s_end=100.0, w3=0.1  , σ_min=1.0: triple root not found
+  s_end=100.0, w3=0.1  , σ_min=0.5: λ = 0.294, R- = 0.715, R+ = 1.9998, T_H/T_S = 0.995, halo = 0.011 %, K_max(layer)/K(0) = 0.004 at R = 0.73, p⊥max/ρc = 0.06, NEC True
+  s_end=100.0, w3=0.1  , σ_min=0.2: λ = 0.272, R- = 0.654, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.005 at R = 0.67, p⊥max/ρc = 0.06, NEC True
+  s_end=100.0, w3=0.1  , σ_min=0.0: λ = 0.258, R- = 0.615, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.005 at R = 0.63, p⊥max/ρc = 0.06, NEC True
+  s_end=100.0, w3=0.05 , σ_min=1.0: λ = 0.271, R- = 0.676, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.004 at R = 0.69, p⊥max/ρc = 0.06, NEC True
+  s_end=100.0, w3=0.05 , σ_min=0.5: λ = 0.234, R- = 0.568, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.004 at R = 0.58, p⊥max/ρc = 0.06, NEC True
+  s_end=100.0, w3=0.05 , σ_min=0.2: λ = 0.212, R- = 0.510, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.005 at R = 0.52, p⊥max/ρc = 0.06, NEC True
+  s_end=100.0, w3=0.05 , σ_min=0.0: λ = 0.199, R- = 0.474, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.005 at R = 1.26, p⊥max/ρc = 0.06, NEC False
+  s_end=100.0, w3=0.02 , σ_min=1.0: λ = 0.248, R- = 0.620, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.006 at R = 1.68, p⊥max/ρc = 0.07, NEC True
+  s_end=100.0, w3=0.02 , σ_min=0.5: λ = 0.212, R- = 0.515, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.010 at R = 1.45, p⊥max/ρc = 0.08, NEC True
+  s_end=100.0, w3=0.02 , σ_min=0.2: λ = 0.191, R- = 0.459, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.014 at R = 1.31, p⊥max/ρc = 0.10, NEC True
+  s_end=100.0, w3=0.02 , σ_min=0.0: λ = 0.178, R- = 0.424, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.017 at R = 1.23, p⊥max/ρc = 0.11, NEC False
+  s_end=100.0, w3=0.01 , σ_min=1.0: λ = 0.243, R- = 0.608, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.016 at R = 1.67, p⊥max/ρc = 0.11, NEC True
+  s_end=100.0, w3=0.01 , σ_min=0.5: λ = 0.207, R- = 0.503, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.026 at R = 1.44, p⊥max/ρc = 0.14, NEC True
+  s_end=100.0, w3=0.01 , σ_min=0.2: λ = 0.187, R- = 0.448, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.036 at R = 1.30, p⊥max/ρc = 0.16, NEC True
+  s_end=100.0, w3=0.01 , σ_min=0.0: λ = 0.174, R- = 0.414, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.044 at R = 1.22, p⊥max/ρc = 0.18, NEC False
+  s_end=500.0, w3=0.1  , σ_min=1.0: triple root not found
+  s_end=500.0, w3=0.1  , σ_min=0.5: λ = 0.377, R- = 0.917, R+ = 1.9961, T_H/T_S = 0.927, halo = 0.194 %, K_max(layer)/K(0) = 0.004 at R = 0.94, p⊥max/ρc = 0.06, NEC True
+  s_end=500.0, w3=0.1  , σ_min=0.2: λ = 0.357, R- = 0.858, R+ = 1.9996, T_H/T_S = 0.989, halo = 0.020 %, K_max(layer)/K(0) = 0.005 at R = 1.65, p⊥max/ρc = 0.06, NEC True
+  s_end=500.0, w3=0.1  , σ_min=0.0: λ = 0.344, R- = 0.820, R+ = 2.0000, T_H/T_S = 0.998, halo = 0.002 %, K_max(layer)/K(0) = 0.006 at R = 1.60, p⊥max/ρc = 0.06, NEC True
+  s_end=500.0, w3=0.05 , σ_min=1.0: λ = 0.298, R- = 0.745, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.004 at R = 0.76, p⊥max/ρc = 0.06, NEC True
+  s_end=500.0, w3=0.05 , σ_min=0.5: λ = 0.261, R- = 0.635, R+ = 2.0000, T_H/T_S = 1.000, halo = -0.000 %, K_max(layer)/K(0) = 0.005 at R = 1.52, p⊥max/ρc = 0.06, NEC True
+  s_end=500.0, w3=0.05 , σ_min=0.2: λ = 0.239, R- = 0.575, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.008 at R = 1.40, p⊥max/ρc = 0.07, NEC True
+  s_end=500.0, w3=0.05 , σ_min=0.0: λ = 0.225, R- = 0.537, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.010 at R = 1.32, p⊥max/ρc = 0.08, NEC False
+  s_end=500.0, w3=0.02 , σ_min=1.0: λ = 0.258, R- = 0.644, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.010 at R = 1.69, p⊥max/ρc = 0.09, NEC True
+  s_end=500.0, w3=0.02 , σ_min=0.5: λ = 0.221, R- = 0.538, R+ = 2.0000, T_H/T_S = 1.000, halo = -0.000 %, K_max(layer)/K(0) = 0.017 at R = 1.46, p⊥max/ρc = 0.11, NEC True
+  s_end=500.0, w3=0.02 , σ_min=0.2: λ = 0.200, R- = 0.481, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.023 at R = 1.33, p⊥max/ρc = 0.13, NEC True
+  s_end=500.0, w3=0.02 , σ_min=0.0: λ = 0.187, R- = 0.445, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.028 at R = 1.25, p⊥max/ρc = 0.14, NEC False
+  s_end=500.0, w3=0.01 , σ_min=1.0: λ = 0.248, R- = 0.621, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.032 at R = 1.68, p⊥max/ρc = 0.15, NEC True
+  s_end=500.0, w3=0.01 , σ_min=0.5: λ = 0.212, R- = 0.516, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.052 at R = 1.45, p⊥max/ρc = 0.19, NEC True
+  s_end=500.0, w3=0.01 , σ_min=0.2: λ = 0.192, R- = 0.460, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.071 at R = 1.32, p⊥max/ρc = 0.22, NEC True
+  s_end=500.0, w3=0.01 , σ_min=0.0: λ = 0.178, R- = 0.425, R+ = 2.0000, T_H/T_S = 1.000, halo = 0.000 %, K_max(layer)/K(0) = 0.087 at R = 1.23, p⊥max/ρc = 0.25, NEC False
+  minimum halo at K_layer ≤ K(0): -0.000 % (s_end=500.0, w3=0.05, σ_min=0.5, K_ratio 0.01)
+  minimum halo at K_layer ≤ 2K(0): -0.000 % (s_end=500.0, w3=0.05, σ_min=0.5, K_ratio 0.01)
+
+(C) QNM l = 2 (axial, time domain) for nearly compact smooth profiles:
+  w3 = 0.01: λ = 0.233, halo = 0.043 %, K_ratio = 0.00, δRe/Re = -9.61e-05, δIm/Im = -3.60e-06   [18 s]
+  σ_min = 0.2: λ = 0.213, halo = 0.012 %, K_ratio = 0.00, δRe/Re = -2.65e-05, δIm/Im = -6.50e-06   [21 s]
+  σ_min = 0.0: λ = 0.199, halo = 0.003 %, K_ratio = 0.00, δRe/Re = -7.50e-06, δIm/Im = -1.01e-06   [23 s]
+  s_end = 100, w3 = 0.02: λ = 0.248, halo = 0.000 %, K_ratio = 0.01, δRe/Re = +6.84e-10, δIm/Im = +2.25e-09   [26 s]
+
+(D) T19: points of the extended family (T15) — what sets the halo:
+  base          : λ = 0.271, halo = 0.77 %, T_H/T_S = 0.884, QNM δRe/δIm = -1.7e-03/-2.2e-03, u3·R1/R+ = 0.94, s_end = 24, w3 = 0.100
+  lambda ~ 0.45 : λ = 0.444, halo = 0.23 %, T_H/T_S = 0.926, QNM δRe/δIm = -3.7e-04/+2.1e-03, u3·R1/R+ = 1.14, s_end = 140, w3 = 0.096
+  s_end = 8     : λ = 0.213, halo = 4.75 %, T_H/T_S = 0.794, QNM δRe/δIm = —, u3·R1/R+ = 0.77, s_end = 8, w3 = 0.100
+  s_end = 48    : λ = 0.300, halo = 0.49 %, T_H/T_S = 0.893, QNM δRe/δIm = —, u3·R1/R+ = 1.04, s_end = 48, w3 = 0.100
+  u3 = 12       : λ = 0.186, halo = 0.87 %, T_H/T_S = 0.878, QNM δRe/δIm = —, u3·R1/R+ = 0.97, s_end = 24, w3 = 0.100
+  u3 = 8        : λ = 0.271, halo = 0.77 %, T_H/T_S = 0.884, QNM δRe/δIm = —, u3·R1/R+ = 0.94, s_end = 24, w3 = 0.100
+  correlation of ln(halo) with u3·R1/R+: -0.98; with λ: -0.76

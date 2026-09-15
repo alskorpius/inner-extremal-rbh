@@ -1,0 +1,115 @@
+T15: upper bound of lambda = ell/M for the family of monotone profiles with a triple root
+  base: lam = 0.2710 (identity 0.2710); R- = 0.677, R+ = 1.985, kappa+ = 0.2211, T_H/T_S = 0.884, halo = 0.0077, m(3M)/M = 0.999998; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 6e-17, 2e-07, 2e-03; s1* = 2.842
+
+1. One-dimensional continuations from the base
+  s_end = 8: lam = 0.2134 (identity 0.2134); R- = 0.534, R+ = 1.905, kappa+ = 0.1986, T_H/T_S = 0.794, halo = 0.0475, m(3M)/M = 0.995033; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 1e-16, 1e-07, 2e-03; s1* = 2.843
+  s_end = 48: lam = 0.2998 (identity 0.2998); R- = 0.750, R+ = 1.990, kappa+ = 0.2231, T_H/T_S = 0.893, halo = 0.0049, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 0e+00, 2e-07, 2e-03; s1* = 2.842
+  s_end = 100: lam = 0.3309 (identity 0.3309); R- = 0.828, R+ = 1.989, kappa+ = 0.2162, T_H/T_S = 0.865, halo = 0.0054, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.501; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 1e-24, 8e-08, 7e-04; s1* = 2.842
+  s_end = 200: lam = 0.3625 (identity 0.3625); R- = 0.907, R+ = 1.983, kappa+ = 0.1993, T_H/T_S = 0.797, halo = 0.0084, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.503; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 6e-17, 1e-07, 8e-04; s1* = 2.841
+  s_end = 500: lam = 0.4090 (identity 0.4090); R- = 1.026, R+ = 1.961, kappa+ = 0.1566, T_H/T_S = 0.626, halo = 0.0193, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.509; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 6e-17, 1e-07, 7e-04; s1* = 2.839
+  s_end = 2000: lam = 0.4901 (identity 0.4901); R- = 1.248, R+ = 1.839, kappa+ = 0.0466, T_H/T_S = 0.186, halo = 0.0807, m(3M)/M = 1.000000; s(R-) = 0.051, R-/ell = 2.547; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.05; |f,f',f''|(R-) = 6e-17, 5e-08, 3e-04; s1* = 2.826
+  u3 = 12: lam = 0.1857 (identity 0.1857); R- = 0.464, R+ = 1.983, kappa+ = 0.2195, T_H/T_S = 0.878, halo = 0.0087, m(3M)/M = 0.999997; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 6e-17, 1e-07, 2e-03; s1* = 2.843
+  u3 = 8: lam = 0.2710 (identity 0.2710); R- = 0.677, R+ = 1.985, kappa+ = 0.2211, T_H/T_S = 0.884, halo = 0.0077, m(3M)/M = 0.999998; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 6e-17, 2e-07, 2e-03; s1* = 2.842
+  u3 = 7: lam = 0.3152 (identity 0.3152); R- = 0.788, R+ = 1.976, kappa+ = 0.2062, T_H/T_S = 0.825, halo = 0.0122, m(3M)/M = 0.999996; s(R-) = 0.053, R-/ell = 2.501; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 6e-17, 2e-07, 2e-03; s1* = 2.842
+  u3 = 6: lam = 0.3809 (identity 0.3809); R- = 0.955, R+ = 1.942, kappa+ = 0.1606, T_H/T_S = 0.643, halo = 0.0288, m(3M)/M = 0.999990; s(R-) = 0.053, R-/ell = 2.507; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 0e+00, 8e-08, 6e-04; s1* = 2.840
+  u3 = 5.5: lam = 0.4257 (identity 0.4257); R- = 1.072, R+ = 1.894, kappa+ = 0.1105, T_H/T_S = 0.442, halo = 0.0531, m(3M)/M = 0.999983; s(R-) = 0.053, R-/ell = 2.517; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.05; |f,f',f''|(R-) = 6e-17, 1e-07, 9e-04; s1* = 2.836
+  u3 = 5: lam = 0.4810 (identity 0.4810); R- = 1.230, R+ = 1.764, kappa+ = 0.0353, T_H/T_S = 0.141, halo = 0.1181, m(3M)/M = 0.999969; s(R-) = 0.051, R-/ell = 2.557; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.05; |f,f',f''|(R-) = 6e-17, 4e-08, 2e-04; s1* = 2.823
+  u3 = 4.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u3 = 4.2: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u2 = 6: lam = 0.3247 (identity 0.3247); R- = 1.040, R+ = 1.890, kappa+ = 0.1077, T_H/T_S = 0.431, halo = 0.0549, m(3M)/M = 0.999982; s(R-) = 0.033, R-/ell = 3.202; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.03; |f,f',f''|(R-) = 6e-17, 7e-09, 5e-05; s1* = 2.450
+  u2 = 3: lam = 0.2697 (identity 0.2697); R- = 0.583, R+ = 1.959, kappa+ = 0.1916, T_H/T_S = 0.767, halo = 0.0207, m(3M)/M = 0.999990; s(R-) = 0.071, R-/ell = 2.162; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.09; |f,f',f''|(R-) = 6e-17, 2e-07, 3e-03; s1* = 3.415
+  u2 = 2.5: lam = 0.2964 (identity 0.2964); R- = 0.592, R+ = 1.842, kappa+ = 0.1482, T_H/T_S = 0.593, halo = 0.0789, m(3M)/M = 0.999812; s(R-) = 0.084, R-/ell = 1.996; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.12; |f,f',f''|(R-) = 6e-17, 4e-07, 5e-03; s1* = 4.085
+  u2 = 2: lam = 0.3705 (identity 0.3705); R- = 0.679, R+ = 1.807, kappa+ = 0.1723, T_H/T_S = 0.689, halo = 0.0967, m(3M)/M = 0.993656; s(R-) = 0.099, R-/ell = 1.834; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.16; |f,f',f''|(R-) = 6e-17, 9e-08, 1e-03; s1* = 5.712
+  u2 = 1.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 = 0.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 = 0.05: lam = 0.2441 (identity 0.2441); R- = 0.610, R+ = 1.998, kappa+ = 0.2439, T_H/T_S = 0.976, halo = 0.0012, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 2e-24, 9e-08, 1e-03; s1* = 2.843
+  w3 = 0.02: lam = 0.2345 (identity 0.2345); R- = 0.586, R+ = 1.999, kappa+ = 0.2474, T_H/T_S = 0.990, halo = 0.0005, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 2e-24, 9e-08, 1e-03; s1* = 2.843
+  w3 = 0.01: lam = 0.2328 (identity 0.2328); R- = 0.582, R+ = 1.999, kappa+ = 0.2478, T_H/T_S = 0.991, halo = 0.0004, m(3M)/M = 1.000000; s(R-) = 0.053, R-/ell = 2.500; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 2e-24, 9e-08, 1e-03; s1* = 2.843
+  u1 = 2: lam = 0.4418 (identity 0.4418); R- = 0.810, R+ = 1.965, kappa+ = 0.1978, T_H/T_S = 0.791, halo = 0.0177, m(3M)/M = 0.999991; s(R-) = 0.099, R-/ell = 1.834; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.16; |f,f',f''|(R-) = 2e-16, 2e-07, 1e-03; s1* = 5.712
+  u1 = 0.5: lam = 0.1498 (identity 0.1498); R- = 0.576, R+ = 1.994, kappa+ = 0.2369, T_H/T_S = 0.948, halo = 0.0031, m(3M)/M = 0.999999; s(R-) = 0.023, R-/ell = 3.842; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.02; |f,f',f''|(R-) = 6e-17, 1e-07, 1e-03; s1* = 2.308
+  u1 = 0.3: lam = 0.0944 (identity 0.0944); R- = 0.525, R+ = 1.996, kappa+ = 0.2411, T_H/T_S = 0.964, halo = 0.0021, m(3M)/M = 0.999999; s(R-) = 0.011, R-/ell = 5.561; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.01; |f,f',f''|(R-) = 6e-17, 2e-08, 3e-04; s1* = 2.165
+  u1 = 0.15: lam = 0.0494 (identity 0.0494); R- = 0.475, R+ = 1.997, kappa+ = 0.2435, T_H/T_S = 0.974, halo = 0.0015, m(3M)/M = 1.000000; s(R-) = 0.004, R-/ell = 9.627; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.00; |f,f',f''|(R-) = 4e-25, 2e-08, 3e-04; s1* = 2.076
+  w1 = 0.5: lam = 0.1966 (identity 0.1966); R- = 0.648, R+ = 1.991, kappa+ = 0.2324, T_H/T_S = 0.930, halo = 0.0044, m(3M)/M = 0.999999; s(R-) = 0.031, R-/ell = 3.296; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.02; |f,f',f''|(R-) = 1e-16, 3e-07, 3e-03; s1* = 3.253
+  w1 = 0.1: lam = 0.2957 (identity 0.2957); R- = 0.655, R+ = 1.987, kappa+ = 0.2257, T_H/T_S = 0.903, halo = 0.0063, m(3M)/M = 0.999998; s(R-) = 0.068, R-/ell = 2.215; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.12; |f,f',f''|(R-) = 0e+00, 7e-08, 7e-04; s1* = 2.649
+  w1 = 0.05: lam = 0.2992 (identity 0.2992); R- = 0.649, R+ = 1.988, kappa+ = 0.2267, T_H/T_S = 0.907, halo = 0.0059, m(3M)/M = 0.999998; s(R-) = 0.071, R-/ell = 2.169; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.17; |f,f',f''|(R-) = 1e-25, 1e-07, 1e-03; s1* = 2.618
+  w2 = 0.6: lam = 0.2209 (identity 0.2209); R- = 0.524, R+ = 1.998, kappa+ = 0.2445, T_H/T_S = 0.978, halo = 0.0012, m(3M)/M = 1.000000; s(R-) = 0.059, R-/ell = 2.373; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.08; |f,f',f''|(R-) = 1e-16, 2e-07, 3e-03; s1* = 3.421
+  w2 = 0.2: lam = 0.3139 (identity 0.3139); R- = 0.836, R+ = 1.933, kappa+ = 0.1592, T_H/T_S = 0.637, halo = 0.0334, m(3M)/M = 0.999986; s(R-) = 0.047, R-/ell = 2.662; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.04; |f,f',f''|(R-) = 0e+00, 2e-07, 1e-03; s1* = 2.610
+  w2 = 0.15: lam = 0.3304 (identity 0.3304); R- = 0.904, R+ = 1.884, kappa+ = 0.1216, T_H/T_S = 0.486, halo = 0.0579, m(3M)/M = 0.999972; s(R-) = 0.045, R-/ell = 2.736; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.03; |f,f',f''|(R-) = 2e-16, 1e-08, 9e-05; s1* = 2.547
+  sigma_min = 1.5: lam = 0.3092 (identity 0.3092); R- = 0.810, R+ = 1.895, kappa+ = 0.1263, T_H/T_S = 0.505, halo = 0.0526, m(3M)/M = 0.999976; s(R-) = 0.049, R-/ell = 2.621; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.05; |f,f',f''|(R-) = 2e-24, 1e-07, 1e-03; s1* = 2.776
+  sigma_min = 1.9: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  sigma_min = 0.5: lam = 0.2340 (identity 0.2340); R- = 0.569, R+ = 1.999, kappa+ = 0.2469, T_H/T_S = 0.988, halo = 0.0007, m(3M)/M = 1.000000; s(R-) = 0.056, R-/ell = 2.431; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 3e-24, 1e-07, 1e-03; s1* = 2.890
+  sigma_min = 0.2: lam = 0.2126 (identity 0.2126); R- = 0.511, R+ = 2.000, kappa+ = 0.2494, T_H/T_S = 0.998, halo = 0.0001, m(3M)/M = 1.000000; s(R-) = 0.058, R-/ell = 2.401; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 2e-16, 2e-07, 3e-03; s1* = 2.913
+  sigma_min = 0.0: lam = 0.1989 (identity 0.1989); R- = 0.474, R+ = 2.000, kappa+ = 0.2498, T_H/T_S = 0.999, halo = 0.0000, m(3M)/M = 1.000000; s(R-) = 0.059, R-/ell = 2.384; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.06; |f,f',f''|(R-) = 0e+00, 2e-07, 3e-03; s1* = 2.927
+
+2. Random search (300 points) over all parameters
+  triple roots found: 143 out of 300; lam from 0.020 to 0.842; median 0.172; all NEC/WEC: False
+  best: lam = 0.8419 (identity 0.8419); R- = 1.236, R+ = 1.824, kappa+ = 0.0862, T_H/T_S = 0.345, halo = 0.0882, m(3M)/M = 0.999734; s(R-) = 0.155, R-/ell = 1.468; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.41; |f,f',f''|(R-) = 1e-16, 2e-07, 1e-03; s1* = 6.923
+
+3. Local maximization of lambda (Nelder–Mead from the best point)
+  parameters: u1 = 1.98, u2 = 2.99, u3 = 4.07, w1 = 0.122, w2 = 0.24, w3 = 0.135, s_end = 33.1, sigma_min = 0.461
+  optimum: lam = 1.0478 (identity 1.0478); R- = 1.555, R+ = 1.587, kappa+ = 0.0000, T_H/T_S = 0.000, halo = 0.2067, m(3M)/M = 0.999994; s(R-) = 0.151, R-/ell = 1.484; sigma_min = +0.000, NEC/WEC True, p_perp,max/rho_c = 0.46; |f,f',f''|(R-) = 6e-17, 4e-09, 2e-05; s1* = 8.000
+
+4. What breaks past the boundary: continuations of the best point along each parameter
+  u1 x 1.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 0.769: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 1.6: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 0.625: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 2: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u1 x 0.333: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u2 x 0.769: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u2 x 0.625: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u2 x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u2 x 0.333: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u3 x 1.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u3 x 1.6: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u3 x 2: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  u3 x 3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w1 x 1.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w1 x 0.769: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w1 x 1.6: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w1 x 0.625: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w1 x 2: lam = 0.801
+  w1 x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w1 x 3: lam = 0.630
+  w1 x 0.333: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 1.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 0.769: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 1.6: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 0.625: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 2: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w2 x 0.333: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 1.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 0.769: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 1.6: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 0.625: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 2: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  w3 x 0.333: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 1.3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 0.769: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 1.6: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 0.625: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 2: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 3: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  s_end x 0.333: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  sigma_min x 0: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  sigma_min x 0.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  sigma_min x 1.5: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+  sigma_min x 1.9: NO — no 3 stationary points of H up to s1 = 8.0 (S-shape of H does not appear)
+
+5. companion-paper synthesis points: lambda = 0.45, 0.58, 0.77
+  lambda = 0.45: yes; closest found lam = 0.444 (R- = 0.807, R+ = 1.995, halo 0.002)
+  lambda = 0.58: yes; closest found lam = 0.567 (R- = 1.066, R+ = 1.823, halo 0.088)
+  lambda = 0.77: yes; closest found lam = 0.842 (R- = 1.236, R+ = 1.824, halo 0.088)
+
+6. Analytical estimate: at the triple root <rho>(R-) = 3 rho(R-) and 2m(R-) = R-, hence lam = ell/M = (R-/M) sqrt(3 rho(R-)/rho_c) <= R-/M (equality only for a homogeneous core with a jump), and R- < R+ <= 2M: lam < 2. Found: max lam = 1.048 at R-/M = 1.555, s(R-) = 0.151 (3s = 0.454).
+  across all found: R-/ell from 1.468 to 12.706 (analytically >= 1); 3 s(R-) from 0.006 to 0.464 (<= 1); R-/M from 0.054 to 1.555
+
+7. QNM (axial, l = 2, time domain) for the point with maximum lambda
+  QNM not computed: f(a) and f(b) must have different signs

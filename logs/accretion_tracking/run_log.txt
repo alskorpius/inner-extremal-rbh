@@ -1,0 +1,29 @@
+sympy: G^v_v + 2m_R/R^2 = 0; G^R_R + 2m_R/R^2 = 0; G^th_th + m_RR/R = 0; T(l,l) = Derivative(m(v, R), v)/(4*pi*R**2) (expected m_v/(4 pi R^2)); T(n,n) = 0; Box_2 R = 2*(-R*Derivative(m(v, R), R) + m(v, R))/R**2 (expected d_R f)
+
+Scenario: lambda = ell/M = 0.27102; branch-A profile. Hayward: lambda = 0.2710 (same ell at M = 1).
+
+=== Hayward, ell fixed (law F)
+M=1: horizons (R, kappa): [(0.29339, -2.65846), (1.96183, 0.24027)]; m_M<0 for R < 0.0000 (min m_M = 0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = 2.27e-12
+M=1.01: horizons (R, kappa): [(0.29312, -2.66905), (1.98224, 0.23809)]; m_M<0 for R < 0.0000 (min m_M = 0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = 2.22e-12
+M=1.1: horizons (R, kappa): [(0.29093, -2.75538), (2.16554, 0.22004)]; m_M<0 for R < 0.0000 (min m_M = 0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = 1.88e-12
+M=2: horizons (R, kappa): [(0.28107, -3.18282), (3.98147, 0.12384)]; m_M<0 for R < 0.0000 (min m_M = 0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = 5.67e-13
+
+=== Hayward, ell = lambda*M (law T)
+M=1: horizons (R, kappa): [(0.29339, -2.65846), (1.96183, 0.24027)]; m_M<0 for R < 0.6647 (min m_M = -0.3333 at R=0.4188); int |m_M^-| dR = 0.1084; min (mu/rho_v)/Mdot = -0.209
+M=1.01: horizons (R, kappa): [(0.29632, -2.63214), (1.98145, 0.23789)]; m_M<0 for R < 0.6713 (min m_M = -0.3333 at R=0.4229); int |m_M^-| dR = 0.1095; min (mu/rho_v)/Mdot = -0.209
+M=1.1: horizons (R, kappa): [(0.32273, -2.41678), (2.15802, 0.21843)]; m_M<0 for R < 0.7311 (min m_M = -0.3333 at R=0.4606); int |m_M^-| dR = 0.1193; min (mu/rho_v)/Mdot = -0.209
+M=2: horizons (R, kappa): [(0.58678, -1.32923), (3.92366, 0.12014)]; m_M<0 for R < 1.3293 (min m_M = -0.3333 at R=0.8375); int |m_M^-| dR = 0.2168; min (mu/rho_v)/Mdot = -0.209
+
+=== Scenario (branch A), ell fixed (law F)
+M=1: horizons (R, kappa): [(0.67604, -1e-05), (1.98465, 0.22108)]; m_M<0 for R < 0.0046 (min m_M = -0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = -4.18e-09
+M=1.01: horizons (R, kappa): [(0.54477, -0.07948), (2.00625, 0.22172)]; m_M<0 for R < 0.0046 (min m_M = -0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = -4.17e-09
+M=1.1: horizons (R, kappa): [(0.428, -0.42031), (2.19474, 0.21803)]; m_M<0 for R < 0.0048 (min m_M = -0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = -4.18e-09
+M=2: horizons (R, kappa): [(0.30968, -1.95258), (4.0, 0.125)]; m_M<0 for R < 0.0058 (min m_M = -0.0000 at R=0.0010); int |m_M^-| dR = 0.0000; min (mu/rho_v)/Mdot = -4.2e-09
+
+=== Scenario (branch A), ell = lambda*M (law T)
+M=1: horizons (R, kappa): [(0.67604, -1e-05), (1.98465, 0.22108)]; m_M<0 for R < 1.4877 (min m_M = -0.1995 at R=1.1998); int |m_M^-| dR = 0.1201; min (mu/rho_v)/Mdot = -0.279
+M=1.01: horizons (R, kappa): [(0.6828, -1e-05), (2.00449, 0.21889)]; m_M<0 for R < 1.5025 (min m_M = -0.1995 at R=1.2120); int |m_M^-| dR = 0.1213; min (mu/rho_v)/Mdot = -0.279
+M=1.1: horizons (R, kappa): [(0.74364, -1e-05), (0.74398, -0.0), (0.74403, -0.0), (2.18311, 0.20098)]; m_M<0 for R < 1.6365 (min m_M = -0.1995 at R=1.3201); int |m_M^-| dR = 0.1321; min (mu/rho_v)/Mdot = -0.279
+M=2: horizons (R, kappa): [(1.35241, -0.0), (3.9693, 0.11054)]; m_M<0 for R < 2.9753 (min m_M = -0.1995 at R=2.4001); int |m_M^-| dR = 0.2402; min (mu/rho_v)/Mdot = -0.279
+Mdot (10 M_sun, Eddington rate ~2e-8 M_sun/yr) = 3.12e-21 (dimensionless, G=c=1): mu/rho_v in the core ~ 3.1e-21 x (m_M/m_R)
+Mdot (super-critical accretion 1e-2 M_sun/yr) = 1.56e-15 (dimensionless, G=c=1): mu/rho_v in the core ~ 1.6e-15 x (m_M/m_R)

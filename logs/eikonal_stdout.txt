@@ -1,0 +1,33 @@
+Eikonal QNMs of the rotating inner-extremal regular BH (Franzin et al. 2022) against Kerr; M = 1.
+Schwarzschild (a -> 0, e = 0): r_c = 2.999999, Omega_c = 0.192450, lambda = 0.192450 (expected 3, 0.192450, 0.192450); V = 2.0e-16, V' = 2.0e-11
+Kerr a=0.3, prograde: r_c = 2.630026 (analytic 2.630026), Omega = +0.219048 (analytic +0.219048), lambda = 0.190671
+Kerr a=0.3, retrograde: r_c = 3.328855 (analytic 3.328855), Omega = -0.173204 (analytic -0.173204), lambda = 0.191462
+Kerr a=0.6, prograde: r_c = 2.188914 (analytic 2.188914), Omega = +0.260519 (analytic +0.260519), lambda = 0.181303
+Kerr a=0.6, retrograde: r_c = 3.629850 (analytic 3.629850), Omega = -0.158337 (analytic -0.158337), lambda = 0.189278
+Kerr a=0.9, prograde: r_c = 1.557855 (analytic 1.557855), Omega = +0.351565 (analytic +0.351565), lambda = 0.136080
+Kerr a=0.9, retrograde: r_c = 3.910268 (analytic 3.910268), Omega = -0.146363 (analytic -0.146363), lambda = 0.186549
+
+Shifts relative to Kerr at the same (M, a): dOmega/Omega, dlambda/lambda; r_c; e is the inner-horizon displacement parameter (e = 0 is Kerr).
+a=0.30 e=0.1 (r-=0.0484, alpha-gamma=+1.43e-07): pro: r_c 2.6300 (+7.8e-09), dOmega/Omega = -1.67e-08, dlambda/lambda = -5.07e-08; retro: r_c 3.3289 (+1.4e-08), dOmega/Omega = -1.66e-08, dlambda/lambda = -3.10e-08; 
+a=0.30 e=0.3 (r-=0.0540, alpha-gamma=+5.36e-06): pro: r_c 2.6300 (+2.9e-07), dOmega/Omega = -6.28e-07, dlambda/lambda = -1.91e-06; retro: r_c 3.3289 (+5.4e-07), dOmega/Omega = -6.22e-07, dlambda/lambda = -1.16e-06; 
+a=0.30 e=0.5 (r-=0.0609, alpha-gamma=+3.57e-05): pro: r_c 2.6300 (+2.0e-06), dOmega/Omega = -4.22e-06, dlambda/lambda = -1.28e-05; retro: r_c 3.3289 (+3.6e-06), dOmega/Omega = -4.17e-06, dlambda/lambda = -7.80e-06; 
+a=0.30 e=1.0 (r-=0.0900, alpha-gamma=+9.21e-04): pro: r_c 2.6302 (+5.4e-05), dOmega/Omega = -1.13e-04, dlambda/lambda = -3.40e-04; retro: r_c 3.3292 (+9.6e-05), dOmega/Omega = -1.10e-04, dlambda/lambda = -2.05e-04; 
+a=0.30 e=1.5 (r-=0.1721, alpha-gamma=+2.17e-02): pro: r_c 2.6339 (+1.5e-03), dOmega/Omega = -2.91e-03, dlambda/lambda = -8.71e-03; retro: r_c 3.3373 (+2.5e-03), dOmega/Omega = -2.80e-03, dlambda/lambda = -5.06e-03; 
+a=0.60 e=0.1 (r-=0.2093, alpha-gamma=+2.01e-06): pro: r_c 2.1889 (+6.4e-08), dOmega/Omega = -2.85e-07, dlambda/lambda = -1.29e-06; retro: r_c 3.6299 (+2.8e-07), dOmega/Omega = -2.63e-07, dlambda/lambda = -3.86e-07; 
+a=0.60 e=0.3 (r-=0.2308, alpha-gamma=+7.28e-05): pro: r_c 2.1889 (+2.5e-06), dOmega/Omega = -1.06e-05, dlambda/lambda = -4.82e-05; retro: r_c 3.6299 (+1.0e-05), dOmega/Omega = -9.69e-06, dlambda/lambda = -1.41e-05; 
+a=0.60 e=0.5 (r-=0.2571, alpha-gamma=+4.66e-04): pro: r_c 2.1890 (+1.7e-05), dOmega/Omega = -7.10e-05, dlambda/lambda = -3.22e-04; retro: r_c 3.6301 (+6.9e-05), dOmega/Omega = -6.35e-05, dlambda/lambda = -9.14e-05; 
+a=0.60 e=1.0 (r-=0.3600, alpha-gamma=+1.02e-02): pro: r_c 2.1901 (+5.2e-04), dOmega/Omega = -1.83e-03, dlambda/lambda = -8.23e-03; retro: r_c 3.6361 (+1.7e-03), dOmega/Omega = -1.52e-03, dlambda/lambda = -2.08e-03; 
+a=0.60 e=1.5 (r-=0.6000, alpha-gamma=+1.60e-01): pro: r_c 2.2223 (+1.5e-02), dOmega/Omega = -3.86e-02, dlambda/lambda = -1.61e-01; retro: r_c 3.7543 (+3.4e-02), dOmega/Omega = -2.76e-02, dlambda/lambda = -3.29e-02; 
+a=0.90 e=0.1 (r-=0.5818, alpha-gamma=+4.88e-06): pro: r_c 1.5579 (-2.9e-07), dOmega/Omega = -1.56e-06, dlambda/lambda = -1.86e-05; retro: r_c 3.9103 (+1.2e-06), dOmega/Omega = -8.53e-07, dlambda/lambda = -7.79e-07; 
+a=0.90 e=0.3 (r-=0.6206, alpha-gamma=+1.60e-04): pro: r_c 1.5578 (-9.3e-06), dOmega/Omega = -5.77e-05, dlambda/lambda = -6.92e-04; retro: r_c 3.9104 (+4.0e-05), dOmega/Omega = -2.89e-05, dlambda/lambda = -2.52e-05; 
+a=0.90 e=0.5 (r-=0.6651, alpha-gamma=+9.12e-04): pro: r_c 1.5578 (-4.9e-05), dOmega/Omega = -3.79e-04, dlambda/lambda = -4.56e-03; retro: r_c 3.9112 (+2.4e-04), dOmega/Omega = -1.72e-04, dlambda/lambda = -1.41e-04; 
+a=0.90 e=1.0 (r-=0.8100, alpha-gamma=+1.32e-02): pro: r_c 1.5573 (-3.6e-04), dOmega/Omega = -8.76e-03, dlambda/lambda = -1.04e-01; retro: r_c 3.9264 (+4.1e-03), dOmega/Omega = -2.82e-03, dlambda/lambda = -1.84e-03; 
+a=0.90 e=1.5 (r-=1.0357, alpha-gamma=+9.30e-02): pro: r_c 1.4882 (-4.5e-02), dOmega/Omega = -8.02e-02, dlambda/lambda = -8.02e-01; retro: r_c 4.0515 (+3.6e-02), dOmega/Omega = -2.30e-02, dlambda/lambda = -1.07e-02; 
+a=0.99 e=0.1 (r-=0.8697, alpha-gamma=+7.24e-07): pro: r_c 1.1676 (-8.3e-07), dOmega/Omega = -1.50e-06, dlambda/lambda = -7.51e-05; retro: r_c 3.9911 (+2.5e-07), dOmega/Omega = -1.62e-07, dlambda/lambda = -7.91e-08; 
+a=0.99 e=0.3 (r-=0.8920, alpha-gamma=+2.11e-05): pro: r_c 1.1676 (-2.8e-05), dOmega/Omega = -5.51e-05, dlambda/lambda = -2.78e-03; retro: r_c 3.9911 (+7.4e-06), dOmega/Omega = -4.83e-06, dlambda/lambda = -2.19e-06; 
+a=0.99 e=0.5 (r-=0.9155, alpha-gamma=+1.06e-04): pro: r_c 1.1675 (-1.6e-04), dOmega/Omega = -3.57e-04, dlambda/lambda = -1.81e-02; retro: r_c 3.9913 (+3.8e-05), dOmega/Omega = -2.47e-05, dlambda/lambda = -1.03e-05; 
+a=0.99 e=1.0 (r-=0.9801, alpha-gamma=+1.04e-03): pro: r_c 1.1638 (-3.3e-03), dOmega/Omega = -6.73e-03, dlambda/lambda = -3.35e-01; retro: r_c 3.9927 (+4.1e-04), dOmega/Omega = -2.58e-04, dlambda/lambda = -8.11e-05; 
+a=0.99 e=1.5 (r-=1.0545, alpha-gamma=+4.35e-03): pro: r_c 1.1428 (-2.1e-02), dOmega/Omega = -2.17e-02, dlambda/lambda = -9.37e-01; retro: r_c 3.9987 (+1.9e-03), dOmega/Omega = -1.17e-03, dlambda/lambda = -2.22e-04; 
+
+Power law in e (a = 0.6, prograde, dOmega/Omega): exponent d ln|dOmega|/d ln e = 3.42 (companion paper: kappa_+ = Kerr + O(e^3))
+-> <repo>\inner-extremal-rbh\data\rotating_eikonal

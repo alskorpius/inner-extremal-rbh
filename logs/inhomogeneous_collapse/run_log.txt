@@ -1,0 +1,136 @@
+Inhomogeneous collapse with curvature regularization (LTB class). M_tot = 1, ball r0 = 20 (R0 = 10 R_s), start from rest.
+C0. Classical (ell=0), surface r0=20: max relative deviation from the cycloid 1.46e-12; integrator reached tau=95.000000 (status 0) (cycloid: singularity at 99.345883)
+C0. Classical eps=-0.1: first shell crossing: {'tau': 93.72, 'r': 19.75, 'R': 4.944572505110135}; crushed shells: 80 out of 84
+C0. Classical eps=0.1: first shell crossing: None; crushed shells: 80 out of 84
+
+Scenario: ell = 0.27102 M_tot, rho_c = 1.6251, Itot = 3.87154
+  derivative check (max relative difference vs finite differences): m_R 7.7e-04, m_M 1.4e+02, m_RR 1.7e-04, m_RM 3.1e-04; m(1,R) vs branch-A backbone: 2.4e-08
+  static horizons at M=1: [(0.67639, -5e-06), (1.98465, 0.221076)]
+
+=== model hayward_ellA: ell=0.27101577964329177; static horizons of the exterior region (R, kappa): [(0.29339, -2.65846), (1.96183, 0.24027)]
+-- eps=+0.00: bounce for 184/184 shells, tau_b from 99.98671929666774 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00437', '0.00437', '0.00437', '0.00437', '0.00437', '0.00437', '0.00437', '0.00437', '0.00423', '0.00254']; K at bounce: ['4379', '4379', '4379', '4379', '4379', '4379', '4379', '4379', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 4380 at tau=99.94, r=9.000; min(rho+p_perp)=1.56e-10, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: 0.9835225120193105
+   SHELL CROSSING: first at tau=99.986 (r=20.000, R=0.0873, R/ell=0.322), after this shell's bounce: False (after -0.00025051305955514636), inside the trapped region: False; K at |Y|=0.1: 4312.048257084456, at 0.01: 4312.048257084456; shells crossed by the end: 25
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 2.0e-10; time 14 s
+   horizons inside the ball: 190 events; during contraction R from 0.2934 to 1.962, kappa from -3.02 to +0.2403
+-- eps=+0.01: bounce for 184/184 shells, tau_b from 99.49331006591324 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00439', '0.00439', '0.00436', '0.00436', '0.00436', '0.00438', '0.00437', '0.00436', '0.00423', '0.00254']; K at bounce: ['4379', '4379', '4380', '4380', '4380', '4384', '4395', '4420', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 5.589e+08 at tau=100.04, r=11.250; min(rho+p_perp)=-355, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: 0.7840863651335486
+   SHELL CROSSING: first at tau=99.907 (r=13.875, R=0.07392, R/ell=0.273), after this shell's bounce: True (after 0.17749329429298655), inside the trapped region: False; K at |Y|=0.1: 2.1599925856907345, at 0.01: 4261.168811603304; shells crossed by the end: 95
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 2.3e-11; time 14 s
+   horizons inside the ball: 192 events; during contraction R from 0.2934 to 1.962, kappa from -2.729 to +0.2403
+-- eps=+0.10: bounce for 184/184 shells, tau_b from 95.35982518351473 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00454', '0.00457', '0.00455', '0.00453', '0.0045', '0.00449', '0.00445', '0.00441', '0.00423', '0.00254']; K at bounce: ['4377', '4376', '4383', '4282', '4333', '4259', '4277', '4309', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 1.93e+07 at tau=95.97, r=3.750; min(rho+p_perp)=-64.3, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: -161.46656207966475
+   SHELL CROSSING: first at tau=95.774 (r=4.625, R=0.02572, R/ell=0.0949), after this shell's bounce: True (after 0.1829889469996715), inside the trapped region: False; K at |Y|=0.1: 2.727747216112171, at 0.01: 4200.626941916469; shells crossed by the end: 154
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 1.2e-11; time 15 s
+   horizons inside the ball: 196 events; during contraction R from 0.2934 to 1.962, kappa from -2.658 to +0.3039
+-- eps=+0.30: bounce for 184/184 shells, tau_b from 87.76302202438075 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00498', '0.00493', '0.0049', '0.00489', '0.00483', '0.00472', '0.00461', '0.00451', '0.00423', '0.00254']; K at bounce: ['4369', '4375', '4328', '4271', '4285', '4275', '4291', '4306', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 1.239e+05 at tau=88.22, r=2.625; min(rho+p_perp)=-4.72, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: -202.5271555538606
+   SHELL CROSSING: first at tau=88.177 (r=3.000, R=0.01854, R/ell=0.0684), after this shell's bounce: True (after 0.18747131342517775), inside the trapped region: False; K at |Y|=0.1: 4.853568438050568, at 0.01: 4261.240901572828; shells crossed by the end: 165
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 1.2e-11; time 16 s
+   horizons inside the ball: 212 events; during contraction R from 0.2934 to 1.962, kappa from -2.658 to +0.3662
+-- eps=-0.01: bounce for 184/184 shells, tau_b from 99.98671929666865 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00434', '0.00434', '0.00431', '0.00433', '0.00432', '0.00435', '0.00435', '0.00436', '0.00423', '0.00254']; K at bounce: ['4379', '4379', '4381', '4381', '4381', '4384', '4393', '4409', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 1.626e+07 at tau=99.45, r=13.625; min(rho+p_perp)=-38.4, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: 0.7744343347400323
+   SHELL CROSSING: first at tau=98.775 (r=19.875, R=1.169, R/ell=4.31), after this shell's bounce: False (after -1.2176959466006707), inside the trapped region: True; K at |Y|=0.1: 0.24365751337420696, at 0.01: 481.37090298793134; shells crossed by the end: 96
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 4.4e-11; time 14 s
+   horizons inside the ball: 188 events; during contraction R from 0.2934 to 1.962, kappa from -13.06 to +5.64
+-- eps=-0.10: bounce for 184/184 shells, tau_b from 99.98671929666865 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00414', '0.00414', '0.00414', '0.00414', '0.00416', '0.00417', '0.00427', '0.00429', '0.00423', '0.00254']; K at bounce: ['4383', '4384', '4424', '4406', '4353', '4375', '4315', '4332', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 4.119e+08 at tau=102.13, r=9.000; min(rho+p_perp)=-192, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: -157.46579316290615
+   SHELL CROSSING: first at tau=93.615 (r=19.875, R=5.006, R/ell=18.5), after this shell's bounce: False (after -6.433541380547226), inside the trapped region: False; K at |Y|=0.1: 0.014889778426466561, at 0.01: 3.4821143974403386; shells crossed by the end: 159
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 1.2e-11; time 15 s
+   horizons inside the ball: 184 events; during contraction R from 0.2934 to 1.962, kappa from -2.658 to +0.5389
+-- eps=-0.30: bounce for 184/184 shells, tau_b from 99.98671929666865 to 179.5606198965856 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00363', '0.00366', '0.0037', '0.00375', '0.00381', '0.00392', '0.00407', '0.0042', '0.00423', '0.00254']; K at bounce: ['4391', '4412', '4252', '4287', '4168', '4302', '4323', '4323', '4315', '4370']  (24/ell^4 = 4449)
+   K_max in the regular region = 1.567e+08 at tau=108.19, r=9.125; min(rho+p_perp)=-3.84, min rho=5.21e-11, max p_perp=0.214
+   fraction of the vacuum-like component in the ball mass at surface bounce: -195.63837514002478
+   SHELL CROSSING: first at tau=84.777 (r=19.875, R=8.836, R/ell=32.6), after this shell's bounce: False (after -15.396254452372432), inside the trapped region: False; K at |Y|=0.1: 0.0034536352285260267, at 0.01: 0.3501378383587145; shells crossed by the end: 172
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 1.2e-11; time 16 s
+   horizons inside the ball: 168 events; during contraction R from 0.2934 to 1.962, kappa from -2.658 to +0.4462
+
+=== model hayward_ell0.05: ell=0.05; static horizons of the exterior region (R, kappa): [(0.05065, -18.99515), (1.99875, 0.24969)]
+-- eps=+0.00: bounce for 184/184 shells, tau_b from 99.49025146256507 to 179.02590469096293 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00121', '0.00121', '0.00121', '0.00121', '0.00121', '0.00121', '0.00121', '0.00121', '0.00116', '0.000696']; K at bounce: ['3.802e+06', '3.802e+06', '3.802e+06', '3.802e+06', '3.802e+06', '3.802e+06', '3.802e+06', '3.802e+06', '3.764e+06', '3.791e+06']  (24/ell^4 = 3.84e+06)
+   K_max in the regular region = 3.828e+06 at tau=179.02, r=29.600; min(rho+p_perp)=5.32e-12, min rho=1.77e-12, max p_perp=6.29
+   fraction of the vacuum-like component in the ball mass at surface bounce: 1.8704231115121068
+   SHELL CROSSING: first at tau=99.490 (r=20.000, R=0.02421, R/ell=0.0893), after this shell's bounce: False (after -8.413418740360612e-06), inside the trapped region: False; K at |Y|=0.1: 3778212.4580119327, at 0.01: 3778212.4580119327; shells crossed by the end: 25
+   exterior-region horizons (event/static): R 1.99875/1.99875, kappa +0.24969/+0.24969; R 0.05065/0.05065, kappa -18.99515/-18.99515; R 1.99875/1.99875, kappa +0.24969/+0.24969; R 0.05065/0.05065, kappa -18.99515/-18.99515
+   check of K in the exterior region against the static formula: max relative difference 8.881784197001252e-16; energy integral: 5.1e-11; time 16 s
+   horizons inside the ball: 384 events; during contraction R from 0.05065 to 1.999, kappa from -19.36 to +0.2497
+-- eps=+0.10: bounce for 184/184 shells, tau_b from 94.86635539559664 to 179.02590469096293 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.001', '0.00124', '0.00116', '0.00119', '0.00114', '0.00121', '0.00118', '0.00123', '0.00116', '0.000696']; K at bounce: ['3.801e+06', '3.745e+06', '3.749e+06', '3.751e+06', '3.75e+06', '3.756e+06', '3.754e+06', '3.763e+06', '3.764e+06', '3.791e+06']  (24/ell^4 = 3.84e+06)
+   K_max in the regular region = 6.312e+06 at tau=94.97, r=1.500; min(rho+p_perp)=-12.9, min rho=1.77e-12, max p_perp=6.29
+   fraction of the vacuum-like component in the ball mass at surface bounce: -338.8389189141785
+   SHELL CROSSING: first at tau=94.942 (r=2.000, R=0.002885, R/ell=0.0106), after this shell's bounce: True (after 0.033167366262631504), inside the trapped region: False; K at |Y|=0.1: 1.1377817303141953, at 0.01: 1279188.8453919622; shells crossed by the end: 172
+   exterior-region horizons (event/static): R 1.99875/1.99875, kappa +0.24969/+0.24969; R 0.05065/0.05065, kappa -18.99515/-18.99515; R 1.99875/1.99875, kappa +0.24969/+0.24969; R 0.05065/0.05065, kappa -18.99515/-18.99515
+   check of K in the exterior region against the static formula: max relative difference 8.881784197001252e-16; energy integral: 1.9e-11; time 18 s
+   horizons inside the ball: 392 events; during contraction R from 0.05065 to 1.999, kappa from -19 to +1.845
+-- eps=-0.10: bounce for 184/184 shells, tau_b from 99.49025146256507 to 179.02590469096293 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00115', '0.00115', '0.00109', '0.00098', '0.000986', '0.000838', '0.00118', '0.00106', '0.00116', '0.000696']; K at bounce: ['3.804e+06', '3.763e+06', '3.758e+06', '3.76e+06', '3.76e+06', '3.795e+06', '3.765e+06', '3.754e+06', '3.764e+06', '3.791e+06']  (24/ell^4 = 3.84e+06)
+   K_max in the regular region = 5.86e+10 at tau=104.71, r=1.375; min(rho+p_perp)=-3.42e+03, min rho=1.77e-12, max p_perp=6.29
+   fraction of the vacuum-like component in the ball mass at surface bounce: -331.82237946373147
+   SHELL CROSSING: first at tau=93.603 (r=19.875, R=5.008, R/ell=18.5), after this shell's bounce: False (after -5.949110948285835), inside the trapped region: False; K at |Y|=0.1: 0.015089049418430665, at 0.01: 3.910823716901965; shells crossed by the end: 174
+   exterior-region horizons (event/static): R 1.99875/1.99875, kappa +0.24969/+0.24969; R 0.05065/0.05065, kappa -18.99515/-18.99515; R 1.99875/1.99875, kappa +0.24969/+0.24969; R 0.05065/0.05065, kappa -18.99515/-18.99515
+   check of K in the exterior region against the static formula: max relative difference 8.881784197001252e-16; energy integral: 1.2e-11; time 20 s
+   horizons inside the ball: 376 events; during contraction R from 0.05065 to 1.999, kappa from -19 to +2.542
+
+=== model scenario: ell=0.2710 (branch A, triple root at M=1); static horizons of the exterior region (R, kappa): [(0.67639, -0.0), (1.98465, 0.22108)]
+-- eps=+0.00: bounce for 184/184 shells, tau_b from 100.27376323257964 to 179.83679835953197 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00436', '0.00436', '0.00436', '0.00436', '0.00436', '0.00436', '0.00436', '0.00436', '0.00424', '0.00256']; K at bounce: ['4345', '4345', '4345', '4345', '4345', '4345', '4345', '4345', '4220', '4331']  (24/ell^4 = 4449)
+   K_max in the regular region = 4348 at tau=100.24, r=0.250; min(rho+p_perp)=2.5e-30, min rho=2.09e-31, max p_perp=0.0899
+   fraction of the vacuum-like component in the ball mass at surface bounce: 0.9842994357557144
+   SHELL CROSSING: first at tau=100.274 (r=20.000, R=0.08722, R/ell=0.322), after this shell's bounce: False (after -0.0002531398318836864), inside the trapped region: False; K at |Y|=0.1: 4219.326938597842, at 0.01: 4219.326938597842; shells crossed by the end: 25
+   exterior-region horizons (event/static): R 1.98465/1.98465, kappa +0.22108/+0.22108; R 0.67457/0.67639, kappa -0.00003/-0.00000; R 1.98465/1.98465, kappa +0.22108/+0.22108; R 0.67456/0.67639, kappa -0.00003/-0.00000
+   check of K in the exterior region against the static formula: max relative difference 8.881784197001252e-16; energy integral: 1.1e-07; time 615 s
+   horizons inside the ball: 44 events; during contraction R from 0.6746 to 1.985, kappa from -0.6093 to +0.2211
+-- eps=+0.10: bounce for 184/184 shells, tau_b from 95.6480022348177 to 179.83679835953197 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00456', '0.00458', '0.00456', '0.00451', '0.00448', '0.0045', '0.00446', '0.00441', '0.00424', '0.00256']; K at bounce: ['4339', '4339', '4355', '4251', '4297', '4165', '4179', '4219', '4220', '4331']  (24/ell^4 = 4449)
+   K_max in the regular region = 1.767e+06 at tau=96.27, r=3.875; min(rho+p_perp)=-17.4, min rho=2.09e-31, max p_perp=0.0899
+   fraction of the vacuum-like component in the ball mass at surface bounce: -128.7841966002236
+   SHELL CROSSING: first at tau=96.064 (r=4.750, R=0.02578, R/ell=0.0951), after this shell's bounce: True (after 0.17247337941527974), inside the trapped region: False; K at |Y|=0.1: 2.214478890246655, at 0.01: 3916.983756919388; shells crossed by the end: 153
+   exterior-region horizons (event/static): R 1.98465/1.98465, kappa +0.22108/+0.22108; R 0.67457/0.67639, kappa -0.00003/-0.00000; R 1.98465/1.98465, kappa +0.22108/+0.22108; R 0.67456/0.67639, kappa -0.00003/-0.00000
+   check of K in the exterior region against the static formula: max relative difference 8.881784197001252e-16; energy integral: 1.1e-07; time 978 s
+   horizons inside the ball: 44 events; during contraction R from 0.6746 to 1.985, kappa from -0.1844 to +0.2211
+-- eps=-0.10: bounce for 184/184 shells, tau_b from 100.27376329148822 to 179.83679835953197 (classical 99.35); crushed: 0
+   R_b/r by shell (every 20th): ['0.00414', '0.00415', '0.00415', '0.00412', '0.00418', '0.0042', '0.00427', '0.00431', '0.00424', '0.00256']; K at bounce: ['4351', '4353', '4414', '4363', '4256', '4280', '4205', '4232', '4220', '4331']  (24/ell^4 = 4449)
+   K_max in the regular region = 3.961e+06 at tau=105.01, r=3.375; min(rho+p_perp)=-25.8, min rho=2.09e-31, max p_perp=0.0899
+   fraction of the vacuum-like component in the ball mass at surface bounce: -125.92486503800104
+   SHELL CROSSING: first at tau=93.603 (r=19.875, R=5.008, R/ell=18.5), after this shell's bounce: False (after -6.733072927094128), inside the trapped region: False; K at |Y|=0.1: 0.015096137472593522, at 0.01: 3.9272796385888857; shells crossed by the end: 158
+   exterior-region horizons (event/static): R 1.98465/1.98465, kappa +0.22108/+0.22108; R 0.67457/0.67639, kappa -0.00003/-0.00000; R 1.98465/1.98465, kappa +0.22108/+0.22108; R 0.67456/0.67639, kappa -0.00003/-0.00000
+   check of K in the exterior region against the static formula: max relative difference 8.881784197001252e-16; energy integral: 1.1e-07; time 914 s
+   horizons inside the ball: 40 events; during contraction R from 0.6746 to 1.985, kappa from -0.08668 to +0.3233
+
+=== model local_lamA: ell=0.27101577964329177*M(r); static horizons of the exterior region (R, kappa): [(0.29339, -2.65846), (1.96183, 0.24027)]
+-- eps=+0.00: bounce for 183/184 shells, tau_b from 99.34588619823732 to 179.5606198965856 (classical 99.35); crushed: 1
+   R_b/r by shell (every 20th): ['nan', '0.000792', '0.00336', '0.003', '0.000768', '0.00118', '0.00191', '0.00304', '0.00423', '0.00254']; K at bounce: ['nan', '2.503e+13', '6.932e+09', '9.613e+07', '8.792e+06', '7.244e+05', '1.224e+05', '1.421e+04', '4315', '4370']  (24/ell^4 = 3.84e+06)
+   K_max in the regular region = 1.891e+29 at tau=99.35, r=0.125; min(rho+p_perp)=1.56e-10, min rho=-7.01e+03, max p_perp=8.13e+08
+   fraction of the vacuum-like component in the ball mass at surface bounce: nan
+   SHELL CROSSING: first at tau=99.346 (r=0.250, R=9.454e-07, R/ell=3.49e-06), after this shell's bounce: True (after 1.090906778244971e-07), inside the trapped region: True; K at |Y|=0.1: 0.8979830053331361, at 0.01: 31073.142766664903; shells crossed by the end: 183
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 2.0e-11; time 17 s
+   horizons inside the ball: 638 events; during contraction R from 7.163e-08 to 1.962, kappa from -6.787e+06 to +0.2403
+-- eps=+0.10: bounce for 183/184 shells, tau_b from 94.72325912922659 to 179.5606198965856 (classical 99.35); crushed: 1
+   R_b/r by shell (every 20th): ['nan', '0.00844', '0.00852', '0.00261', '0.000913', '0.00139', '0.00214', '0.00312', '0.00423', '0.00254']; K at bounce: ['nan', '7.156e+06', '2.148e+06', '1.841e+08', '1.447e+07', '7.709e+05', '1.082e+05', '4.843e+04', '4315', '4370']  (24/ell^4 = 3.84e+06)
+   K_max in the regular region = 8.501e+11 at tau=94.88, r=3.750; min(rho+p_perp)=1.56e-10, min rho=-7.32, max p_perp=3.38e+03
+   fraction of the vacuum-like component in the ball mass at surface bounce: nan
+   SHELL CROSSING: first at tau=94.723 (r=0.250, R=0.002864, R/ell=0.0106), after this shell's bounce: True (after 9.99733629214461e-10), inside the trapped region: False; K at |Y|=0.1: 1.0475106400300191, at 0.01: 611613.5338328665; shells crossed by the end: 183
+   exterior-region horizons (event/static): R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846; R 1.96183/1.96183, kappa +0.24027/+0.24027; R 0.29339/0.29339, kappa -2.65846/-2.65846
+   check of K in the exterior region against the static formula: max relative difference 1.1102230246251565e-15; energy integral: 1.2e-11; time 18 s
+   horizons inside the ball: 638 events; during contraction R from 7.879e-08 to 1.962, kappa from -9.896e+06 to +8.926e+05

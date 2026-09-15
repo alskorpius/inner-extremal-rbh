@@ -1,0 +1,14 @@
+T25: closed forms for the family constants
+  base profile: s1* = 2.842420699852, u_s = 2.90756777, R1 = 0.23299037, rho_c = 1.62514546
+  lambda = 0.27101578, R-/M = 0.67762960 (sign changes of f: [0.6774352, 0.6776295999999999, 0.6778112]), R+/M = 1.9846481547, kappa+ = 0.22108219, kappa- = 5.88e-08
+  precision: the merger point of the stationary points of H is set by the grid in ln u (step 2.9e-04), so R-, lambda and R+ are reliable to ~4 significant figures; kappa+ ~4 digits
+  lambda_max (T15, search for the maximum over 8 parameters, precision ~3 digits): 1.066
+
+  number | value | tolerance | mpmath.identify | polynomial (complexity, coefficients) | control (best complexity of 10 random) | verdict
+  lambda     | 0.271016 | 1e-04 | ((-1/2) + (1/2)*pi + (-1/2)*e + (-1/2)*sqrt(2) + 1*sqrt(3))/e | (11, (-1, 3, 2, 2)) | 10 (identify triggers on 10/10 random) | match not simpler than random -- not accepted
+  R-/M       | 0.677630 | 2e-04 | ((-5) + 4*e + (-3)*sqrt(3)) | (10, (-2, 0, 3, 2)) | 8 (identify triggers on 10/10 random) | match not simpler than random -- not accepted
+  R+/M       | 1.984648 | 1e-04 | ((4-sqrt(0))/2) | None | 16 (identify triggers on 10/10 random) | match not simpler than random -- not accepted
+  kappa+     | 0.221082 | 1e-04 | ((1/2) + (-1)*e + (1/2)*sqrt(2) + 1*sqrt(3)) | (15, (-2, 9, 0, 1)) | 12 (identify triggers on 10/10 random) | match not simpler than random -- not accepted
+  lambda_max | 1.066000 | 2e-03 | (1*e + (-2)*sqrt(2) + 2*sqrt(3))/pi | (14, (-6, 0, 1, 4)) | 6 (identify triggers on 10/10 random) | match not simpler than random -- not accepted
+
+  lambda_max: family boundary -- maximum of lambda over 8 parameters of the manual parametrization (sigmoids + Gaussian dip); analytically extremality = a fourfold root f = f' = f'' = f''' = 0 (4 conditions on the profile), which for the given parametrization is an equation on the parameters, not on the number; there is no algebraic equation for lambda_max.

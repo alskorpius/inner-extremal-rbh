@@ -1,0 +1,25 @@
+Hayward M=1.0, ell=0.2: inner horizon R_- = 0.211495; f(m->inf, r) = 1 - r^2/ell^2 -> negative for r > ell
+
+Shells dm_in = dm_out = 0.001: inflated mass m_D at intersection at r0 = R_- (1 + eps)
+  eps= 1e-01: f_A=-1.691e-01, required f_D=-1.6908e-01, f(m->inf)=-0.3531, m_D = 1
+  eps= 1e-02: f_A=-1.684e-02, required f_D=-1.6841e-02, f(m->inf)=-0.1407, m_D = 1
+  eps= 1e-03: f_A=-1.683e-03, required f_D=-1.6760e-03, f(m->inf)=-0.1205, m_D = 0.9999
+  eps= 1e-04: f_A=-1.683e-04, required f_D=-1.0158e-04, f(m->inf)=-0.1185, m_D = 0.9994
+  eps= 1e-05: f_A=-1.683e-05, required f_D=+6.4796e-04, f(m->inf)=-0.1183, m_D = 0.9937
+  eps= 1e-06: f_A=-1.683e-06, required f_D=+6.6439e-03, f(m->inf)=-0.1183, m_D = 0.9405
+
+Shells dm_in = dm_out = 1e-06: inflated mass m_D at intersection at r0 = R_- (1 + eps)
+  eps= 1e-01: f_A=-1.691e-01, required f_D=-1.6908e-01, f(m->inf)=-0.3531, m_D = 1
+  eps= 1e-02: f_A=-1.684e-02, required f_D=-1.6842e-02, f(m->inf)=-0.1407, m_D = 1
+  eps= 1e-03: f_A=-1.683e-03, required f_D=-1.6829e-03, f(m->inf)=-0.1205, m_D = 1
+  eps= 1e-04: f_A=-1.683e-04, required f_D=-1.6828e-04, f(m->inf)=-0.1185, m_D = 1
+  eps= 1e-05: f_A=-1.683e-05, required f_D=-1.6827e-05, f(m->inf)=-0.1183, m_D = 1
+  eps= 1e-06: f_A=-1.683e-06, required f_D=-1.6761e-06, f(m->inf)=-0.1183, m_D = 1
+
+Curvature of region D (K_max, tidal) at the found m_D -- saturation at fixed ell:
+  m_D=       1: K_max(core)=15000 (24/ell^4=15000), max|f''/2|=25, R_-=0.21149490145556865
+  m_D=      10: K_max(core)=15000 (24/ell^4=15000), max|f''/2|=25, R_-=None
+  m_D=     100: K_max(core)=15000 (24/ell^4=15000), max|f''/2|=25, R_-=None
+  m_D=   10000: K_max(core)=15000 (24/ell^4=15000), max|f''/2|=25, R_-=None
+  m_D=   1e+06: K_max(core)=15000 (24/ell^4=15000), max|f''/2|=25, R_-=None
+-> <repo>\inner-extremal-rbh\data\stability

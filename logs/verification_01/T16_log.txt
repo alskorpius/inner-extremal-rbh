@@ -1,0 +1,13 @@
+T16: base profile: s1* = 2.8424206999 (bisection 45 steps over s1 in [2.02, 3.5]: step 4.2e-14), u_s = 2.907568, scale = 1.10860812, R1 = 0.232990, rho_c = 1.625145, lambda = 0.27102
+  rho' <= 0 everywhere: True; max rho' = -1.025e-19; sigma = -R rho'/rho: min 0.0000 (at R = 0.001), max 24.000 (at R = 10.000)
+  min(rho + p_perp) = min(-R rho'/2) = 5.126e-19 at R = 10.0000 (rho there 4.272e-20); rho > 0 everywhere: True; min rho = 4.272e-20 at R = 10
+  min(rho + p_r) = 0 identically (p_r = -rho); SEC: min(rho + p_r + 2 p_perp) = min(-2 rho + sigma rho) = -3.2503 (< 0 in the core)
+  roots of f (sign change): [0.677435, 0.67763, 0.677811, 1.984648]; minimum |f| on (0.3, 1.5): R = 0.677642, f = 1.40e-12, f' = 1.27e-07, f'' = -1.99e-04
+  R- = 0.67744, kappa- = -5.38e-08, f''(R-) = +2.47e-03; sigma(R-) = 2.00113, 8 pi R-^2 rho(R-) = 1.000000
+  R+ = 1.98465, kappa+ = 0.22108, T_H/T_Schw = 0.8843, m(R+)/M = 0.99232, halo outside R+ = 0.00768
+  rho(3 M)/rho_c = 9.14e-08; 1 - m(3 M)/M = 2.41e-06
+  rho(10 M)/rho_c = 2.63e-20; 1 - m(10 M)/M = 0.00e+00
+  shift of the dip depth d by +1e-06 at the same normalization at u_s: f(u_s) = +1.1e-16, number of roots on (0.3, 1.7) u_s: 1, f'(u_s)/R1 = -3.20e-07
+  shift of the dip depth d by -1e-06 at the same normalization at u_s: f(u_s) = +1.9e-24, number of roots on (0.3, 1.7) u_s: 3, f'(u_s)/R1 = -1.59e-07
+  shift of the dip depth d by +1e-04 at the same normalization at u_s: f(u_s) = +5.6e-17, number of roots on (0.3, 1.7) u_s: 1, f'(u_s)/R1 = -8.30e-06
+  shift of the dip depth d by -1e-04 at the same normalization at u_s: f(u_s) = +1.1e-16, number of roots on (0.3, 1.7) u_s: 3, f'(u_s)/R1 = +7.82e-06

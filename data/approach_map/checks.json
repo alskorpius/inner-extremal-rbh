@@ -1,0 +1,386 @@
+[
+  {
+    "check": "schwarzschild: f' vs FD",
+    "error": 3.995039926561863e-08,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "schwarzschild: f'' vs FD",
+    "error": 1.0915415218295582e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "schwarzschild: R' vs FD",
+    "error": 1.89289139918003e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "schwarzschild: R'' vs FD",
+    "error": 0.0,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "hayward: f' vs FD",
+    "error": 8.734558799980989e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "hayward: f'' vs FD",
+    "error": 1.326066735799219e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "hayward: R' vs FD",
+    "error": 1.89289139918003e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "hayward: R'' vs FD",
+    "error": 0.0,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "bardeen: f' vs FD",
+    "error": 2.6441907571700757e-10,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "bardeen: f'' vs FD",
+    "error": 1.7443916107093027e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "bardeen: R' vs FD",
+    "error": 1.89289139918003e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "bardeen: R'' vs FD",
+    "error": 0.0,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "bardeen_samerho: f' vs FD",
+    "error": 1.1794376458536673e-10,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "bardeen_samerho: f'' vs FD",
+    "error": 1.3665346655296171e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "bardeen_samerho: R' vs FD",
+    "error": 1.89289139918003e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "bardeen_samerho: R'' vs FD",
+    "error": 0.0,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: f' vs FD",
+    "error": 5.562138183992515e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: f'' vs FD",
+    "error": 1.0915415218295582e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: R' vs FD",
+    "error": 1.89289139918003e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: R'' vs FD",
+    "error": 0.0,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: f' vs FD",
+    "error": 1.2725267169187726e-10,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: f'' vs FD",
+    "error": 1.8611242609851006e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: R' vs FD",
+    "error": 2.4243559615450947e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: R'' vs FD",
+    "error": 4.907980807121081e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "triple_root: f' vs FD",
+    "error": 3.584024026550773e-09,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "triple_root: f'' vs FD",
+    "error": 2.6957799631232195e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "triple_root: R' vs FD",
+    "error": 1.89289139918003e-11,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "triple_root: R'' vs FD",
+    "error": 0.0,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "pocket: f' vs FD",
+    "error": 4.5601525166352775e-08,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "pocket: f'' vs FD",
+    "error": 1.326066735799219e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "pocket: R' vs FD",
+    "error": 1.1456988961328432e-08,
+    "tolerance": 1e-07,
+    "passed": true
+  },
+  {
+    "check": "pocket: R'' vs FD",
+    "error": 1.2774419803727079e-07,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "schwarzschild: G=0",
+    "error": 1.4210854715202004e-14,
+    "tolerance": 1e-12,
+    "passed": true
+  },
+  {
+    "check": "schwarzschild: K=48m^2/R^6",
+    "error": 4.440892098500626e-16,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  {
+    "check": "hayward: 8pi rho(0) = 3/ell_eff^2",
+    "error": 2.2499998530989274e-09,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "hayward: p_perp/rho(0) = -1",
+    "error": 3.3749998351595423e-09,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "hayward: p_r/rho = -1 (everywhere, R=x)",
+    "error": 0.0,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  {
+    "check": "bardeen: 8pi rho(0) = 3/ell_eff^2",
+    "error": 5.624977851614865e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "bardeen: p_perp/rho(0) = -1",
+    "error": 5.624987343799681e-06,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "bardeen: p_r/rho = -1 (everywhere, R=x)",
+    "error": 0.0,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: 8pi rho(0) = 3/ell_eff^2",
+    "error": 1.1249996489937075e-09,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: p_perp/rho(0) = -1",
+    "error": 1.687500139624376e-09,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: p_r/rho = -1 (everywhere, R=x)",
+    "error": 0.0,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  {
+    "check": "schwarzschild: conservation (f>0)",
+    "error": 1.3605700391057236e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "hayward: conservation (f>0)",
+    "error": 4.74930375466871e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "bardeen: conservation (f>0)",
+    "error": 4.3891888288611595e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "bardeen_samerho: conservation (f>0)",
+    "error": 8.867167750918909e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "dymnikova: conservation (f>0)",
+    "error": 5.945046115041815e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: conservation (f>0)",
+    "error": 1.9218989670651982e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "triple_root: conservation (f>0)",
+    "error": 8.409306267466254e-11,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "pocket: conservation (f>0)",
+    "error": 1.7386251963035865e-08,
+    "tolerance": 1e-05,
+    "passed": true
+  },
+  {
+    "check": "pocket: K vs baseline",
+    "error": 1.4229645279990838e-15,
+    "tolerance": 1e-09,
+    "passed": true
+  },
+  {
+    "check": "pocket: epsilon8pi vs baseline",
+    "error": 6.356000975309867e-15,
+    "tolerance": 1e-09,
+    "passed": true
+  },
+  {
+    "check": "pocket: radial_pressure8pi vs baseline",
+    "error": 0.0,
+    "tolerance": 1e-09,
+    "passed": true
+  },
+  {
+    "check": "pocket: transverse_pressure8pi vs baseline",
+    "error": 2.8078997392464068e-14,
+    "tolerance": 1e-09,
+    "passed": true
+  },
+  {
+    "check": "pocket: NEC8pi vs baseline",
+    "error": 5.798625528170442e-16,
+    "tolerance": 1e-09,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: 8pi T(n,n)|throat = -2/a^2",
+    "error": 2.220446049250313e-16,
+    "tolerance": 1e-12,
+    "passed": true
+  },
+  {
+    "check": "simpson_visser: rho+p_r|throat = -2|f|/a^2",
+    "error": 1.7763568394002505e-15,
+    "tolerance": 1e-12,
+    "passed": true
+  },
+  {
+    "check": "triple_root: F(r_-)=F(r_+)=0",
+    "error": 0.0,
+    "tolerance": 1e-12,
+    "passed": true
+  },
+  {
+    "check": "triple_root: F'(r_-)=0 (kappa_-=0)",
+    "error": 0.0,
+    "tolerance": 1e-12,
+    "passed": true
+  },
+  {
+    "check": "triple_root: F'(r_+) != 0",
+    "error": 0.005407407407407408,
+    "tolerance": 1.0,
+    "passed": true
+  },
+  {
+    "check": "triple_root: D>0 on [0,50]",
+    "error": 0.0,
+    "tolerance": 0.0,
+    "passed": true
+  },
+  {
+    "check": "triple_root: 8pi rho(0)=3 b2/(r_-^3 r_+)",
+    "error": 1.3407489390271365e-05,
+    "tolerance": 0.0001,
+    "passed": true
+  },
+  {
+    "check": "triple_root: 1-F -> 2m/R at large R",
+    "error": 0.00017810858523215067,
+    "tolerance": 0.01,
+    "passed": true
+  }
+]

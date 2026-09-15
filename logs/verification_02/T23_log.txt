@@ -1,0 +1,32 @@
+T23: frame dragging omega, ergoregions and radial flux inside a rotating triple inner root (Franzin et al. 2022, Gurses-Gursey class)
+
+(0) Symbolic: G_rt = R_rt for Kerr with M -> m(r) (arbitrary m):
+    R_rt = 0  -> no radial energy flux T^r_t identically for any m(r)
+
+  a = 0.6, e = 0.5: r+ = 1.80000, r- = 0.25714; Delta(r+) = 1.0e-15, Delta(r-) = 4.5e-15, Delta'(r-) = -3.7e-08, Delta''(r-) = 6.1e-05; denominator of m(r): discriminant -0.014 (< 0 -- no poles)
+    Omega+ = 0.166667 (Kerr 0.166667), Omega- = 1.408046 (Kerr 1.500000 at Kerr r- = 0.2000); Omega-/Omega+ = 8.4483 (Kerr 9.0000); theta dependence on the horizons: 0.0e+00, 1.2e-14
+    m(0) = 0.9901 M (not 0: the GG-class core is regularized by the conformal factor, not by m); omega(r->0): equator 1.6667 (= 1/a = 1.6667), theta = 60 deg: 3.67e-05, axis: 9.17e-06; min omega inside r- = 9.17e-04 (> 0: no zero-angular-momentum core)
+    ergosurfaces at theta = 90 deg: r = 2.00006
+    ergosurfaces at theta = 60 deg: r = 0.04672, 1.95399
+    ergosurfaces at theta = 30 deg: r = 0.15206, 1.85442
+
+  a = 0.6, e = 1.0: r+ = 1.80000, r- = 0.36000; Delta(r+) = 1.1e-16, Delta(r-) = 2.2e-16, Delta'(r-) = -3.2e-09, Delta''(r-) = 0.0e+00; denominator of m(r): discriminant -0.159 (< 0 -- no poles)
+    Omega+ = 0.166667 (Kerr 0.166667), Omega- = 1.225490 (Kerr 1.500000 at Kerr r- = 0.2000); Omega-/Omega+ = 7.3529 (Kerr 9.0000); theta dependence on the horizons: 0.0e+00, 4.4e-16
+    m(0) = 0.9210 M (not 0: the GG-class core is regularized by the conformal factor, not by m); omega(r->0): equator 1.6667 (= 1/a = 1.6667), theta = 60 deg: 3.41e-05, axis: 8.53e-06; min omega inside r- = 8.53e-04 (> 0: no zero-angular-momentum core)
+    ergosurfaces at theta = 90 deg: r = 2.00167
+    ergosurfaces at theta = 60 deg: r = 0.05110, 1.95533
+    ergosurfaces at theta = 30 deg: r = 0.17824, 1.85500
+
+  a = 0.9, e = 0.5: r+ = 1.43589, r- = 0.66505; Delta(r+) = -1.3e-15, Delta(r-) = 1.9e-14, Delta'(r-) = -6.3e-09, Delta''(r-) = 1.1e-06; denominator of m(r): discriminant -0.038 (< 0 -- no poles)
+    Omega+ = 0.313395 (Kerr 0.313395), Omega- = 0.718679 (Kerr 0.797717 at Kerr r- = 0.5641); Omega-/Omega+ = 2.2932 (Kerr 2.5454); theta dependence on the horizons: 5.6e-17, 6.3e-15
+    m(0) = 0.9975 M (not 0: the GG-class core is regularized by the conformal factor, not by m); omega(r->0): equator 1.1111 (= 1/a = 1.1111), theta = 60 deg: 1.09e-05, axis: 2.74e-06; min omega inside r- = 2.74e-04 (> 0: no zero-angular-momentum core)
+    ergosurfaces at theta = 90 deg: r = 2.00062
+    ergosurfaces at theta = 60 deg: r = 0.10736, 1.89366
+    ergosurfaces at theta = 30 deg: r = 0.37824, 1.62704
+
+  a = 0.9, e = 1.0: r+ = 1.43589, r- = 0.81000; Delta(r+) = -4.9e-15, Delta(r-) = -8.0e-15, Delta'(r-) = -6.9e-10, Delta''(r-) = 3.7e-05; denominator of m(r): discriminant -0.287 (< 0 -- no poles)
+    Omega+ = 0.313395 (Kerr 0.313395), Omega- = 0.613874 (Kerr 0.797717 at Kerr r- = 0.5641); Omega-/Omega+ = 1.9588 (Kerr 2.5454); theta dependence on the horizons: 1.7e-16, 1.8e-15
+    m(0) = 0.9799 M (not 0: the GG-class core is regularized by the conformal factor, not by m); omega(r->0): equator 1.1111 (= 1/a = 1.1111), theta = 60 deg: 1.08e-05, axis: 2.69e-06; min omega inside r- = 2.69e-04 (> 0: no zero-angular-momentum core)
+    ergosurfaces at theta = 90 deg: r = 2.01228
+    ergosurfaces at theta = 60 deg: r = 0.10984, 1.90592
+    ergosurfaces at theta = 30 deg: r = 0.39830, 1.63865

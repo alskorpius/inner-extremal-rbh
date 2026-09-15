@@ -1,0 +1,145 @@
+T30: first-order phase transition in the T-region (KS). M = 1, start b₀ = 1.9 inside the Schwarzschild horizon.
+  base profile: ρ_c = 1.6251, ℓ = 0.2710, s(u₃) = 1.955e-03 (scenario-EOS threshold)
+
+(A) control without transition, p = ρ/3, ρ₀ ≪: outcome — singularity in the fluid phase (ḃ<0 until b→0) at b = 1.00e-03, τ = 2.24; |C| = 0.0e+00
+
+(B) Transition to the p_x = p_⊥ = −ρ branch (fixed ε_c, companion-paper scenario): outcome, m₀, Nariai condition 9Λm₀² (1 = degenerate exit)
+  ℓ/M | ρ₀/ε_c | ΔE/ε_c | τ_rel | b_c | m_c | ρ_vac/ε_c | m₀ | m₀/m₀* | 9Λm₀² | outcome | κ_exit | |ḃ²+f_SdS| | |C|
+  0.10 |   1e-04 | +0.0 | 0.0 | 0.007 | 1.010 | 1.00 | +1.0101 | +52.49 | 2754.687 | singularity (b→0) in the vacuum phase | +nan | 7.6e-07 | 0.0e+00
+  0.10 |   1e-04 | +0.0 | 0.1 | 0.007 | 1.010 | 1.00 | +1.0101 | +52.49 | 2754.687 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.10 |   1e-04 | +0.0 | 1.0 | 0.007 | 1.010 | 1.00 | +1.0101 | +52.49 | 2754.687 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.10 |   1e-04 | +0.5 | 0.0 | 0.007 | 1.010 | 1.50 | +1.0101 | +64.28 | 4131.946 | singularity (b→0) in the vacuum phase | +nan | 7.6e-07 | 0.0e+00
+  0.10 |   1e-04 | -0.5 | 0.0 | 0.007 | 1.010 | 0.50 | +1.0101 | +37.11 | 1377.372 | singularity (b→0) in the vacuum phase | +nan | 7.6e-07 | 0.0e+00
+  0.10 |   1e-04 | +2.0 | 0.0 | 0.007 | 1.010 | 3.00 | +1.0100 | +90.90 | 8263.383 | singularity (b→0) in the vacuum phase | +nan | 7.6e-07 | 0.0e+00
+  0.10 |   1e-02 | +0.0 | 0.0 | 1.871 | 1.532 | 1.00 | -325.8613 | -16932.25 | 286701045.277 | exit through a simple horizon (κ₋<0), R-region | -2.802e+02 | 2.2e-11 | 0.0e+00
+  0.10 |   1e-02 | +0.0 | 0.1 | 1.871 | 1.532 | 1.00 | -325.8613 | -16932.25 | 286701045.277 | not completed within τ_max | -4.248e+17 | nan | 0.0e+00
+  0.10 |   1e-02 | +0.0 | 1.0 | 1.871 | 1.532 | 1.00 | -325.8613 | -16932.25 | 286701045.277 | not completed within τ_max | -9.912e+17 | nan | 0.0e+00
+  0.10 |   1e-02 | +0.5 | 0.0 | 1.871 | 1.532 | 1.50 | -489.5578 | -31155.27 | 970650883.994 | exit through a simple horizon (κ₋<0), R-region | -4.205e+02 | 2.0e-11 | 0.0e+00
+  0.10 |   1e-02 | -0.5 | 0.0 | 1.871 | 1.532 | 0.50 | -162.1647 | -5958.31 | 35501480.384 | exit through a simple horizon (κ₋<0), R-region | -1.399e+02 | 2.2e-11 | 0.0e+00
+  0.10 |   1e-02 | +2.0 | 0.0 | 1.871 | 1.532 | 3.00 | -980.6476 | -88258.28 | 7789523936.239 | exit through a simple horizon (κ₋<0), R-region | -8.414e+02 | 2.8e-11 | 0.0e+00
+  0.10 |   3e-01 | +0.0 | 0.0 | 1.900 | 1.041 | 1.00 | -341.6816 | -17754.29 | 315214965.587 | exit through a simple horizon (κ₋<0), R-region | -2.846e+02 | 3.4e-12 | 0.0e+00
+  0.10 |   3e-01 | +0.0 | 0.1 | 1.900 | 1.041 | 1.00 | -341.6816 | -17754.29 | 315214965.587 | not completed within τ_max | -2.073e+19 | nan | 0.0e+00
+  0.10 |   3e-01 | +0.0 | 1.0 | 1.900 | 1.041 | 1.00 | -341.6816 | -17754.29 | 315214965.587 | not completed within τ_max | -2.934e+19 | nan | 0.0e+00
+  0.10 |   3e-01 | +0.5 | 0.0 | 1.900 | 1.041 | 1.50 | -513.0431 | -32649.86 | 1066013365.318 | exit through a simple horizon (κ₋<0), R-region | -4.271e+02 | 9.8e-12 | 0.0e+00
+  0.10 |   3e-01 | -0.5 | 0.0 | 1.900 | 1.041 | 0.50 | -170.3201 | -6257.96 | 39162041.394 | exit through a simple horizon (κ₋<0), R-region | -1.422e+02 | 5.6e-12 | 0.0e+00
+  0.10 |   3e-01 | +2.0 | 0.0 | 1.900 | 1.041 | 3.00 | -1027.1276 | -92441.48 | 8545427345.107 | exit through a simple horizon (κ₋<0), R-region | -8.545e+02 | 5.9e-11 | 0.0e+00
+  0.27 |   1e-04 | +0.0 | 0.0 | 0.007 | 1.001 | 1.00 | +1.0013 | +19.27 | 371.322 | singularity (b→0) in the vacuum phase | +nan | 5.4e-07 | 0.0e+00
+  0.27 |   1e-04 | +0.0 | 0.1 | 0.007 | 1.001 | 1.00 | +1.0013 | +19.27 | 371.322 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.27 |   1e-04 | +0.0 | 1.0 | 0.007 | 1.001 | 1.00 | +1.0013 | +19.27 | 371.322 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.27 |   1e-04 | +0.5 | 0.0 | 0.007 | 1.001 | 1.50 | +1.0013 | +23.60 | 556.981 | singularity (b→0) in the vacuum phase | +nan | 5.4e-07 | 0.0e+00
+  0.27 |   1e-04 | -0.5 | 0.0 | 0.007 | 1.001 | 0.50 | +1.0013 | +13.63 | 185.661 | singularity (b→0) in the vacuum phase | +nan | 5.4e-07 | 0.0e+00
+  0.27 |   1e-04 | +2.0 | 0.0 | 0.007 | 1.001 | 3.00 | +1.0013 | +33.38 | 1113.954 | singularity (b→0) in the vacuum phase | +nan | 5.4e-07 | 0.0e+00
+  0.27 |   1e-02 | +0.0 | 0.0 | 0.851 | 2.384 | 1.00 | -1.8462 | -35.53 | 1262.385 | exit through a simple horizon (κ₋<0), R-region | -1.333e+01 | 2.9e-10 | 0.0e+00
+  0.27 |   1e-02 | +0.0 | 0.1 | 0.851 | 2.384 | 1.00 | -1.8462 | -35.53 | 1262.385 | exit through a simple horizon (κ₋<0), R-region | -8.573e+05 | nan | 0.0e+00
+  0.27 |   1e-02 | +0.0 | 1.0 | 0.851 | 2.384 | 1.00 | -1.8462 | -35.53 | 1262.385 | not completed within τ_max | -7.261e+15 | nan | 0.0e+00
+  0.27 |   1e-02 | +0.5 | 0.0 | 0.851 | 2.384 | 1.50 | -3.9612 | -93.37 | 8717.401 | exit through a simple horizon (κ₋<0), R-region | -2.247e+01 | 2.4e-10 | 0.0e+00
+  0.27 |   1e-02 | -0.5 | 0.0 | 0.851 | 2.384 | 0.50 | +0.2688 | +3.66 | 13.384 | singularity (b→0) in the vacuum phase | +nan | 1.9e-07 | 0.0e+00
+  0.27 |   1e-02 | +2.0 | 0.0 | 0.851 | 2.384 | 3.00 | -10.3063 | -343.54 | 118022.506 | exit through a simple horizon (κ₋<0), R-region | -4.903e+01 | 2.1e-10 | 0.0e+00
+  0.27 |   3e-01 | +0.0 | 0.0 | 1.897 | 1.043 | 1.00 | -45.7689 | -880.82 | 775847.785 | exit through a simple horizon (κ₋<0), R-region | -3.874e+01 | 2.2e-12 | 0.0e+00
+  0.27 |   3e-01 | +0.0 | 0.1 | 1.897 | 1.043 | 1.00 | -45.7689 | -880.82 | 775847.785 | not completed within τ_max | -2.199e+17 | nan | 0.0e+00
+  0.27 |   3e-01 | +0.0 | 1.0 | 1.897 | 1.043 | 1.00 | -45.7689 | -880.82 | 775847.785 | not completed within τ_max | -2.816e+18 | nan | 0.0e+00
+  0.27 |   3e-01 | +0.5 | 0.0 | 1.897 | 1.043 | 1.50 | -69.1746 | -1630.46 | 2658399.559 | exit through a simple horizon (κ₋<0), R-region | -5.826e+01 | 4.1e-12 | 0.0e+00
+  0.27 |   3e-01 | -0.5 | 0.0 | 1.897 | 1.043 | 0.50 | -22.3632 | -304.32 | 92613.253 | exit through a simple horizon (κ₋<0), R-region | -1.922e+01 | 3.0e-12 | 0.0e+00
+  0.27 |   3e-01 | +2.0 | 0.0 | 1.897 | 1.043 | 3.00 | -139.3916 | -4646.39 | 21588917.952 | exit through a simple horizon (κ₋<0), R-region | -1.168e+02 | 2.2e-12 | 0.0e+00
+  0.50 |   1e-04 | +0.0 | 0.0 | 0.007 | 1.000 | 1.00 | +1.0004 | +10.40 | 108.080 | singularity (b→0) in the vacuum phase | +nan | 1.6e-06 | 0.0e+00
+  0.50 |   1e-04 | +0.0 | 0.1 | 0.007 | 1.000 | 1.00 | +1.0004 | +10.40 | 108.080 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.50 |   1e-04 | +0.0 | 1.0 | 0.007 | 1.000 | 1.00 | +1.0004 | +10.40 | 108.080 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.50 |   1e-04 | +0.5 | 0.0 | 0.007 | 1.000 | 1.50 | +1.0004 | +12.73 | 162.120 | singularity (b→0) in the vacuum phase | +nan | 1.6e-06 | 0.0e+00
+  0.50 |   1e-04 | -0.5 | 0.0 | 0.007 | 1.000 | 0.50 | +1.0004 | +7.35 | 54.040 | singularity (b→0) in the vacuum phase | +nan | 1.6e-06 | 0.0e+00
+  0.50 |   1e-04 | +2.0 | 0.0 | 0.007 | 1.000 | 3.00 | +1.0004 | +18.01 | 324.240 | singularity (b→0) in the vacuum phase | +nan | 1.6e-06 | 0.0e+00
+  0.50 |   1e-02 | +0.0 | 0.0 | 0.095 | 1.053 | 1.00 | +1.0517 | +10.93 | 119.452 | singularity (b→0) in the vacuum phase | +nan | 2.8e-07 | 0.0e+00
+  0.50 |   1e-02 | +0.0 | 0.1 | 0.095 | 1.053 | 1.00 | +1.0517 | +10.93 | 119.452 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.50 |   1e-02 | +0.0 | 1.0 | 0.095 | 1.053 | 1.00 | +1.0517 | +10.93 | 119.452 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  0.50 |   1e-02 | +0.5 | 0.0 | 0.095 | 1.053 | 1.50 | +1.0508 | +13.38 | 178.891 | singularity (b→0) in the vacuum phase | +nan | 2.8e-07 | 0.0e+00
+  0.50 |   1e-02 | -0.5 | 0.0 | 0.095 | 1.053 | 0.50 | +1.0525 | +7.73 | 59.822 | singularity (b→0) in the vacuum phase | +nan | 2.8e-07 | 0.0e+00
+  0.50 |   1e-02 | +2.0 | 0.0 | 0.095 | 1.053 | 3.00 | +1.0483 | +18.87 | 356.056 | singularity (b→0) in the vacuum phase | +nan | 3.0e-07 | 0.0e+00
+  0.50 |   3e-01 | +0.0 | 0.0 | 1.888 | 1.046 | 1.00 | -12.4228 | -129.10 | 16667.314 | exit through a simple horizon (κ₋<0), R-region | -1.104e+01 | 4.7e-12 | 0.0e+00
+  0.50 |   3e-01 | +0.0 | 0.1 | 1.888 | 1.046 | 1.00 | -12.4228 | -129.10 | 16667.314 | not completed within τ_max | -7.899e+13 | nan | 0.0e+00
+  0.50 |   3e-01 | +0.0 | 1.0 | 1.888 | 1.046 | 1.00 | -12.4228 | -129.10 | 16667.314 | not completed within τ_max | -3.440e+17 | nan | 0.0e+00
+  0.50 |   3e-01 | +0.5 | 0.0 | 1.888 | 1.046 | 1.50 | -19.1572 | -243.83 | 59453.419 | exit through a simple horizon (κ₋<0), R-region | -1.670e+01 | 3.7e-12 | 0.0e+00
+  0.50 |   3e-01 | -0.5 | 0.0 | 1.888 | 1.046 | 0.50 | -5.6885 | -41.80 | 1747.407 | exit through a simple horizon (κ₋<0), R-region | -5.369e+00 | 4.7e-12 | 0.0e+00
+  0.50 |   3e-01 | +2.0 | 0.0 | 1.888 | 1.046 | 3.00 | -39.3601 | -708.48 | 501945.903 | exit through a simple horizon (κ₋<0), R-region | -3.370e+01 | 3.8e-12 | 0.0e+00
+  1.00 |   1e-04 | +0.0 | 0.0 | 0.007 | 1.000 | 1.00 | +1.0001 | +5.20 | 27.005 | singularity (b→0) in the vacuum phase | +nan | 2.0e-06 | 0.0e+00
+  1.00 |   1e-04 | +0.0 | 0.1 | 0.007 | 1.000 | 1.00 | +1.0001 | +5.20 | 27.005 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.00 |   1e-04 | +0.0 | 1.0 | 0.007 | 1.000 | 1.00 | +1.0001 | +5.20 | 27.005 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.00 |   1e-04 | +0.5 | 0.0 | 0.007 | 1.000 | 1.50 | +1.0001 | +6.36 | 40.507 | singularity (b→0) in the vacuum phase | +nan | 2.0e-06 | 0.0e+00
+  1.00 |   1e-04 | -0.5 | 0.0 | 0.007 | 1.000 | 0.50 | +1.0001 | +3.67 | 13.503 | singularity (b→0) in the vacuum phase | +nan | 2.0e-06 | 0.0e+00
+  1.00 |   1e-04 | +2.0 | 0.0 | 0.007 | 1.000 | 3.00 | +1.0001 | +9.00 | 81.015 | singularity (b→0) in the vacuum phase | +nan | 2.0e-06 | 0.0e+00
+  1.00 |   1e-02 | +0.0 | 0.0 | 0.075 | 1.010 | 1.00 | +1.0097 | +5.25 | 27.526 | singularity (b→0) in the vacuum phase | +nan | 1.5e-06 | 0.0e+00
+  1.00 |   1e-02 | +0.0 | 0.1 | 0.075 | 1.010 | 1.00 | +1.0097 | +5.25 | 27.526 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.00 |   1e-02 | +0.0 | 1.0 | 0.075 | 1.010 | 1.00 | +1.0097 | +5.25 | 27.526 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.00 |   1e-02 | +0.5 | 0.0 | 0.075 | 1.010 | 1.50 | +1.0096 | +6.42 | 41.280 | singularity (b→0) in the vacuum phase | +nan | 1.5e-06 | 0.0e+00
+  1.00 |   1e-02 | -0.5 | 0.0 | 0.075 | 1.010 | 0.50 | +1.0098 | +3.71 | 13.766 | singularity (b→0) in the vacuum phase | +nan | 1.5e-06 | 0.0e+00
+  1.00 |   1e-02 | +2.0 | 0.0 | 0.075 | 1.010 | 3.00 | +1.0093 | +9.08 | 82.508 | singularity (b→0) in the vacuum phase | +nan | 1.5e-06 | 0.0e+00
+  1.00 |   3e-01 | +0.0 | 0.0 | 1.833 | 1.066 | 1.00 | -2.0131 | -10.46 | 109.418 | exit through a simple horizon (κ₋<0), R-region | -2.421e+00 | 4.8e-12 | 0.0e+00
+  1.00 |   3e-01 | +0.0 | 0.1 | 1.833 | 1.066 | 1.00 | -2.0131 | -10.46 | 109.418 | exit through a simple horizon (κ₋<0), R-region | -1.513e+03 | nan | 0.0e+00
+  1.00 |   3e-01 | +0.0 | 1.0 | 1.833 | 1.066 | 1.00 | -2.0131 | -10.46 | 109.418 | not completed within τ_max | -1.468e+15 | nan | 0.0e+00
+  1.00 |   3e-01 | +0.5 | 0.0 | 1.833 | 1.066 | 1.50 | -3.5524 | -22.61 | 511.095 | exit through a simple horizon (κ₋<0), R-region | -3.800e+00 | 7.2e-12 | 0.0e+00
+  1.00 |   3e-01 | -0.5 | 0.0 | 1.833 | 1.066 | 0.50 | -0.4738 | -1.74 | 3.030 | exit through a simple horizon (κ₋<0), R-region | -1.031e+00 | 6.8e-13 | 0.0e+00
+  1.00 |   3e-01 | +2.0 | 0.0 | 1.833 | 1.066 | 3.00 | -8.1704 | -73.53 | 5407.161 | exit through a simple horizon (κ₋<0), R-region | -7.927e+00 | 7.1e-12 | 0.0e+00
+  1.50 |   1e-04 | +0.0 | 0.0 | 0.007 | 1.000 | 1.00 | +1.0000 | +3.46 | 12.001 | singularity (b→0) in the vacuum phase | +nan | 2.1e-06 | 0.0e+00
+  1.50 |   1e-04 | +0.0 | 0.1 | 0.007 | 1.000 | 1.00 | +1.0000 | +3.46 | 12.001 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.50 |   1e-04 | +0.0 | 1.0 | 0.007 | 1.000 | 1.00 | +1.0000 | +3.46 | 12.001 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.50 |   1e-04 | +0.5 | 0.0 | 0.007 | 1.000 | 1.50 | +1.0000 | +4.24 | 18.001 | singularity (b→0) in the vacuum phase | +nan | 2.1e-06 | 0.0e+00
+  1.50 |   1e-04 | -0.5 | 0.0 | 0.007 | 1.000 | 0.50 | +1.0000 | +2.45 | 6.000 | singularity (b→0) in the vacuum phase | +nan | 2.1e-06 | 0.0e+00
+  1.50 |   1e-04 | +2.0 | 0.0 | 0.007 | 1.000 | 3.00 | +1.0000 | +6.00 | 36.003 | singularity (b→0) in the vacuum phase | +nan | 2.1e-06 | 0.0e+00
+  1.50 |   1e-02 | +0.0 | 0.0 | 0.073 | 1.004 | 1.00 | +1.0041 | +3.48 | 12.099 | singularity (b→0) in the vacuum phase | +nan | 1.4e-06 | 0.0e+00
+  1.50 |   1e-02 | +0.0 | 0.1 | 0.073 | 1.004 | 1.00 | +1.0041 | +3.48 | 12.099 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.50 |   1e-02 | +0.0 | 1.0 | 0.073 | 1.004 | 1.00 | +1.0041 | +3.48 | 12.099 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.50 |   1e-02 | +0.5 | 0.0 | 0.073 | 1.004 | 1.50 | +1.0041 | +4.26 | 18.147 | singularity (b→0) in the vacuum phase | +nan | 1.4e-06 | 0.0e+00
+  1.50 |   1e-02 | -0.5 | 0.0 | 0.073 | 1.004 | 0.50 | +1.0042 | +2.46 | 6.050 | singularity (b→0) in the vacuum phase | +nan | 1.4e-06 | 0.0e+00
+  1.50 |   1e-02 | +2.0 | 0.0 | 0.073 | 1.004 | 3.00 | +1.0039 | +6.02 | 36.284 | singularity (b→0) in the vacuum phase | +nan | 1.4e-06 | 0.0e+00
+  1.50 |   3e-01 | +0.0 | 0.0 | 1.539 | 1.135 | 1.00 | +0.3247 | +1.12 | 1.265 | singularity (b→0) in the vacuum phase | +nan | 6.1e-07 | 0.0e+00
+  1.50 |   3e-01 | +0.0 | 0.1 | 1.539 | 1.135 | 1.00 | +0.3247 | +1.12 | 1.265 | singularity (b→0) in the vacuum phase | +nan | nan | 0.0e+00
+  1.50 |   3e-01 | +0.0 | 1.0 | 1.539 | 1.135 | 1.00 | +0.3247 | +1.12 | 1.265 | exit through a simple horizon (κ₋<0), R-region | -1.445e+06 | nan | 0.0e+00
+  1.50 |   3e-01 | +0.5 | 0.0 | 1.539 | 1.135 | 1.50 | -0.0803 | -0.34 | 0.116 | exit through a simple horizon (κ₋<0), R-region | -9.131e-01 | 2.4e-12 | 0.0e+00
+  1.50 |   3e-01 | -0.5 | 0.0 | 1.539 | 1.135 | 0.50 | +0.7297 | +1.79 | 3.194 | singularity (b→0) in the vacuum phase | +nan | 1.8e-06 | 0.0e+00
+  1.50 |   3e-01 | +2.0 | 0.0 | 1.539 | 1.135 | 3.00 | -1.2951 | -7.77 | 60.386 | exit through a simple horizon (κ₋<0), R-region | -2.548e+00 | 1.7e-11 | 0.0e+00
+
+(C) ΔE* giving a degenerate exit (9Λm₀² = 1) — does it exist, and is it fine-tuning
+  ℓ = 0.27, ρ₀/ε_c = 1e-04: ΔE* does not exist (transition not reached or no root)
+  ℓ = 0.27, ρ₀/ε_c = 1e-02: b_c = 0.8512, ΔE*/ε_c = -0.453056 (ρ_vac* = 0.5469 ε_c): outcome exit through a simple horizon (κ₋<0), R-region, κ = -8.35e-05, 9Λm₀² = 1.000000;  ΔE*(1+10⁻³): singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 1.0544;  ΔE*(1−10⁻³): exit through a simple horizon (κ₋<0), R-region, κ = -5.86e-01, 9Λm₀² = 0.9470
+  ℓ = 0.27, ρ₀/ε_c = 3e-01: ΔE* does not exist (transition not reached or no root)
+  ℓ = 0.5, ρ₀/ε_c = 1e-04: b_c = 0.0070, ΔE*/ε_c = -0.990748 (ρ_vac* = 0.0093 ε_c): outcome singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 1.000000;  ΔE*(1+10⁻³): singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 0.8929;  ΔE*(1−10⁻³): singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 1.1071
+  ℓ = 0.5, ρ₀/ε_c = 1e-02: ΔE* does not exist (transition not reached or no root)
+  ℓ = 0.5, ρ₀/ε_c = 3e-01: ΔE* does not exist (transition not reached or no root)
+  ℓ = 1.0, ρ₀/ε_c = 1e-04: b_c = 0.0070, ΔE*/ε_c = -0.962970 (ρ_vac* = 0.0370 ε_c): outcome singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 1.000000;  ΔE*(1+10⁻³): singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 0.9740;  ΔE*(1−10⁻³): singularity (b→0) in the vacuum phase, κ = +nan, 9Λm₀² = 1.0260
+  ℓ = 1.0, ρ₀/ε_c = 1e-02: ΔE* does not exist (transition not reached or no root)
+  ℓ = 1.0, ρ₀/ε_c = 3e-01: ΔE* does not exist (transition not reached or no root)
+
+(D) Control: polytrope p = Kρ² (p/ρ = 0.3 at ε_c), ℓ = 0.27, ΔE = 0
+  ρ₀/ε_c = 1e-04: b_c = 0.002, m₀ = +1.0000, 9Λm₀² = 370.371, outcome singularity (b→0) in the vacuum phase, κ = +nan
+  ρ₀/ε_c = 1e-02: b_c = 0.760, m₀ = -1.7425, 9Λm₀² = 1124.504, outcome exit through a simple horizon (κ₋<0), R-region, κ = -1.31e+01
+  ρ₀/ε_c = 3e-01: b_c = 1.897, m₀ = -45.7889, 9Λm₀² = 776526.020, outcome exit through a simple horizon (κ₋<0), R-region, κ = -3.87e+01
+
+(E) Scenario branch (base-profile EOS, trigger at ρ = s(u₃)·ρ_c = 1.96e-03 ρ_c): degenerate exit ⇔ transition exactly at b_c = u₃R₁ = 1.8639
+  ρ₀/ρ_tr = 2.0e-02: b_c = 0.1010, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 2.5e-02: b_c = 0.1137, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 3.2e-02: b_c = 0.1280, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 4.0e-02: b_c = 0.1442, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 5.0e-02: b_c = 0.1626, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 6.3e-02: b_c = 0.1835, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 8.0e-02: b_c = 0.2073, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 1.0e-01: b_c = 0.2345, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 1.3e-01: b_c = 0.2657, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 1.6e-01: b_c = 0.3018, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 2.0e-01: b_c = 0.3436, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 2.5e-01: b_c = 0.3925, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 3.2e-01: b_c = 0.4504, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 4.0e-01: b_c = 0.5198, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 5.0e-01: b_c = 0.6044, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 6.3e-01: b_c = 0.7105, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 7.9e-01: b_c = 0.8486, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ρ₀/ρ_tr = 1.0e+00: b_c = 1.0414, outcome singularity (b→0) in the vacuum phase, κ_exit = +nan, b_end = 0.0010, ρ_end/ρ_c = 1.000, |C| = 0.0e+00
+  ⇒ starting from the Schwarzschild T-region, an upward crossing transition at ρ_tr is possible only for b_c ≤ 1.04 (ρ initially decreases: a = √|f| grows faster than b² contracts), and in all cases the outcome is a singularity: the residual mass M is not converted.
+
+(E2) Scenario branch, vacuum phase started at given (b_c, m_c) [ρ = ρ_tr, ḃ² = 2m_c/b_c − 1]: κ at exit (degenerate ⇔ κ = 0)
+  b_c* = u₃R₁ = 1.86392, m_c* = m_base(b_c*) = 0.98074 (base profile: R₋ = 0.6776, triple root)
+  δ' (b_c) / δ (m_c) | -0.020 | -0.005 | +0.000 | +0.005 | +0.020 
+  -0.020            | exit -6.5e-01 | exit -4.7e-01 | sing        | sing        | sing        |
+  -0.005            | exit -1.1e-01 | exit -2.1e-01 | exit -3.2e-01 | exit -4.2e-01 | exit -7.0e-01 |
+  +0.000            | exit -1.5e-01 | exit -8.1e-02 | exit -1.5e-04 | exit -1.6e-01 | exit -4.7e-01 |
+  +0.005            | exit -1.8e-01 | exit -1.4e-01 | exit -1.2e-01 | exit -9.1e-02 | exit -2.2e-01 |
+  +0.020            | exit -2.0e-01 | exit -2.0e-01 | exit -2.0e-01 | exit -2.0e-01 | exit -1.7e-01 |
+
+  plot: <repo>\inner-extremal-rbh\data\verification_03\T30_phase.png
