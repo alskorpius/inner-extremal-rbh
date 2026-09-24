@@ -1,0 +1,44 @@
+p = 4: H_P Q^2 = 32269440000000*r**8/(160000*r**4 + 2401)**(11/4)
+  l=2: r^2 V22 (r=1e-6, 30 digits) = -6.000000   predicted -6.000000
+     r_cut= 0.100: omega^2 =     567.6420  nu =     0.000  nu*r_cut =  0.000  peak r = 0.1221
+     r_cut= 0.050: omega^2 =    -508.8479  nu =    22.558  nu*r_cut =  1.128  peak r = 0.0964
+     r_cut= 0.020: omega^2 =   -1777.1141  nu =    42.156  nu*r_cut =  0.843  peak r = 0.0475
+     r_cut= 0.010: omega^2 =   -5160.6908  nu =    71.838  nu*r_cut =  0.718  peak r = 0.0242
+     r_cut= 0.005: omega^2 =  -18320.1321  nu =   135.352  nu*r_cut =  0.677  peak r = 0.0121
+     r_cut= 0.002: omega^2 = -110250.7745  nu =   332.040  nu*r_cut =  0.664  peak r = 0.0049
+  l=3: r^2 V22 (r=1e-6, 30 digits) = -24.000000   predicted -24.000000
+     r_cut= 0.100: omega^2 =     145.6952  nu =     0.000  nu*r_cut =  0.000  peak r = 0.1213
+     r_cut= 0.050: omega^2 =   -2288.1585  nu =    47.835  nu*r_cut =  2.392  peak r = 0.0765
+     r_cut= 0.020: omega^2 =  -13907.9605  nu =   117.932  nu*r_cut =  2.359  peak r = 0.0318
+     r_cut= 0.010: omega^2 =  -54658.2451  nu =   233.791  nu*r_cut =  2.338  peak r = 0.0160
+     r_cut= 0.005: omega^2 = -217525.7306  nu =   466.397  nu*r_cut =  2.332  peak r = 0.0080
+     r_cut= 0.002: omega^2 = -1358164.6285  nu =  1165.403  nu*r_cut =  2.331  peak r = 0.0032
+  l=5: r^2 V22 (r=1e-6, 30 digits) = -78.000000   predicted -78.000000
+     r_cut= 0.100: omega^2 =   -1186.0884  nu =    34.440  nu*r_cut =  3.444  peak r = 0.1187
+     r_cut= 0.050: omega^2 =  -10620.7176  nu =   103.057  nu*r_cut =  5.153  peak r = 0.0653
+     r_cut= 0.020: omega^2 =  -73872.2268  nu =   271.794  nu*r_cut =  5.436  peak r = 0.0267
+     r_cut= 0.010: omega^2 = -299266.4584  nu =   547.053  nu*r_cut =  5.471  peak r = 0.0134
+     r_cut= 0.005: omega^2 = -1200892.0140  nu =  1095.852  nu*r_cut =  5.479  peak r = 0.0067
+     r_cut= 0.002: omega^2 = -7518764.4717  nu =  2742.037  nu*r_cut =  5.484  peak r = 0.0027
+p = 10: H_P Q^2 = 451237261762560000000000000*r**14/((400*r**2 + 49)**(23/10)*(25600000000*r**8 - 3136000000*r**6 + 384160000*r**4 - 47059600*r**2 + 5764801)**(23/10))
+  l=2: r^2 V22 (r=1e-6, 30 digits) = 6.000000   predicted 6.000000
+     r_cut= 0.100: omega^2 =     420.7082  nu =     0.000  nu*r_cut =  0.000  peak r = 0.1207
+     r_cut= 0.050: omega^2 =    -608.1153  nu =    24.660  nu*r_cut =  1.233  peak r = 0.1048
+     r_cut= 0.020: omega^2 =    -706.5403  nu =    26.581  nu*r_cut =  0.532  peak r = 0.1003
+     r_cut= 0.010: omega^2 =    -708.6870  nu =    26.621  nu*r_cut =  0.266  peak r = 0.1002
+     r_cut= 0.005: omega^2 =    -708.7634  nu =    26.623  nu*r_cut =  0.133  peak r = 0.1002
+     r_cut= 0.002: omega^2 =    -708.7659  nu =    26.623  nu*r_cut =  0.053  peak r = 0.1002
+  l=3: r^2 V22 (r=1e-6, 30 digits) = -30.000000   predicted -30.000000
+     r_cut= 0.100: omega^2 =    -485.0730  nu =    22.024  nu*r_cut =  2.202  peak r = 0.1193
+     r_cut= 0.050: omega^2 =   -4259.7614  nu =    65.267  nu*r_cut =  3.263  peak r = 0.0729
+     r_cut= 0.020: omega^2 =  -20941.5821  nu =   144.712  nu*r_cut =  2.894  peak r = 0.0305
+     r_cut= 0.010: omega^2 =  -78558.5978  nu =   280.283  nu*r_cut =  2.803  peak r = 0.0153
+     r_cut= 0.005: omega^2 = -308667.1349  nu =   555.578  nu*r_cut =  2.778  peak r = 0.0077
+     r_cut= 0.002: omega^2 = -1920240.7735  nu =  1385.728  nu*r_cut =  2.771  peak r = 0.0031
+  l=5: r^2 V22 (r=1e-6, 30 digits) = -138.000000   predicted -138.000000
+     r_cut= 0.100: omega^2 =   -3424.5281  nu =    58.519  nu*r_cut =  5.852  peak r = 0.1153
+     r_cut= 0.050: omega^2 =  -23476.1538  nu =   153.219  nu*r_cut =  7.661  peak r = 0.0619
+     r_cut= 0.020: omega^2 = -157325.7989  nu =   396.643  nu*r_cut =  7.933  peak r = 0.0252
+     r_cut= 0.010: omega^2 = -634141.0672  nu =   796.330  nu*r_cut =  7.963  peak r = 0.0126
+     r_cut= 0.005: omega^2 = -2541574.0244  nu =  1594.231  nu*r_cut =  7.971  peak r = 0.0063
+     r_cut= 0.002: omega^2 = -15911127.9938  nu =  3988.876  nu*r_cut =  7.978  peak r = 0.0025

@@ -1,0 +1,24 @@
+Centre limit r^2 W_22 of the matter channel (fine grid around r0)
+  scenario (branch A, triple root)   p=4 l= 2:    -5.971 (r=3e-3)    -6.043 (r=1e-2);  l(l+1) part only   -18.00;  full formula    -6.00
+  scenario (branch A, triple root)   p=4 l= 3:   -23.971 (r=3e-3)   -24.043 (r=1e-2);  l(l+1) part only   -36.00;  full formula   -24.00
+  scenario (branch A, triple root)   p=4 l= 5:   -77.971 (r=3e-3)   -78.043 (r=1e-2);  l(l+1) part only   -90.00;  full formula   -78.00
+  scenario (branch A, triple root)   p=4 l=10:  -317.971 (r=3e-3)  -318.042 (r=1e-2);  l(l+1) part only  -330.00;  full formula  -318.00
+  Hayward ell=0.271                  p=3 l= 2:    -6.252 (r=3e-3)    -6.272 (r=1e-2);  l(l+1) part only   -15.00;  full formula    -6.25
+  Hayward ell=0.271                  p=3 l= 3:   -21.252 (r=3e-3)   -21.271 (r=1e-2);  l(l+1) part only   -30.00;  full formula   -21.25
+  Hayward ell=0.271                  p=3 l= 5:   -66.252 (r=3e-3)   -66.271 (r=1e-2);  l(l+1) part only   -75.00;  full formula   -66.25
+  Hayward ell=0.271                  p=3 l=10:  -266.252 (r=3e-3)  -266.268 (r=1e-2);  l(l+1) part only  -275.00;  full formula  -266.25
+  Bardeen g=0.6                      p=2 l= 2:    -6.001 (r=3e-3)    -6.012 (r=1e-2);  l(l+1) part only   -12.00;  full formula    -6.00
+  Bardeen g=0.6                      p=2 l= 3:   -18.001 (r=3e-3)   -18.006 (r=1e-2);  l(l+1) part only   -24.00;  full formula   -18.00
+  Bardeen g=0.6                      p=2 l= 5:   -53.999 (r=3e-3)   -53.989 (r=1e-2);  l(l+1) part only   -60.00;  full formula   -54.00
+  Bardeen g=0.6                      p=2 l=10:  -213.992 (r=3e-3)  -213.911 (r=1e-2);  l(l+1) part only  -220.00;  full formula  -214.00
+  Dymnikova r*=0.9615                p=3 l= 2:    -6.248 (r=3e-3)    -6.253 (r=1e-2);  l(l+1) part only   -15.00;  full formula    -6.25
+  Dymnikova r*=0.9615                p=3 l= 3:   -21.248 (r=3e-3)   -21.253 (r=1e-2);  l(l+1) part only   -30.00;  full formula   -21.25
+  Dymnikova r*=0.9615                p=3 l= 5:   -66.248 (r=3e-3)   -66.253 (r=1e-2);  l(l+1) part only   -75.00;  full formula   -66.25
+  Dymnikova r*=0.9615                p=3 l=10:  -266.248 (r=3e-3)  -266.253 (r=1e-2);  l(l+1) part only  -275.00;  full formula  -266.25
+
+Branch A, l = 2: lowest omega^2 of the two-channel solver on [r_cut, 0.6]
+  r_cut= 0.100: omega^2 =   -105.0236  nu =   10.248  nu*r_cut =  1.025
+  r_cut= 0.050: omega^2 =   -361.6350  nu =   19.017  nu*r_cut =  0.951
+  r_cut= 0.020: omega^2 =  -1336.7099  nu =   36.561  nu*r_cut =  0.731
+  r_cut= 0.010: omega^2 =  -4618.2195  nu =   67.957  nu*r_cut =  0.680
+  r_cut= 0.005: omega^2 = -17736.5366  nu =  133.179  nu*r_cut =  0.666

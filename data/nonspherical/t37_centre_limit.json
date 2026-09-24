@@ -1,0 +1,187 @@
+{
+  "scenario (branch A, triple root)": {
+    "p": 4,
+    "rows": [
+      {
+        "l": 2,
+        "r2W22_at_r3em3": -5.971328356200023,
+        "r2W22_at_r1em2": -6.04310886338467,
+        "l_l1_part_only": -18.0,
+        "full_formula": -6.0,
+        "falls_to_centre": true
+      },
+      {
+        "l": 3,
+        "r2W22_at_r3em3": -23.97132779190248,
+        "r2W22_at_r1em2": -24.043039145314605,
+        "l_l1_part_only": -36.0,
+        "full_formula": -24.0,
+        "falls_to_centre": true
+      },
+      {
+        "l": 5,
+        "r2W22_at_r3em3": -77.97132609912065,
+        "r2W22_at_r1em2": -78.04283014277497,
+        "l_l1_part_only": -90.0,
+        "full_formula": -78.0,
+        "falls_to_centre": true
+      },
+      {
+        "l": 10,
+        "r2W22_at_r3em3": -317.97131857572015,
+        "r2W22_at_r1em2": -318.04190134454467,
+        "l_l1_part_only": -330.0,
+        "full_formula": -318.0,
+        "falls_to_centre": true
+      }
+    ]
+  },
+  "Hayward ell=0.271": {
+    "p": 3,
+    "rows": [
+      {
+        "l": 2,
+        "r2W22_at_r3em3": -6.251952180511474,
+        "r2W22_at_r1em2": -6.2715462670029885,
+        "l_l1_part_only": -15.0,
+        "full_formula": -6.25,
+        "falls_to_centre": true
+      },
+      {
+        "l": 3,
+        "r2W22_at_r3em3": -21.251947216858184,
+        "r2W22_at_r1em2": -21.27136224740615,
+        "l_l1_part_only": -30.0,
+        "full_formula": -21.25,
+        "falls_to_centre": true
+      },
+      {
+        "l": 5,
+        "r2W22_at_r3em3": -66.25193232714929,
+        "r2W22_at_r1em2": -66.27081070244341,
+        "l_l1_part_only": -75.0,
+        "full_formula": -66.25,
+        "falls_to_centre": true
+      },
+      {
+        "l": 10,
+        "r2W22_at_r3em3": -266.2518661515062,
+        "r2W22_at_r1em2": -266.2683597368692,
+        "l_l1_part_only": -275.0,
+        "full_formula": -266.25,
+        "falls_to_centre": true
+      }
+    ]
+  },
+  "Bardeen g=0.6": {
+    "p": 2,
+    "rows": [
+      {
+        "l": 2,
+        "r2W22_at_r3em3": -6.001088053365466,
+        "r2W22_at_r1em2": -6.012067577887588,
+        "l_l1_part_only": -12.0,
+        "full_formula": -6.0,
+        "falls_to_centre": true
+      },
+      {
+        "l": 3,
+        "r2W22_at_r3em3": -18.000563038373148,
+        "r2W22_at_r1em2": -18.00623240322393,
+        "l_l1_part_only": -24.0,
+        "full_formula": -18.0,
+        "falls_to_centre": true
+      },
+      {
+        "l": 5,
+        "r2W22_at_r3em3": -53.99898806569701,
+        "r2W22_at_r1em2": -53.98873577959136,
+        "l_l1_part_only": -60.0,
+        "full_formula": -54.0,
+        "falls_to_centre": true
+      },
+      {
+        "l": 10,
+        "r2W22_at_r3em3": -213.99198823573374,
+        "r2W22_at_r1em2": -213.91097899030197,
+        "l_l1_part_only": -220.0,
+        "full_formula": -214.0,
+        "falls_to_centre": true
+      }
+    ]
+  },
+  "Dymnikova r*=0.9615": {
+    "p": 3,
+    "rows": [
+      {
+        "l": 2,
+        "r2W22_at_r3em3": -6.248449712419821,
+        "r2W22_at_r1em2": -6.253443545641184,
+        "l_l1_part_only": -15.0,
+        "full_formula": -6.25,
+        "falls_to_centre": true
+      },
+      {
+        "l": 3,
+        "r2W22_at_r3em3": -21.24844943903842,
+        "r2W22_at_r1em2": -21.25343341791741,
+        "l_l1_part_only": -30.0,
+        "full_formula": -21.25,
+        "falls_to_centre": true
+      },
+      {
+        "l": 5,
+        "r2W22_at_r3em3": -66.24844861891131,
+        "r2W22_at_r1em2": -66.25340304177335,
+        "l_l1_part_only": -75.0,
+        "full_formula": -66.25,
+        "falls_to_centre": true
+      },
+      {
+        "l": 10,
+        "r2W22_at_r3em3": -266.2484449739134,
+        "r2W22_at_r1em2": -266.25326804141207,
+        "l_l1_part_only": -275.0,
+        "full_formula": -266.25,
+        "falls_to_centre": true
+      }
+    ]
+  },
+  "branchA_l2_spectrum": [
+    {
+      "r_cut": 0.1,
+      "omega2": -105.02358814934753,
+      "nu": 10.248101685158453,
+      "nu_times_rcut": 1.0248101685158453,
+      "matter_weight": 0.9861109568585925
+    },
+    {
+      "r_cut": 0.05,
+      "omega2": -361.634987602222,
+      "nu": 19.016702858335407,
+      "nu_times_rcut": 0.9508351429167704,
+      "matter_weight": 0.9990350944556486
+    },
+    {
+      "r_cut": 0.02,
+      "omega2": -1336.7099019505902,
+      "nu": 36.561043501937824,
+      "nu_times_rcut": 0.7312208700387565,
+      "matter_weight": 0.9999948094674128
+    },
+    {
+      "r_cut": 0.01,
+      "omega2": -4618.21951436689,
+      "nu": 67.95748313737708,
+      "nu_times_rcut": 0.6795748313737708,
+      "matter_weight": 0.9999999882666731
+    },
+    {
+      "r_cut": 0.005,
+      "omega2": -17736.536626902172,
+      "nu": 133.1785892210237,
+      "nu_times_rcut": 0.6658929461051186,
+      "matter_weight": 0.999999999986599
+    }
+  ]
+}

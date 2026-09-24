@@ -24,8 +24,12 @@ Sectors:
   POLAR.  The coefficient of l(l+1) in the polar potential is f c_t^2 / r^2 with c_t^2 = kappa_MS.  In a
     de Sitter plateau rho = rho_c (1 - (r/L)^p + ...) gives sigma = p (r/L)^p and c_t^2 -> -1 - p/2 < -1 at
     the centre (<= -2 only once p >= 2; every profile tried here has p >= 2), so the radial operator acquires
-    -(1 + p/2) l(l+1)/r^2, in every case below the critical -1/4: "fall to the
-    centre", spectrum unbounded below, growth rate unbounded in l and as r -> 0 (Hadamard ill-posed).
+    -(1 + p/2) l(l+1)/r^2 plus the l-independent static term (p+2)(p+4)/(4 r^2) of the matter channel
+    (H_P Q^2 = 2 pi r^4 rho sigma ~ r^(p+4)), i.e. -(p+2)/4 [2 l(l+1) - (p+4)] in total. This is below the
+    critical -1/4 when 2 l(l+1) > p + 4 + 1/(p+2) -- every l >= 2 for p <= 7, which covers every profile here,
+    never l = 1 -- and there "fall to the centre": spectrum unbounded below, growth rate unbounded in l and as
+    r -> 0 (Hadamard ill-posed). For larger p the lowest multipoles have bounded growth instead
+    (t37_large_p.py: p = 10, l = 2 saturates at 26.6/M). Coefficient checked in t37_centre_limit.py.
     Confirmed by (a) the eikonal rate, (b) a two-channel Moreno-Sarbach eigenvalue solve, (c) time evolution
     whose measured growth rate keeps rising as the grid is refined.
 
@@ -357,7 +361,8 @@ def main():
     say("  => every de Sitter plateau has c_t^2(0) = -1 - p/2 < -1: the tangential sound speed squared is")
     say("     negative (and |c_t| > 1) at the centre for ANY regular profile, not only for this one.")
     say("     The sharper bound c_t^2(0) <= -2 needs p >= 2 (p = 1 gives -1.5); every profile above has")
-    say("     p >= 2.  What the polar sector needs is only c_t^2(0) < -1/4, which holds for all p > 0.")
+    say("     p >= 2.  The polar sector needs the full centre coefficient -(p+2)/4 [2l(l+1) - (p+4)] < -1/4,")
+    say("     which holds for every l >= 2 when p <= 7 (all profiles here); see t37_centre_limit.py.")
 
     rfull = np.linspace(1e-3, core.Rm * (1 - 1e-4), 200001)
     kap = core_quantities(core, rfull)["kappa"]

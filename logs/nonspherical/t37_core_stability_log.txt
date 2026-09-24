@@ -41,7 +41,8 @@ Background: scenario (branch A, triple root); ell/M = 0.271016; R_- = 0.676388 (
   => every de Sitter plateau has c_t^2(0) = -1 - p/2 < -1: the tangential sound speed squared is
      negative (and |c_t| > 1) at the centre for ANY regular profile, not only for this one.
      The sharper bound c_t^2(0) <= -2 needs p >= 2 (p = 1 gives -1.5); every profile above has
-     p >= 2.  What the polar sector needs is only c_t^2(0) < -1/4, which holds for all p > 0.
+     p >= 2.  The polar sector needs the full centre coefficient -(p+2)/4 [2l(l+1) - (p+4)] < -1/4,
+     which holds for every l >= 2 when p <= 7 (all profiles here); see t37_centre_limit.py.
 
   c_t^2 < 0 on r in [0.0010, 0.3791] = 56.0% of the core; min c_t^2 = -3.0000; c_t^2(R_-^-) = +1.0007
 
